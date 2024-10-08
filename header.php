@@ -21,10 +21,11 @@
                 <div class="exit2"></div>
             </label>
             <div class="optionMenu">
-                <h2>à propos</h2>
-                <h2>cours</h2>
-                <h2>professeur</h2>
-                <h2>nous contacter</h2>
+                <h2>Vie étudiante</h2>
+                <h2>Liste de cours</h2>
+                <h2>Nos professeurs</h2>
+                <h2>Projet</h2>
+                <h2>Secteur avenir</h2>
             </div>
         </div>
         <label for="chkBurger" class="menuBurger">

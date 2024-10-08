@@ -1,7 +1,29 @@
 footer {
-  height: 200px;
   background-color: black;
   color: white;
-  text-align: center;
-  align-content: center;
+  display: flex;
+  align-content: first baseline;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-bottom: 10vh;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-y: hidden;
+
+  .footerGauche {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+
+  .footerBas {
+    position: absolute;
+    font-size: 15vw;
+    bottom: -70px;
+  }
+
+  p {
+    font-size: xx-small;
+  }
 }
