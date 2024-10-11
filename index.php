@@ -45,9 +45,6 @@
         <div>image</div>
         <div>image</div>
     </div>
-    <div class="barreBasPage">
-        <div class="div1"></div>
-        <div class="div2"></div>
-    </div>
+    <?= get_barreBasPage(); ?>
 </main>
 <?= get_footer(); ?>
