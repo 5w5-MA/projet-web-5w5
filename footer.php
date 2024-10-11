@@ -32,6 +32,9 @@
   </section>
   <section class="footerBas">Maisonneuve</section>
 </footer>
+
+<?php wp_footer(); ?>
+
 </body>
 <script>
   document

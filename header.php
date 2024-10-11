@@ -9,10 +9,14 @@
         href="https://fonts.googleapis.com/css2?family=Lato">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/normalize.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css" />
+    <?php wp_head(); ?>
 </head>
 
 <body>
     <header>
+
+        <?php get_custom_logo(); ?>
+
         <h1>TIM</h1>
         <input type="checkbox" id="chkBurger" />
         <div class="menuCache">
@@ -26,6 +30,7 @@
                 <h2>Nos professeurs</h2>
                 <h2>Projet</h2>
                 <h2>Secteur avenir</h2>
+                <?php wp_nav_menu(); ?>
             </div>
         </div>
         <label for="chkBurger" class="menuBurger">
