@@ -12,6 +12,8 @@ Text Domain: theme tim
 */
 
 //Importer les composants
+@import "composant/_variable.scss";
+
 @import "composant/menu";
 
 @import "composant/footer";
