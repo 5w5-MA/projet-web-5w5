@@ -144,6 +144,21 @@ footer p {
   font-size: xx-small;
 }
 
+.barreBasPage {
+  display: flex;
+  justify-content: space-between;
+}
+.barreBasPage .div1 {
+  height: 20px;
+  width: 20vw;
+  background-color: #fcbe32;
+}
+.barreBasPage .div2 {
+  height: 20px;
+  width: 70vw;
+  background-color: #fcbe32;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -356,18 +371,4 @@ body main .photo div {
   background-color: #fcbe32;
   text-align: center;
   align-content: center;
-}
-body main .barreBasPage {
-  display: flex;
-  justify-content: space-between;
-}
-body main .barreBasPage .div1 {
-  height: 20px;
-  width: 20vw;
-  background-color: #fcbe32;
-}
-body main .barreBasPage .div2 {
-  height: 20px;
-  width: 70vw;
-  background-color: #fcbe32;
 }/*# sourceMappingURL=style.css.map */
