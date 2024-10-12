@@ -1,13 +1,54 @@
+.titrePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    height: 25vh;
+    z-index: 1;
+
+    color: var(--gris);
+
+}
+
+.titrePage::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../../images/entete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    filter: blur(5px);
+    z-index: -1;
+
+
+}
+
 .vieEtudiante img {
     width: 50px;
     height: 50px;
 }
 
 .imageVieEntete {
+    display: none;
     width: 50%;
     height: 50%;
 }
 
+.informations {}
+
+.texte {
+    background-color: var(--gris);
+}
+
 .cetim {
-    background-color: var(--orange);
+    .titreSection {
+        background-color: var(--orange);
+    }
 }
