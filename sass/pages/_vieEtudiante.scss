@@ -30,9 +30,17 @@
 
 }
 
+.titreSection {
+    background-color: var(--orange);
+    width: max-content;
+    padding: 0 2rem;
+}
+
 .vieEtudiante img {
-    width: 50px;
-    height: 50px;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover; //À VOIR: image devient plus pixelisé
+
 }
 
 .imageVieEntete {
@@ -47,8 +55,4 @@
     background-color: var(--gris);
 }
 
-.cetim {
-    .titreSection {
-        background-color: var(--orange);
-    }
-}
+.cetim {}

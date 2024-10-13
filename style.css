@@ -405,9 +405,16 @@ body main .photo div {
   z-index: -1;
 }
 
+.titreSection {
+  background-color: var(--orange);
+  width: max-content;
+  padding: 0 2rem;
+}
+
 .vieEtudiante img {
-  width: 50px;
-  height: 50px;
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
 }
 
 .imageVieEntete {
@@ -418,8 +425,4 @@ body main .photo div {
 
 .texte {
   background-color: var(--gris);
-}
-
-.cetim .titreSection {
-  background-color: var(--orange);
 }/*# sourceMappingURL=style.css.map */
