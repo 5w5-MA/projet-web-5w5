@@ -1,3 +1,4 @@
+/*******ZONE DE TITRE DE LA PAGE*******/
 .titrePage {
     display: flex;
     align-items: center;
@@ -33,37 +34,48 @@
     height: 50%;
 }
 
-.titreSection {
+/*********TITRE DES SECTIONS**********/
+.titreSection h2 {
     background-color: var(--orange);
     width: max-content;
     padding: 0 2rem;
 
     clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+}
+
+.titreSection {
     position: relative;
+    width: max-content;
 }
 
 .titreSection::after {
     content: "";
     position: absolute;
-    display: block;
     top: 0;
-    left: 0;
-    width: 10%;
+    right: 0;
+    width: 2%;
     height: 100%;
-    // top: 0;
-    // bottom: 0;
-    // left: 100%;
-    // right: -20px;
-    transform: skewX(-45deg) translateX(230px);
 
+    transform: skewX(-42deg); //voir comment faire un calcul
+    background-color: var(--orange);
+}
 
-    background-color: var(--gris);
+.titreSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1%;
+    height: 100%;
+
+    transform: skewX(-42deg);
+    translate: (0.7rem);
+    background-color: var(--orange);
 }
 
 .vieEtudiante img {
     width: 100vw;
     height: 40vh;
-    // padding: 4rem 0;´
 
     object-fit: cover; //À VOIR: image devient plus pixelisé
 
@@ -80,12 +92,22 @@
 
 .cetim {}
 
+
+/*********MÉDIA QUERRY**********/
 @media screen and (min-width: 900px) {
+
+    .vieEtudiante img {
+        width: 40vw;
+        height: auto;
+
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+    }
 
     .titrePage {
         height: auto;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         color: var(--gris);
     }
@@ -96,7 +118,7 @@
 
     .imageVieEntete {
         display: flex;
-        width: 100%;
+        width: 60vw;
         height: 100%;
     }
 
@@ -108,16 +130,15 @@
         align-items: center;
     }
 
+    .locaux .informations {
+        flex-direction: row-reverse;
+    }
+
     .texte {
         width: 50%;
         clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
     }
 
-    .vieEtudiante img {
-        width: 40vw;
-        height: auto;
 
-        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
-    }
 
 }

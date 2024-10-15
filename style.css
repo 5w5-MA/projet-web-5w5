@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: tim
 Theme URI: http://example.com
@@ -380,6 +381,7 @@ body main .photo div {
   align-content: center;
 }
 
+/*******ZONE DE TITRE DE LA PAGE*******/
 .titrePage {
   display: flex;
   align-items: center;
@@ -411,24 +413,40 @@ body main .photo div {
   height: 50%;
 }
 
-.titreSection {
+/*********TITRE DES SECTIONS**********/
+.titreSection h2 {
   background-color: var(--orange);
   width: max-content;
   padding: 0 2rem;
   clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+}
+
+.titreSection {
   position: relative;
+  width: max-content;
 }
 
 .titreSection::after {
   content: "";
   position: absolute;
-  display: block;
   top: 0;
-  left: 0;
-  width: 10%;
+  right: 0;
+  width: 2%;
   height: 100%;
-  transform: skewX(-45deg) translateX(230px);
-  background-color: var(--gris);
+  transform: skewX(-42deg);
+  background-color: var(--orange);
+}
+
+.titreSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1%;
+  height: 100%;
+  transform: skewX(-42deg);
+  translate: 0.7rem;
+  background-color: var(--orange);
 }
 
 .vieEtudiante img {
@@ -443,11 +461,18 @@ body main .photo div {
   background-color: var(--gris);
 }
 
+/*********MÉDIA QUERRY**********/
 @media screen and (min-width: 900px) {
+  .vieEtudiante img {
+    width: 40vw;
+    height: auto;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+  }
   .titrePage {
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: var(--gris);
   }
   .titrePage::before {
@@ -455,7 +480,7 @@ body main .photo div {
   }
   .imageVieEntete {
     display: flex;
-    width: 100%;
+    width: 60vw;
     height: 100%;
   }
   .informations {
@@ -464,13 +489,11 @@ body main .photo div {
     justify-content: space-between;
     align-items: center;
   }
+  .locaux .informations {
+    flex-direction: row-reverse;
+  }
   .texte {
     width: 50%;
     clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
-  }
-  .vieEtudiante img {
-    width: 40vw;
-    height: auto;
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
   }
 }/*# sourceMappingURL=style.css.map */
