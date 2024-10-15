@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <main>
     <div class="txtMain">
-        <h1>Tim Maisonneuve</h1>
+        <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+        <br>
+        <h2><?php echo get_bloginfo( 'description' ); ?></h2>
     </div>
     <div class="img">image</div>
     <div class="boutonCours">
@@ -50,4 +52,4 @@
         <div class="div2"></div>
     </div>
 </main>
-<?= get_footer(); ?>
+<?php get_footer(); ?>

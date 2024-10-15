@@ -19,6 +19,10 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+header .custom-logo {
+  width: 80px;
+  height: 80px;
+}
 header .menuCache {
   position: absolute;
   width: 100%;
@@ -36,8 +40,18 @@ header .menuCache .optionMenu {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  color: white;
   height: 600px;
+}
+header .menuCache .optionMenu .menu-menuprincipal-container {
+  text-align: center;
+}
+header .menuCache .optionMenu .menu-menuprincipal-container ul {
+  list-style: none;
+}
+header .menuCache .optionMenu .menu-menuprincipal-container ul a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
 }
 @media screen and (min-width: 900px) {
   header .menuCache {
@@ -54,6 +68,14 @@ header .menuCache .optionMenu {
     height: auto;
     padding-right: 2vw;
     right: 10vw;
+  }
+  header .menuCache .menu {
+    display: flex;
+    width: clamp(700px, 60vw, 800px);
+    font-size: clamp(16px, 1.06vw, 21px);
+    margin: 40px 0px 0px 0px;
+    padding: 25px 10px;
+    justify-content: space-between;
   }
 }
 header input {

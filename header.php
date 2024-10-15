@@ -15,9 +15,9 @@
 <body>
     <header>
 
-        <?php get_custom_logo(); ?>
+        <?php the_custom_logo(); ?>
 
-        <h1>TIM</h1>
+        
         <input type="checkbox" id="chkBurger" />
         <div class="menuCache">
             <label for="chkBurger" class="exitMenu">
@@ -25,11 +25,7 @@
                 <div class="exit2"></div>
             </label>
             <div class="optionMenu">
-                <h2>Vie étudiante</h2>
-                <h2>Liste de cours</h2>
-                <h2>Nos professeurs</h2>
-                <h2>Projet</h2>
-                <h2>Secteur avenir</h2>
+               
                 <?php wp_nav_menu(); ?>
             </div>
         </div>
