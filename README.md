@@ -18,11 +18,19 @@ https://docs.google.com/spreadsheets/d/1ifhd2P6OZVds5_mNxjLPQELZd7fUbF6d7ynXQSH9
 But: finir les pages en html css et commencer le wordpress
 
 Les pages:
+
   Accueil
+  
   Les cours
+
+  Les professeurs
+  
   Les projets
+  
   Futur
+  
   Vie Étudiante
+  
 
   
   
