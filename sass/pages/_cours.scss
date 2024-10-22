@@ -1,0 +1,21 @@
+.pageCours {
+  .coursPrincipale {
+    h1 {
+      color: white;
+      padding-left: 5vw;
+    }
+
+    .img {
+      height: 200px;
+      margin-bottom: 20px;
+      clip-path: polygon(7vw 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .txt {
+      height: 200px;
+      width: 60vw;
+      background-color: white;
+      clip-path: polygon(0 0, 53vw 0, 100% 100%, 0 100%);
+    }
+  }
+}
