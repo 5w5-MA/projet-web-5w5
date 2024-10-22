@@ -155,12 +155,13 @@ footer {
 footer .footerGauche {
   display: flex;
   justify-content: space-evenly;
-  gap: 40px;
+  gap: 5rem;
+  padding-bottom: 5rem;
 }
 footer .footerBas {
   position: absolute;
   font-size: 15vw;
-  bottom: -70px;
+  bottom: -5rem;
 }
 footer p {
   font-size: xx-small;
@@ -172,7 +173,6 @@ body {
   font-family: "Lato";
 }
 body main {
-  background-color: #14243c;
   min-height: 100vh;
   padding-bottom: 150px;
   overflow-x: hidden;
@@ -392,4 +392,8 @@ body main .barreBasPage .div2 {
   height: 20px;
   width: 70vw;
   background-color: #fcbe32;
+}
+
+body {
+  background-color: #14243c;
 }/*# sourceMappingURL=style.css.map */

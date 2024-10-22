@@ -23,13 +23,11 @@
     <div class="reseaux">
       <h2>Suivez-nous</h2>
       <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <p>1</p>
       </div>
     </div>
   </section>
+  
   <section class="footerBas">Maisonneuve</section>
 </footer>
 
