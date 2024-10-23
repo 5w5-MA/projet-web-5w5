@@ -381,6 +381,11 @@ body main .photo div {
   align-content: center;
 }
 
+:root {
+  --width: 1;
+  --height: 30px: ;
+}
+
 /*******ZONE DE TITRE DE LA PAGE*******/
 .titrePage {
   display: flex;
@@ -416,9 +421,10 @@ body main .photo div {
 /*********TITRE DES SECTIONS**********/
 .titreSection h2 {
   background-color: var(--orange);
+  height: max-content;
   width: max-content;
   padding: 0 2rem;
-  clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+  --width: max-content;
 }
 
 .titreSection {
@@ -431,25 +437,25 @@ body main .photo div {
   position: absolute;
   top: 0;
   right: 0;
-  width: 2%;
+  width: 4%;
   height: 100%;
-  transform: skewX(-42deg);
-  background-color: var(--orange);
+  border-left: 5px solid var(--orange);
+  border-right: 2px solid var(--orange);
+  transform: translateX(3rem) skewX(-37deg);
 }
 
 .titreSection::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 1%;
+  right: -30px;
+  width: 2rem;
   height: 100%;
-  transform: skewX(-42deg);
-  translate: 0.7rem;
   background-color: var(--orange);
+  clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
 }
 
-.vieEtudiante img {
+.vieEtudiante .imageVie img {
   width: 100vw;
   height: 40vh;
   object-fit: cover;
@@ -463,11 +469,6 @@ body main .photo div {
 
 /*********MÉDIA QUERRY**********/
 @media screen and (min-width: 900px) {
-  .vieEtudiante img {
-    width: 40vw;
-    height: auto;
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
-  }
   .titrePage {
     height: auto;
     display: flex;
@@ -489,8 +490,19 @@ body main .photo div {
     justify-content: space-between;
     align-items: center;
   }
+  .vieEtudiante .imageVie img {
+    width: 40vw;
+    height: auto;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+  }
   .locaux .informations {
     flex-direction: row-reverse;
+  }
+  .locaux .texte {
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+  }
+  .locaux .imageVie {
+    clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
   }
   .texte {
     width: 50%;
