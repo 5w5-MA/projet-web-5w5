@@ -33,178 +33,256 @@
       display: none;
     }
 
-    .btnSession1 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #fcbe32;
-      clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    .btnSession1Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession1 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fcbe32;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
-      }
-
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
     }
 
-    .btnSession2 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #e8e8e8;
-      clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+    .btnSession2Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession2 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #e8e8e8;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+        transition: scale 0.2s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
-      }
-
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
     }
 
-    .btnSession3 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #fcbe32;
-      clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+    .btnSession3Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession3 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fcbe32;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+        transition: scale 0.2s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
-      }
-
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
     }
 
-    .btnSession4 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #e8e8e8;
-      clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+    .btnSession4Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession4 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #e8e8e8;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+        transition: scale 0.2s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
-      }
-
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
     }
 
-    .btnSession5 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #fcbe32;
-      clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+    .btnSession5Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession5 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fcbe32;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+        transition: scale 0.2s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
-      }
-
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
     }
 
-    .btnSession6 {
-      padding-left: 2vw;
-      padding-right: 2vw;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #e8e8e8;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    .btnSession6Wrap {
       transition: scale 0.2s;
 
       &:hover {
         scale: 1.2;
       }
 
-      @media screen and (min-width: 501px) {
-        padding-left: 3vw;
-        padding-right: 3vw;
+      .btnSession6 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #e8e8e8;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+        transition: scale 0.2s;
+
+        &:hover {
+          scale: 1.2;
+        }
+
+        @media screen and (min-width: 501px) {
+          padding-left: 3vw;
+          padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 700px) {
+          padding-left: 4vw;
+          padding-right: 4vw;
+        }
+
+        @media screen and (min-width: 1000px) {
+          padding-left: 5vw;
+          padding-right: 5vw;
+        }
       }
 
-      @media screen and (min-width: 700px) {
-        padding-left: 4vw;
-        padding-right: 4vw;
+      .actif {
+        background-color: #13243c;
+        color: #e8e8e8;
       }
+    }
 
-      @media screen and (min-width: 1000px) {
-        padding-left: 5vw;
-        padding-right: 5vw;
-      }
+    .wrapActif {
+      filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.25))
+        drop-shadow(-5px -5px 3px rgba(255, 255, 255, 0.25));
     }
   }
 }
