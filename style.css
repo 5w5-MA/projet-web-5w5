@@ -396,4 +396,10 @@ body main .barreBasPage .div2 {
 
 body {
   background-color: #14243c;
+}
+
+h1 {
+  color: #FFF;
+  font-family: "lato";
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

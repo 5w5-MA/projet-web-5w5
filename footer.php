@@ -16,7 +16,9 @@
     </div>
     <div class="liens">
       <h2>Liens</h2>
-      <p>Accueil</p>
+      <?php wp_nav_menu(array(
+        'theme_location' => 'footerMenuLocation',
+      )); ?>
     </div>
   </section>
   <section class="footerDroite">
@@ -27,7 +29,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="footerBas">Maisonneuve</section>
 </footer>
 
