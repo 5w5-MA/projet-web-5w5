@@ -388,7 +388,6 @@ body main .photo div {
   justify-content: center;
   position: relative;
   height: 25vh;
-  z-index: 1;
   color: var(--gris);
 }
 
@@ -404,13 +403,10 @@ body main .photo div {
   background-size: cover;
   background-position: 0;
   filter: blur(5px);
-  z-index: -1;
 }
 
 .imageVieEntete {
   display: none;
-  width: 50%;
-  height: 50%;
 }
 
 /*********TITRE DES SECTIONS**********/
@@ -427,6 +423,17 @@ body main .photo div {
   width: max-content;
 }
 
+.titreSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 2rem;
+  height: 100%;
+  background-color: var(--orange);
+  clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
+}
+
 .titreSection::after {
   content: "";
   position: absolute;
@@ -437,17 +444,6 @@ body main .photo div {
   border-left: 5px solid var(--orange);
   border-right: 2px solid var(--orange);
   transform: translateX(2.7rem) skewX(-37deg);
-}
-
-.titreSection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -30px;
-  width: 2rem;
-  height: 100%;
-  background-color: var(--orange);
-  clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
 }
 
 .locaux .titreSection {
@@ -473,38 +469,94 @@ body main .photo div {
 
 /*********MÉDIA QUERRY**********/
 @media screen and (min-width: 900px) {
+  .titreSection::before {
+    display: none;
+  }
+  /***************HAUT DE LA PAGE***************/
   .titrePage {
-    height: auto;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: var(--gris);
   }
+  .titrePage h1 {
+    padding: 2rem;
+  }
   .titrePage::before {
     content: none;
   }
+  .imageVieEntete {
+    display: flex;
+    width: 50vw;
+    height: 100%;
+  }
+  /*************CONTENU DE LA PAGE*************/
+  /**********TITRES**********/
+  .titreSection {
+    width: 100vw;
+    margin: 5% 0;
+    display: flex;
+    gap: 0 4rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .titreSection h2 {
+    position: relative;
+    margin: 0;
+  }
+  .titreSection > h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 2rem;
+    height: 100%;
+    background-color: var(--orange);
+    clip-path: polygon(100% 0, 50% 100%, 0% 100%, 0 0);
+  }
+  .decoTitre {
+    position: relative;
+    background-color: var(--gris);
+    height: 29px;
+    flex-grow: 1;
+  }
+  .decoTitre::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 2rem;
+    height: 100%;
+    z-index: 3;
+    background-color: var(--gris);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 0);
+  }
+  /***********INFORMATIONS ET IMAGES***************/
   .informations {
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .imageVieEntete {
-    display: flex;
+  .informations .texte {
     width: 60vw;
     height: 100%;
+    margin: 0;
+    padding-right: 3rem;
   }
-  .vieEtudiante .imageVie img {
+  .vieEtudiante .imageVie {
     width: 40vw;
-    height: auto;
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
   }
   .locaux .informations {
     flex-direction: row-reverse;
   }
   .locaux .texte {
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 3% 0);
   }
   .locaux .imageVie {
     clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
