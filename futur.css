@@ -53,21 +53,51 @@ main {
 }
 img{
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
-    overflow: hidden; 
+    overflow: hidden;
+    height: 200px;
 }
 
 .options {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: 20px 0;
+    align-items: center;
 }
 
-.option {
+.option1{
+    background-color: #1f2a44;
+    color: #ffffff;
+    border: solid 2px whitesmoke;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+.option2{
+    background-color: #cfcfcf;
+    color: #1f2a44;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+.option3{
     background-color: #ffc107;
     color: #1f2a44;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
+    clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+
+.vide {
+    background-color: #ffc107;
+    width: 100px;
+    height: 300px;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
 }
 
 .content {
@@ -78,6 +108,7 @@ img{
     position: relative;
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
     overflow: hidden; 
+    text-align: center;
 }
 
 footer {
