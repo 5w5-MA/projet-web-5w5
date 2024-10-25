@@ -378,13 +378,385 @@ body main .barreBasPage .div2 {
 }
 
 body {
+  margin: 0;
   width: 100%;
   height: 100%;
+  /* ************************* Version Mobile ******************************* */
+  /* ************************* Version Tablette ******************************* */
+  /* ************************* Version Desktop ******************************* */
 }
-
-.MaxProjetHeader {
+body .MaxProjetHeader {
   height: 75px;
-  width: 100%;
-  background-color: #010D1E;
-  font-size: xx-large;
+  background-color: #bfd3ef;
+}
+body .MaxProjetFooter {
+  height: 400px;
+  background-color: #031024;
+}
+body .MaxProjetMain {
+  background-color: #2a4161;
+  /* ******************** Section Arcade *********************** */
+  /* ***************** Section Projet ************************** */
+}
+body .MaxProjetMain .SectionArcade {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* *************** Titre section ******************** */
+  /* ****************** Arcade *********************** */
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade {
+  max-width: 300px;
+  display: flex;
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 {
+  --p: 40px; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 265px;
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 60px;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-5vw);
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie3 {
+  --p: 90%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 50px;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-10vw);
+}
+body .MaxProjetMain .SectionArcade .ListeArcade {
+  min-height: 80vh;
+  padding: 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+  grid-area: 1/1/4/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+  grid-area: 4/1/7/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* *************** Titre section ******************** */
+  /* ***************** Liste de Projet ***************** */
+}
+body .MaxProjetMain .SectionProjet .Rangee1 {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet {
+  width: 40vw;
+  display: flex;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
+  --p: 15%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 75%;
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-3vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie3 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-5vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet {
+  width: 50vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 {
+  --p: 15%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 75%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(3vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie3 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(6vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee2 {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 2.5vw;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+  grid-area: 1/1/3/3;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+  grid-area: 1/3/3/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+  grid-area: 3/1/5/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+  grid-area: 5/1/7/3;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+  grid-area: 5/3/7/5;
+  background-color: white;
+}
+@media screen and (min-width: 430px) {
+  body .MaxProjetHeader {
+    height: 75px;
+  }
+  body .MaxProjetFooter {
+    height: 195px;
+  }
+  body .MaxProjetMain {
+    /* ******************** Section Arcade *********************** */
+    /* ***************** Section Projet ************************** */
+  }
+  body .MaxProjetMain .SectionArcade {
+    /* *************** Titre section ******************** */
+    /* ****************** Arcade *********************** */
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade {
+    max-width: 45vw;
+    display: flex;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 {
+    --p: 16%; /* control the shape (can be percentage) */
+    width: 75%;
+    -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    justify-content: flex-start;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 h2 {
+    margin-left: 2.5vw;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie2 {
+    width: 15%;
+    transform: translateX(-4vw);
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie3 {
+    --p: 80%; /* control the shape (can be percentage) */
+    width: 15%;
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-7.5vw);
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
+    grid-area: 5/1/7/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
+    grid-area: 5/3/7/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet {
+    /* *************** Titre section ******************** */
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet {
+    width: 35vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
+    justify-content: flex-start;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 h2 {
+    margin-left: 2.5vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
+    --p: 75%; /* control the shape (can be percentage) */
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-2.5vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie3 {
+    --p: 75%; /* control the shape (can be percentage) */
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-5vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet {
+    width: 50vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
+    transform: translateX(4vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie3 {
+    transform: translateX(8vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+    grid-area: 5/1/7/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div6 {
+    grid-area: 5/3/7/5;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .MaxProjetHeader {
+    height: 125px;
+  }
+  body .MaxProjetFooter {
+    height: 450px;
+  }
+  body .MaxProjetMain {
+    /* ******************** Section Arcade *********************** */
+    /* ***************** Section Projet ************************** */
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
+    grid-area: 1/5/3/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
+    grid-area: 3/5/5/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+    grid-area: 1/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+    grid-area: 1/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+    grid-area: 5/1/7/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+    grid-area: 1/5/3/9;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+    grid-area: 3/5/7/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div6 {
+    grid-area: 3/7/7/9;
+    background-color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
