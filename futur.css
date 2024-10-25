@@ -21,6 +21,10 @@ main {
     overflow: hidden; 
 }
 
+p{
+    width: 60vw;
+}
+
 .intro_dessus{
     display: flex;
     padding-bottom: 30px;
