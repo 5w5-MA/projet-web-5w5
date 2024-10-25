@@ -214,6 +214,7 @@
         height: 100%;
         margin: 0;
         padding-right: 3rem;
+        z-index: 1;
     }
 
 
@@ -222,6 +223,16 @@
         height: 100%;
 
         clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
+
+
+
+
+
+        // animation: apparition linear 2s;
+        // animation-timeline: view();
+        // animation-range-start: cover 0%;
+        // animation-range-end: contain 50%;
+
     }
 
     .locaux .informations {
@@ -243,5 +254,19 @@
     }
 
 
+
+}
+
+
+@keyframes apparition {
+    from {
+        translate: -50% 0;
+        scale: 0.5;
+    }
+
+    to {
+        translate: 0;
+        scale: 1;
+    }
 
 }

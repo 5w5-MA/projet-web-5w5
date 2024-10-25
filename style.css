@@ -167,6 +167,10 @@ footer p {
   background-color: #fcbe32;
 }
 
+.titreSection {
+  position: relative;
+}
+
 .titreSection::before {
   content: "";
   position: absolute;
@@ -580,6 +584,7 @@ body main .photo div {
     height: 100%;
     margin: 0;
     padding-right: 3rem;
+    z-index: 1;
   }
   .vieEtudiante .imageVie {
     width: 40vw;
@@ -598,5 +603,15 @@ body main .photo div {
   .texte {
     width: 50%;
     clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+  }
+}
+@keyframes apparition {
+  from {
+    translate: -50% 0;
+    scale: 0.5;
+  }
+  to {
+    translate: 0;
+    scale: 1;
   }
 }/*# sourceMappingURL=style.css.map */
