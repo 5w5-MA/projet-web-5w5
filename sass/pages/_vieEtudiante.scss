@@ -6,7 +6,7 @@
 
     position: relative;
     height: 25vh;
-
+    z-index: 1;
 
     color: var(--gris);
 }
@@ -26,6 +26,7 @@
     background-size: cover;
     background-position: 0;
     filter: blur(5px);
+    z-index: -1;
 
 }
 
@@ -110,8 +111,6 @@
 /*********MÉDIA QUERRY**********/
 @media screen and (min-width: 900px) {
 
-
-
     .titreSection::before {
         display: none;
     }
@@ -124,6 +123,7 @@
         justify-content: space-between;
 
         color: var(--gris);
+        position: relative;
     }
 
     .titrePage h1 {
@@ -138,6 +138,42 @@
         display: flex;
         width: 50vw;
         height: 100%;
+        object-fit: cover;
+        object-position: 50%;
+
+    }
+
+    .imgEnteteDiv {
+        height: 100%;
+        position: relative;
+    }
+
+    ////Effets sur l'image d'entête
+    .imgEnteteDiv::before {
+        content: "";
+        position: absolute;
+        background-image: none;
+        top: 0;
+        left: 0px;
+        width: 4rem;
+        height: 100%;
+        background-color: var(--marin-fond);
+        z-index: 3;
+        clip-path: polygon(100% 0, 0% 100%, 0% 100%, 0 0);
+    }
+
+    .imgEnteteDiv::after {
+        content: "";
+        position: absolute;
+        background-image: none;
+        top: 0;
+        left: 90px;
+        width: 8rem;
+        height: 100%;
+        border: 2px solid var(--marin-fond);
+        background-color: var(--marin-fond);
+        z-index: 3;
+        clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
     }
 
     /*************CONTENU DE LA PAGE*************/
