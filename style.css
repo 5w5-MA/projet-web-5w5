@@ -167,6 +167,29 @@ footer p {
   background-color: #fcbe32;
 }
 
+.titreSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 2rem;
+  height: 100%;
+  background-color: var(--orange);
+  clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
+}
+
+.titreSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 100%;
+  border-left: 5px solid var(--orange);
+  border-right: 2px solid var(--orange);
+  transform: translateX(2.7rem) skewX(-37deg);
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -423,29 +446,6 @@ body main .photo div {
 .titreSection {
   position: relative;
   width: max-content;
-}
-
-.titreSection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -30px;
-  width: 2rem;
-  height: 100%;
-  background-color: var(--orange);
-  clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
-}
-
-.titreSection::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0.5rem;
-  height: 100%;
-  border-left: 5px solid var(--orange);
-  border-right: 2px solid var(--orange);
-  transform: translateX(2.7rem) skewX(-37deg);
 }
 
 .locaux .titreSection {
