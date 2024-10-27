@@ -228,7 +228,8 @@
 
 
 
-        // animation: apparition linear 2s;
+        animation: apparition linear 2ms;
+        animation-timeline: view(block 50% 10%);
         // animation-timeline: view();
         // animation-range-start: cover 0%;
         // animation-range-end: contain 50%;

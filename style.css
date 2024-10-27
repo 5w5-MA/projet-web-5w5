@@ -590,6 +590,8 @@ body main .photo div {
     width: 40vw;
     height: 100%;
     clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
+    animation: apparition linear 2ms;
+    animation-timeline: view(block 50% 10%);
   }
   .locaux .informations {
     flex-direction: row-reverse;
