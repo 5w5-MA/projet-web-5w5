@@ -76,9 +76,11 @@
 
 
 
-/*********MÉDIA QUERRY**********/
-@media screen and (min-width: 900px) {
+/*******************************MÉDIA QUERRY**************************/
+/****************MÉDIA QUERRY TABLETTE*****************/
+@media screen and (min-width: 900px) {}
 
+@media screen and (min-width: 1100px) {
     .titreSection::before {
         display: none;
     }
@@ -224,15 +226,16 @@
 
         clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
 
+        // transform: translateX(-50%) scale(0.5);
+        // transition: transform 1s ease;
+    }
 
 
 
+    .apparitionImg {
+        // animation: apparition linear 1s forwards;
+        transform: translateX(0) scale(1);
 
-        animation: apparition linear 2ms;
-        animation-timeline: view(block 50% 10%);
-        // animation-timeline: view();
-        // animation-range-start: cover 0%;
-        // animation-range-end: contain 50%;
 
     }
 
@@ -246,6 +249,7 @@
     }
 
     .locaux .imageVie {
+
         clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
     }
 
@@ -254,8 +258,10 @@
         clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
     }
 
-
-
+    .materiel .imageVie img {
+        object-fit: cover;
+        object-position: 30%
+    }
 }
 
 
