@@ -11,12 +11,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme tim
 */
 
+//Importer les composants
+@import "composant/_variable.scss";
+
 @import "composant/menu";
 
 @import "composant/footer";
 
+@import "composant/barreBasPage";
+
+@import "composant/formeTitreSections";
+
+@import "composant/animationScroll";
+
+
+//Importer les pages
 @import "pages/acceuil";
 
 @import "pages/Projet";
 
 @import "pages/futur";
+
+@import "pages/vieEtudiante";

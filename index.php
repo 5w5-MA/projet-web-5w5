@@ -45,9 +45,6 @@
         <div>image</div>
         <div>image</div>
     </div>
-    <div class="barreBasPage">
-        <div class="div1"></div>
-        <div class="div2"></div>
-    </div>
+    <?php get_template_part("composants/barreBasPage"); ?>
 </main>
 <?= get_footer(); ?>
