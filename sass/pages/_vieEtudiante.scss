@@ -1,3 +1,8 @@
+.vieEtudiante {
+    color: var(--marin-fond);
+}
+
+
 /*******ZONE DE TITRE DE LA PAGE*******/
 .titrePage {
     display: flex;
@@ -226,17 +231,15 @@
 
         clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
 
-        // transform: translateX(-50%) scale(0.5);
-        // transition: transform 1s ease;
+        transform: translateX(-50%) scale(0.5);
+        transition: transform 1s ease;
     }
 
 
 
-    .apparitionImg {
+    .vieEtudiante .imageVie.apparitionImg {
         // animation: apparition linear 1s forwards;
         transform: translateX(0) scale(1);
-
-
     }
 
     .locaux .informations {
@@ -260,20 +263,6 @@
 
     .materiel .imageVie img {
         object-fit: cover;
-        object-position: 30%
+        object-position: top right;
     }
-}
-
-
-@keyframes apparition {
-    from {
-        translate: -50% 0;
-        scale: 0.5;
-    }
-
-    to {
-        translate: 0;
-        scale: 1;
-    }
-
 }
