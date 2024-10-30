@@ -850,6 +850,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
 
 /*******************************MÉDIA QUERRY**************************/
 /****************MÉDIA QUERRY TABLETTE*****************/
+/****************MÉDIA QUERRY ordinateur*****************/
 @media screen and (min-width: 1100px) {
   .titreSection::before {
     display: none;
@@ -979,6 +980,9 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     transform: translateX(0) scale(1);
     opacity: 1;
   }
+  .cetim .imageVie img {
+    object-position: 90% 70%;
+  }
   .locaux .informations {
     flex-direction: row-reverse;
   }
@@ -993,7 +997,6 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
   }
   .materiel .imageVie img {
-    object-fit: cover;
-    object-position: top right;
+    object-position: 0 50%;
   }
 }/*# sourceMappingURL=style.css.map */

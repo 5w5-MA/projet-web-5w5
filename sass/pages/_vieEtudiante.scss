@@ -83,8 +83,9 @@
 
 /*******************************MÉDIA QUERRY**************************/
 /****************MÉDIA QUERRY TABLETTE*****************/
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 500px) {}
 
+/****************MÉDIA QUERRY ordinateur*****************/
 @media screen and (min-width: 1100px) {
     .titreSection::before {
         display: none;
@@ -250,6 +251,10 @@
         opacity: 1;
     }
 
+    .cetim .imageVie img {
+        object-position: 90% 70%;
+    }
+
     .locaux .informations {
         flex-direction: row-reverse;
     }
@@ -270,7 +275,8 @@
     }
 
     .materiel .imageVie img {
-        object-fit: cover;
-        object-position: top right;
+
+        object-position: 0 50%;
     }
+
 }
