@@ -6,12 +6,10 @@ console.log(lesImages)
 window.addEventListener('scroll', ApparitionImg);
 
 function ApparitionImg() {
-    let bas = window.innerHeight / 3;
-    console.log(bas);
+    let bas = window.innerHeight / 4 * 2.5;
 
     lesImages.forEach(img => {
         let hautImg = img.getBoundingClientRect().top;
-        console.log(bas);
         if (hautImg < bas) {
             img.classList.add("apparitionImg");
 

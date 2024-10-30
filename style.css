@@ -779,140 +779,6 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1f2a44;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #1f2a44;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 2px solid #444;
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-main {
-  padding: 20px;
-}
-
-.intro {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 40px;
-  margin-bottom: 20px;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-  overflow: hidden;
-}
-
-.intro_dessus {
-  display: flex;
-  padding-bottom: 30px;
-}
-
-img {
-  clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
-  overflow: hidden;
-  height: 200px;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 20px 0;
-  align-items: center;
-}
-
-.option1 {
-  background-color: #1f2a44;
-  color: #ffffff;
-  border: solid 2px whitesmoke;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-}
-
-.option2 {
-  background-color: #cfcfcf;
-  color: #1f2a44;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-}
-
-.option3 {
-  background-color: #ffc107;
-  color: #1f2a44;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-}
-
-.vide {
-  background-color: #ffc107;
-  width: 100px;
-  height: 300px;
-  margin: auto;
-  padding: 100px;
-  text-align: center;
-}
-
-.content {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 40px;
-  margin-top: 20px;
-  position: relative;
-  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-  overflow: hidden;
-  text-align: center;
-}
-
-footer {
-  background-color: #1f2a44;
-  color: #f0f0f0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.address, .credits {
-  width: 45%;
-}
-
 .vieEtudiante {
   color: var(--marin-fond);
 }
@@ -1093,18 +959,25 @@ footer {
     width: 60vw;
     height: 100%;
     margin: 0;
-    padding-right: 3rem;
+    padding-right: 4rem;
     z-index: 1;
+    background-color: var(--marin-fond);
+    color: var(--gris);
   }
   .vieEtudiante .imageVie {
     width: 40vw;
     height: 100%;
     clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
     transform: translateX(-50%) scale(0.5);
-    transition: transform 1s ease;
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.5s ease;
+  }
+  .locaux .imageVie {
+    transform: translateX(50%) scale(0.5);
   }
   .vieEtudiante .imageVie.apparitionImg {
     transform: translateX(0) scale(1);
+    opacity: 1;
   }
   .locaux .informations {
     flex-direction: row-reverse;
