@@ -97,10 +97,22 @@
 .option2 { background-color: #cfcfcf; color: #ffffff; }
 .option3 { background-color: #ffc107; color: #ffffff; }
 
+
 /* Styles de bouton sélectionné */
 .selected-button {
     background-color: #1f2a44;
-    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+}
+.selected-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.235); /* Couleur de l'ombre */
+    clip-path: inherit; /* Utilise le même clip-path que le bouton */
+    filter: drop-shadow(12px 15px 23px white); /* Applique un flou */
+    z-index: -1; /* Place le contour flou derrière le bouton */
 }
 
 /*-----------------FIN BOUTONS OPTIONS---------------------*/
