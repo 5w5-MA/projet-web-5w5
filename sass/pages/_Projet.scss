@@ -183,8 +183,53 @@ body{
             }
             
         }
-    
+
+        /********************** Box Ouvert **********************/
+        // .BoxFermer{
+        //     display: none;
+        // }
+        // .BoxOuvert{
+        //     position: fixed;
+        //     top: 0;
+        //     z-index: 3;
+        //     width: 100vw;
+        //     height: 100vh;
+        //     background-color: #031024a6;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+
+        //     .CarteJeu{
+        //         width: 95vw;
+        //         height: 95vh;
+        //         // display: grid;
+        //         background-color: #bfd3ef;
+        //         padding: 5px;
+        //         .JeuBoite{
+        //             background-color: #FCBE32;
+        //             width: 95%;
+        //             aspect-ratio: 16/9;
+        //             margin: auto;
+        //         }
+        //         .LogicielsCarte{
+        //             list-style-type: none;
+        //             display: flex;
+        //             gap: 5%;
+        //             .Applicase{
+        //                 background-color: blue;
+        //                 width: 6.5vw;
+        //                 aspect-ratio: 1;
+        //             }
+        //         }
+        //     }
+        // }
+
+        
     }
+    // .MainFixe{
+
+    //     position: fixed;
+    // }
 
  /* ************************* Version Tablette ******************************* */
  @media screen and (min-width: 430px){

@@ -1,0 +1,1172 @@
+@charset "UTF-8";
+/*
+Theme Name: tim
+Theme URI: http://example.com
+Author: alek
+Author URI: https://github.com/Alek-Crepeau
+Description: theme tim
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme tim
+*/
+:root {
+  --orange: #fcbe32;
+  --marin-fond: #14243c;
+  --gris: #e8e8e8;
+  --marin: #010d1e;
+}
+
+header {
+  background-color: black;
+  color: #fcbe32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header .menuCache {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 0vh;
+  right: 0vw;
+  overflow-x: hidden;
+  transform: translateX(100%);
+  transition: transform 0.5s, padding-bottom 2s;
+  z-index: 10;
+}
+header .menuCache .optionMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 600px;
+}
+@media screen and (min-width: 900px) {
+  header .menuCache {
+    position: none;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  header .menuCache .optionMenu {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5vw;
+    height: auto;
+    padding-right: 2vw;
+    right: 10vw;
+  }
+}
+header input {
+  display: none;
+}
+header .menuBurger {
+  width: 50px;
+  height: 50px;
+  background-color: #fcbe32;
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  z-index: 11;
+}
+header .menuBurger .burger1 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  border-radius: 2px 2px 2px 2px;
+}
+header .menuBurger .burger2 {
+  display: flex;
+  justify-content: space-between;
+}
+header .menuBurger .burger2 .div1 {
+  width: 10px;
+  transition: width 0.5s;
+}
+header .menuBurger .burger2 .div2 {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  border-radius: 2px 2px 2px 2px;
+  transition: width 0.5s;
+}
+header .menuBurger .burger3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  border-radius: 2px 2px 2px 2px;
+}
+@media screen and (min-width: 900px) {
+  header .menuBurger {
+    display: none;
+  }
+}
+header #chkBurger:checked ~ .menuCache {
+  transform: translateX(0px);
+  padding-bottom: 1000px;
+}
+header #chkBurger:checked ~ .menuBurger .burger2 .div1 {
+  width: 0px;
+}
+header #chkBurger:checked ~ .menuBurger .burger2 .div2 {
+  width: 35px;
+}
+
+.pasDeScroll {
+  overflow-y: hidden;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-content: first baseline;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-bottom: 10vh;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-y: hidden;
+}
+footer .footerGauche {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+footer .footerBas {
+  position: absolute;
+  font-size: 15vw;
+  bottom: -70px;
+}
+footer p {
+  font-size: xx-small;
+}
+
+.barreBasPage {
+  display: flex;
+  justify-content: space-between;
+}
+.barreBasPage .div1 {
+  height: 20px;
+  width: 20vw;
+  background-color: #fcbe32;
+}
+.barreBasPage .div2 {
+  height: 20px;
+  width: 70vw;
+  background-color: #fcbe32;
+}
+
+.titreSection {
+  position: relative;
+}
+
+.titreSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 2rem;
+  height: 100%;
+  background-color: var(--orange);
+  -webkit-clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
+          clip-path: polygon(100% 0, 30% 100%, 0% 100%, 0 0);
+}
+
+.titreSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.5rem;
+  height: 100%;
+  border-left: 5px solid var(--orange);
+  border-right: 2px solid var(--orange);
+  transform: translateX(2.7rem) skewX(-37deg);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Lato";
+}
+body main {
+  background-color: #14243c;
+  min-height: 100vh;
+  padding-bottom: 150px;
+  overflow-x: hidden;
+}
+body main .txtMain {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 5vh;
+  left: -27vw;
+}
+body main .txtMain h1 {
+  margin: 0;
+  font-size: x-large;
+}
+body main .img {
+  width: 70vw;
+  height: 300px;
+  background-color: #fcbe32;
+  position: relative;
+  left: 30vw;
+  -webkit-clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+  color: #14243c;
+  text-align: center;
+  align-content: center;
+}
+@media screen and (min-width: 900px) {
+  body main .img {
+    height: 50vw;
+  }
+}
+@media screen and (min-width: 1100px) {
+  body main .img {
+    height: 550px;
+    width: 60vw;
+    justify-self: flex-end;
+    left: 40vw;
+  }
+}
+body main .boutonCours {
+  position: relative;
+  top: -7vh;
+  left: 3vw;
+  transition: scale 0.5s, transform 0.5s;
+  width: 150px;
+  scale: 80%;
+}
+body main .boutonCours .btn1 {
+  height: 5px;
+  width: 90px;
+  background-color: #fcbe32;
+  margin-bottom: 5px;
+  position: relative;
+  left: 60px;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours .btn2 {
+  width: 150px;
+  height: 50px;
+  background-color: #fcbe32;
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  color: #14243c;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours .btn3 {
+  width: 90px;
+  height: 5px;
+  background-color: #fcbe32;
+  margin-top: 5px;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours .btn4 {
+  width: 25px;
+  height: 5px;
+  background-color: #fcbe32;
+  position: relative;
+  top: -5px;
+  left: 92px;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours .btn5 {
+  width: 10px;
+  height: 5px;
+  background-color: #fcbe32;
+  position: relative;
+  top: -10px;
+  left: 119px;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours .btn6 {
+  width: 65px;
+  height: 5px;
+  background-color: #fcbe32;
+  position: relative;
+  top: -8px;
+  transition: color 0.5s, background-color 0.1s;
+}
+body main .boutonCours:hover .btn1 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .boutonCours:hover .btn2 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .boutonCours:hover .btn3 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .boutonCours:hover .btn4 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .boutonCours:hover .btn5 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .boutonCours:hover .btn6 {
+  background-color: black;
+  color: #fcbe32;
+}
+body main .infoCegep {
+  display: flex;
+  justify-content: flex-start;
+}
+body main .infoCegep .divPolygone {
+  width: 420px;
+  height: 150px;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: 50px;
+}
+body main .infoCegep .divPolygone .div1 {
+  background-color: white;
+  height: 100px;
+  margin-bottom: 10px;
+}
+body main .infoCegep .divPolygone .div2 {
+  background-color: white;
+  height: 40px;
+}
+@media screen and (min-width: 900px) {
+  body main .infoCegep .divPolygone {
+    width: 50vw;
+  }
+}
+body main .infoLogiciel {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+body main .infoLogiciel .divPolygone {
+  width: 420px;
+  height: 150px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+body main .infoLogiciel .divPolygone .div1 {
+  background-color: #fcbe32;
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+body main .infoLogiciel .divPolygone .div2 {
+  background-color: #fcbe32;
+  height: 40px;
+}
+@media screen and (min-width: 900px) {
+  body main .infoLogiciel {
+    position: relative;
+    top: -200px;
+  }
+  body main .infoLogiciel .divPolygone {
+    width: 50vw;
+  }
+}
+body main .description {
+  background-color: white;
+  font-size: small;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 150px;
+  align-content: center;
+  width: 80vw;
+  max-width: 700px;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: 100px;
+  padding: 10px;
+}
+body main .description div {
+  width: 64vw;
+  max-width: 500px;
+}
+body main .photo {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+body main .photo div {
+  height: 300px;
+  width: 200px;
+  background-color: #fcbe32;
+  text-align: center;
+  align-content: center;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* ************************* Version Mobile ******************************* */
+  /* ************************* Version Tablette ******************************* */
+  /* ************************* Version Desktop ******************************* */
+}
+body .MaxProjetHeader {
+  height: 75px;
+  background-color: #bfd3ef;
+}
+body .MaxProjetFooter {
+  height: 400px;
+  background-color: #031024;
+}
+body .MaxProjetMain {
+  background-color: #2a4161;
+  /* ******************** Section Arcade *********************** */
+  /* ***************** Section Projet ************************** */
+  /********************** Box Ouvert **********************/
+}
+body .MaxProjetMain .SectionArcade {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* *************** Titre section ******************** */
+  /* ****************** Arcade *********************** */
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade {
+  max-width: 300px;
+  display: flex;
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 {
+  --p: 40px; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 265px;
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 60px;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-5vw);
+}
+body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie3 {
+  --p: 90%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 50px;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-10vw);
+}
+body .MaxProjetMain .SectionArcade .ListeArcade {
+  min-height: 80vh;
+  padding: 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+  grid-area: 1/1/4/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+  grid-area: 4/1/7/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* *************** Titre section ******************** */
+  /* ***************** Liste de Projet ***************** */
+}
+body .MaxProjetMain .SectionProjet .Rangee1 {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet {
+  width: 40vw;
+  display: flex;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
+  --p: 15%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 75%;
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-3vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie3 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(-5vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet {
+  width: 50vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 {
+  --p: 15%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 75%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #FCBE32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(3vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie3 {
+  --p: 80%; /* control the shape (can be percentage) */
+  height: 50px;
+  width: 15%;
+  -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+          clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+  background: #FCBE32;
+  transform: translateX(6vw);
+}
+body .MaxProjetMain .SectionProjet .Rangee2 {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 2.5vw;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+  grid-area: 1/1/3/3;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+  grid-area: 1/3/3/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+  grid-area: 3/1/5/5;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+  grid-area: 5/1/7/3;
+  background-color: white;
+}
+body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+  grid-area: 5/3/7/5;
+  background-color: white;
+}
+@media screen and (min-width: 430px) {
+  body .MaxProjetHeader {
+    height: 75px;
+  }
+  body .MaxProjetFooter {
+    height: 195px;
+  }
+  body .MaxProjetMain {
+    /* ******************** Section Arcade *********************** */
+    /* ***************** Section Projet ************************** */
+  }
+  body .MaxProjetMain .SectionArcade {
+    /* *************** Titre section ******************** */
+    /* ****************** Arcade *********************** */
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade {
+    max-width: 45vw;
+    display: flex;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 {
+    --p: 16%; /* control the shape (can be percentage) */
+    width: 75%;
+    -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    justify-content: flex-start;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie1 h2 {
+    margin-left: 2.5vw;
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie2 {
+    width: 15%;
+    transform: translateX(-4vw);
+  }
+  body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie3 {
+    --p: 80%; /* control the shape (can be percentage) */
+    width: 15%;
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-7.5vw);
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
+    grid-area: 5/1/7/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
+    grid-area: 5/3/7/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet {
+    /* *************** Titre section ******************** */
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet {
+    width: 35vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
+    justify-content: flex-start;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 h2 {
+    margin-left: 2.5vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
+    --p: 75%; /* control the shape (can be percentage) */
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-2.5vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie3 {
+    --p: 75%; /* control the shape (can be percentage) */
+    -webkit-clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+    transform: translateX(-5vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet {
+    width: 50vw;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
+    transform: translateX(4vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie3 {
+    transform: translateX(8vw);
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+    grid-area: 5/1/7/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div6 {
+    grid-area: 5/3/7/5;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .MaxProjetHeader {
+    height: 125px;
+  }
+  body .MaxProjetFooter {
+    height: 450px;
+  }
+  body .MaxProjetMain {
+    /* ******************** Section Arcade *********************** */
+    /* ***************** Section Projet ************************** */
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
+    grid-area: 1/1/3/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
+    grid-area: 1/3/3/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
+    grid-area: 1/5/3/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
+    grid-area: 3/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
+    grid-area: 3/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
+    grid-area: 3/5/5/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div1 {
+    grid-area: 1/1/5/3;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div2 {
+    grid-area: 1/3/5/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div3 {
+    grid-area: 5/1/7/5;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div4 {
+    grid-area: 1/5/3/9;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
+    grid-area: 3/5/7/7;
+    background-color: white;
+  }
+  body .MaxProjetMain .SectionProjet .Rangee2 .div6 {
+    grid-area: 3/7/7/9;
+    background-color: white;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f2a44;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f2a44;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #444;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.intro_dessus {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+img {
+  -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  height: 200px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.option1 {
+  background-color: #1f2a44;
+  color: #ffffff;
+  border: solid 2px whitesmoke;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+          clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+
+.option2 {
+  background-color: #cfcfcf;
+  color: #1f2a44;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+          clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+
+.option3 {
+  background-color: #ffc107;
+  color: #1f2a44;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+          clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+}
+
+.vide {
+  background-color: #ffc107;
+  width: 100px;
+  height: 300px;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
+
+.content {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 40px;
+  margin-top: 20px;
+  position: relative;
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+footer {
+  background-color: #1f2a44;
+  color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.address, .credits {
+  width: 45%;
+}
+
+/*******ZONE DE TITRE DE LA PAGE*******/
+.titrePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 25vh;
+  z-index: 1;
+  color: var(--gris);
+}
+
+.titrePage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/entete.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.imageVieEntete {
+  display: none;
+}
+
+/*********TITRE DES SECTIONS**********/
+.titreSection h2 {
+  background-color: var(--orange);
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 2rem;
+  --width: max-content;
+}
+
+.titreSection {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.locaux .titreSection {
+  align-self: self-end;
+}
+
+.vieEtudiante .imageVie img {
+  width: 100vw;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.texte {
+  margin: 10% 0;
+  padding: 2rem;
+  background-color: var(--gris);
+}
+
+/*******************************MÉDIA QUERRY**************************/
+/****************MÉDIA QUERRY TABLETTE*****************/
+@media screen and (min-width: 1100px) {
+  .titreSection::before {
+    display: none;
+  }
+  /***************HAUT DE LA PAGE***************/
+  .titrePage {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--gris);
+    position: relative;
+  }
+  .titrePage h1 {
+    padding: 2rem;
+  }
+  .titrePage::before {
+    content: none;
+  }
+  .imageVieEntete {
+    display: flex;
+    width: 50vw;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50%;
+       object-position: 50%;
+  }
+  .imgEnteteDiv {
+    height: 100%;
+    position: relative;
+  }
+  .imgEnteteDiv::before {
+    content: "";
+    position: absolute;
+    background-image: none;
+    top: 0;
+    left: 0px;
+    width: 4rem;
+    height: 100%;
+    background-color: var(--marin-fond);
+    z-index: 3;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 0% 100%, 0% 100%, 0 0);
+  }
+  .imgEnteteDiv::after {
+    content: "";
+    position: absolute;
+    background-image: none;
+    top: 0;
+    left: 90px;
+    width: 8rem;
+    height: 100%;
+    border: 2px solid var(--marin-fond);
+    background-color: var(--marin-fond);
+    z-index: 3;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+            clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+  }
+  /*************CONTENU DE LA PAGE*************/
+  /**********TITRES**********/
+  .titreSection {
+    width: 100vw;
+    margin: 5% 0;
+    display: flex;
+    gap: 0 4rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .titreSection h2 {
+    position: relative;
+    margin: 0;
+  }
+  .titreSection > h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 2rem;
+    height: 100%;
+    background-color: var(--orange);
+    -webkit-clip-path: polygon(100% 0, 50% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 50% 100%, 0% 100%, 0 0);
+  }
+  .decoTitre {
+    position: relative;
+    background-color: var(--gris);
+    height: 29px;
+    flex-grow: 1;
+  }
+  .decoTitre::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 2rem;
+    height: 100%;
+    z-index: 3;
+    background-color: var(--gris);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 0);
+            clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 0);
+  }
+  /***********INFORMATIONS ET IMAGES***************/
+  .informations {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .informations .texte {
+    width: 60vw;
+    height: 100%;
+    margin: 0;
+    padding-right: 3rem;
+    z-index: 1;
+  }
+  .vieEtudiante .imageVie {
+    width: 40vw;
+    height: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
+            clip-path: polygon(100% 0, 100% 100%, 0% 100%, 15% 0);
+  }
+  .apparitionImg {
+    transform: translateX(0) scale(1);
+  }
+  .locaux .informations {
+    flex-direction: row-reverse;
+  }
+  .locaux .texte {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 3% 0);
+            clip-path: polygon(100% 0, 100% 100%, 0% 100%, 3% 0);
+  }
+  .locaux .imageVie {
+    -webkit-clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+  }
+  .texte {
+    width: 50%;
+    -webkit-clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 90% 100%, 0% 100%, 0 0);
+  }
+  .materiel .imageVie img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 30%;
+       object-position: 30%;
+  }
+}
+@keyframes apparition {
+  from {
+    translate: -50% 0;
+    scale: 0.5;
+  }
+  to {
+    translate: 0;
+    scale: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
