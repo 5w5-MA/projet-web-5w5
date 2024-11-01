@@ -63,7 +63,8 @@
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, filter 0.3s;
+    position: relative;
 }
 
 .option2{
@@ -75,7 +76,8 @@
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, filter 0.3s;
+    position: relative;
 }
 .option3{
     margin-left: 100px;
@@ -86,8 +88,10 @@
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s, filter 0.3s;
+    position: relative;
 }
+
 
 .option1 { background-color: #ffc107; color: #ffffff; }
 .option2 { background-color: #cfcfcf; color: #ffffff; }
@@ -95,9 +99,10 @@
 
 /* Styles de bouton sélectionné */
 .selected-button {
-    background-color: #1f2a44 !important;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+    background-color: #1f2a44;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
 }
+
 /*-----------------FIN BOUTONS OPTIONS---------------------*/
 
 /*--------------CARRE INFO OPTIONS------------------------*/
@@ -136,9 +141,7 @@
 
 
 @media screen and (min-width:430px) {
-    .bodyFutur {
-        background-color: aqua;
-    }
+    
     .image_titre{
         width: 300px;
         height: 150px;
@@ -174,9 +177,7 @@
     }
 }
 @media screen and (min-width:1024px) {
-    .bodyFutur{
-        background-color: rgb(58, 188, 58);
-    }
+    
 
     .options{
         flex-direction: row;
