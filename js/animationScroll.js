@@ -1,8 +1,4 @@
-
-
 let lesImages = document.querySelectorAll(".imageVie");
-console.log(lesImages)
-
 window.addEventListener('scroll', ApparitionImg);
 
 function ApparitionImg() {
