@@ -49,8 +49,6 @@
 
 }
 
-
-
 .titreSection {
     position: relative;
     width: max-content;
@@ -87,7 +85,8 @@
 
 /****************MÉDIA QUERRY ordinateur*****************/
 @media screen and (min-width: 1100px) {
-    .titreSection::before {
+
+    .vieEtudiante .titreSection::before {
         display: none;
     }
 
@@ -157,7 +156,7 @@
 
     //////Décoration des titres
     /// enlever les anciennes décorations
-    .titreSection {
+    .vieEtudiante .titreSection {
         width: 100vw;
         margin: 5% 0;
         display: flex;
@@ -167,13 +166,13 @@
         align-items: center;
     }
 
-    .titreSection h2 {
+    .vieEtudiante .titreSection h2 {
         position: relative;
         margin: 0;
 
     }
 
-    .titreSection>h2::before {
+    .vieEtudiante .titreSection>h2::before {
         content: "";
         position: absolute;
         top: 0;
