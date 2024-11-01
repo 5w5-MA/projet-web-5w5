@@ -19,23 +19,27 @@
         <input type="checkbox" id="chkBtnSession4">
         <input type="checkbox" id="chkBtnSession5">
         <input type="checkbox" id="chkBtnSession6">
-        <div class="btnSession1Wrap">
-            <label for="chkBtnSession1" class="btnSession1">Session1</label>
+        <div class="displayFlexBtn1">
+            <div class="btnSession1Wrap">
+                <label for="chkBtnSession1" class="btnSession1">Session1</label>
+            </div>
+            <div class="btnSession2Wrap">
+                <label for="chkBtnSession2" class="btnSession2">Session2</label>
+            </div>
+            <div class="btnSession3Wrap">
+                <label for="chkBtnSession3" class="btnSession3">Session3</label>
+            </div>
         </div>
-        <div class="btnSession2Wrap">
-            <label for="chkBtnSession2" class="btnSession2">Session2</label>
-        </div>
-        <div class="btnSession3Wrap">
-            <label for="chkBtnSession3" class="btnSession3">Session3</label>
-        </div>
-        <div class="btnSession4Wrap">
-            <label for="chkBtnSession4" class="btnSession4">Session4</label>
-        </div>
-        <div class="btnSession5Wrap">
-            <label for="chkBtnSession5" class="btnSession5">Session5</label>
-        </div>
-        <div class="btnSession6Wrap">
-            <label for="chkBtnSession6" class="btnSession6">Session6</label>
+        <div class="displayFlexBtn2">
+            <div class="btnSession4Wrap">
+                <label for="chkBtnSession4" class="btnSession4">Session4</label>
+            </div>
+            <div class="btnSession5Wrap">
+                <label for="chkBtnSession5" class="btnSession5">Session5</label>
+            </div>
+            <div class="btnSession6Wrap">
+                <label for="chkBtnSession6" class="btnSession6">Session6</label>
+            </div>
         </div>
     </section>
     <section class="listeCours">
@@ -130,6 +134,10 @@
             chk: document.getElementById("chkBtnSession6")
         }
     ];
+
+    btns[0].chk.checked = true;
+
+    gestionChangementCheckbox(btns[0].chk);
 
     function gestionChangementCheckbox(changeChk) {
         btns.forEach(({

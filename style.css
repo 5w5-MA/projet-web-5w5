@@ -479,7 +479,7 @@ body main .barreBasPage .div2 {
 .pageCours .coursMenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 100px;
   row-gap: 40px;
   flex-wrap: wrap;
@@ -487,13 +487,20 @@ body main .barreBasPage .div2 {
 .pageCours .coursMenu input {
   display: none;
 }
-.pageCours .coursMenu .btnSession1Wrap {
+.pageCours .coursMenu .displayFlexBtn1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 40px;
+  flex-wrap: nowrap;
+}
+.pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession1Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession1Wrap .btnSession1 {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap .btnSession1 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -501,17 +508,17 @@ body main .barreBasPage .div2 {
   background-color: #fcbe32;
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
 }
-.pageCours .coursMenu .btnSession1Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
-.pageCours .coursMenu .btnSession2Wrap {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession2Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession2Wrap .btnSession2 {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap .btnSession2 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -520,20 +527,20 @@ body main .barreBasPage .div2 {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession2Wrap .btnSession2:hover {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap .btnSession2:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession2Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
-.pageCours .coursMenu .btnSession3Wrap {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession3Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession3Wrap .btnSession3 {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap .btnSession3 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -542,20 +549,27 @@ body main .barreBasPage .div2 {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession3Wrap .btnSession3:hover {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap .btnSession3:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession3Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
-.pageCours .coursMenu .btnSession4Wrap {
+.pageCours .coursMenu .displayFlexBtn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 40px;
+  flex-wrap: nowrap;
+}
+.pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession4Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession4Wrap .btnSession4 {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap .btnSession4 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -564,20 +578,20 @@ body main .barreBasPage .div2 {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession4Wrap .btnSession4:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap .btnSession4:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession4Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
-.pageCours .coursMenu .btnSession5Wrap {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession5Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession5Wrap .btnSession5 {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap .btnSession5 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -586,20 +600,20 @@ body main .barreBasPage .div2 {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession5Wrap .btnSession5:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap .btnSession5:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession5Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
-.pageCours .coursMenu .btnSession6Wrap {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap {
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession6Wrap:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession6Wrap .btnSession6 {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .btnSession6 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -608,10 +622,10 @@ body main .barreBasPage .div2 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
-.pageCours .coursMenu .btnSession6Wrap .btnSession6:hover {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .btnSession6:hover {
   scale: 1.2;
 }
-.pageCours .coursMenu .btnSession6Wrap .actif {
+.pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .actif {
   background-color: #13243c;
   color: #e8e8e8;
 }
