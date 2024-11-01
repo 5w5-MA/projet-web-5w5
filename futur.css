@@ -57,38 +57,46 @@
 
 .option1{
     margin-left: -100px;
-    background-color: #394b77;
     color: #ffffff;
     padding: 10px 20px;
     width: 200px;
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
-    box-shadow: 0 20px 10px -5px rgba(0,0,0,0.45) inset, -20px 0 10px 2px rgba(0,0,0,0.45) inset;
-    filter: drop-shadow(5px 5px 30px #8f1616);
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 
 .option2{
     left: 10px;
-    background-color: #cfcfcf;
-    color: #1f2a44;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
     width: 200px;
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 .option3{
     margin-left: 100px;
-    background-color: #ffc107;
-    color: #1f2a44;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
     width: 200px;
     cursor: pointer;
     text-align: center;
     clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.option1 { background-color: #ffc107; color: #ffffff; }
+.option2 { background-color: #cfcfcf; color: #ffffff; }
+.option3 { background-color: #ffc107; color: #ffffff; }
+
+/* Styles de bouton sélectionné */
+.selected-button {
+    background-color: #1f2a44 !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
 }
 /*-----------------FIN BOUTONS OPTIONS---------------------*/
 
@@ -100,6 +108,9 @@
     margin: auto;
     padding: 100px;
     text-align: center;
+    position: relative;
+    z-index: 9;
+    transition: background-color 0.5s ease; /* Transition douce pour changement de couleur */
 }
 /*------------------FIN INFO OPTIONS--------------------*/
 /*------------------DIAGRAMME POUR INFO OPTIONS--------------------*/
@@ -107,19 +118,25 @@
     background-color: #f0f0f0;
     color: #333;
     padding: 60px; 
+    width: 200px;
+    height: 100px;
     margin-top: 20px;
-    position: fixed;
-    left: 40%;
+    position: static;
+    left: 15vw;
     bottom: 10%;
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
     overflow: hidden; 
     text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: -150px;
+    margin-left: -20px;
 }
 /*----------------MEDIA QUERY----------------------*/
 
 
 @media screen and (min-width:430px) {
-    body {
+    .bodyFutur {
         background-color: aqua;
     }
     .image_titre{
@@ -139,10 +156,26 @@
         width: 300px;
         height: 400px;
     }
+    .Partie1{
+        background-color: #ffc107;
+        clip-path: polygon(0 0, 100% 0%, 72% 100%, 0% 100%);
+        padding: 10px;
+        width: 285px;
+    }
+    .content{
+        left: 40vw;
+        width: 400px;
+        height: 200px;
+        bottom: 20px;
+        margin-top: -250px;
+    }
+    .vide{
+        width: 50vw;
+    }
 }
 @media screen and (min-width:1024px) {
-    body{
-        background-color: rgb(0, 255, 0);
+    .bodyFutur{
+        background-color: rgb(58, 188, 58);
     }
 
     .options{
@@ -159,6 +192,15 @@
     .image_titre{
         width: 500px;
         height: 250px;
+    }
+    .Partie1{
+        background-color: #ffc107;
+        clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+        padding: 30px;
+        width: 305px;
+    }
+    .vide{
+        width: 50vw;
     }
 }
 /*----------------FIN MEDIA QUERY----------------------*/
