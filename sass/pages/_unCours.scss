@@ -1,0 +1,74 @@
+.unCours h3 {
+    position: relative;
+    padding: 3px 2rem;
+
+    color: var(--marin-fond);
+    background-color: var(--orange)
+}
+
+.informationsCours {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.imageCours img {
+    width: 50vw;
+}
+
+.informationsCours .texteCours {
+    padding: 1rem 3rem;
+    background-color: var(--gris);
+}
+
+.boutonPageCours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+/*******************************MÉDIA QUERRY**************************/
+/****************MÉDIA QUERRY TABLETTE*****************/
+@media screen and (min-width: 500px) {}
+
+/****************MÉDIA QUERRY ordinateur*****************/
+@media screen and (min-width: 1100px) {
+
+    .informationsCours {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .informationsCours::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 25vw;
+        width: 9vw;
+        height: 100%;
+        background-color: var(--marin-fond);
+        z-index: 3;
+
+        transform: skewX(-15deg);
+    }
+
+    .informationsCours .texteCours {
+        padding-right: 5rem;
+
+    }
+
+    .imageCours img {
+        height: 20%;
+        width: 30vw;
+    }
+}
