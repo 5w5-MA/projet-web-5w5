@@ -15,7 +15,6 @@
     gap: 2rem;
 }
 
-
 .imageCours img {
     width: 50vw;
 }
@@ -25,10 +24,23 @@
     background-color: var(--gris);
 }
 
-.boutonPageCours {
+.projetsDuCours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projetsDuCours img {
+    width: 80vw
+}
+
+.boutonsPageCours {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: aliceblue;
 }
 
 
