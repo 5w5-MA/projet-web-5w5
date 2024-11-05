@@ -15,13 +15,11 @@
     <div class="infoCegep">
         <div class="divPolygone">
             <div class="div1">location: 7767656 rue khdsksak</div>
-            <div class="div2"></div>
         </div>
     </div>
     <div class="infoLogiciel">
         <div class="divPolygone">
             <div class="div1">img img img</div>
-            <div class="div2"></div>
         </div>
     </div>
     <div class="description">

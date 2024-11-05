@@ -272,7 +272,7 @@ body main .img {
     height: 550px;
     width: 60vw;
     justify-self: flex-end;
-    left: 40vw;
+    left: 0vw;
   }
 }
 body main .boutonCours {
@@ -506,7 +506,7 @@ body main .barreBasPage .div2 {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #fcbe32;
-  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap .actif {
   background-color: #13243c;
@@ -523,7 +523,7 @@ body main .barreBasPage .div2 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
+  background-color: #fcbe32;
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -574,7 +574,7 @@ body main .barreBasPage .div2 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
+  background-color: #fcbe32;
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -618,8 +618,8 @@ body main .barreBasPage .div2 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  background-color: #fcbe32;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .btnSession6:hover {
