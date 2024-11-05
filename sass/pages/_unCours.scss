@@ -43,9 +43,14 @@
     justify-content: space-around;
 
 
+    .boutonCours .btn2 {
+
+        height: 4rem
+    }
+
     .boutonCours {
-        width: 20%;
         top: 0;
+        left: 0;
     }
 }
 
@@ -65,6 +70,22 @@
         width: 45vw;
 
     }
+
+
+    body main .boutonCours {
+        width: auto;
+    }
+
+    body main .boutonCours .btn1 {
+        width: 20vw;
+        left: 10vw;
+    }
+
+    body main .boutonCours .btn2 {
+        width: 30vw;
+        height: 110%;
+    }
+
 }
 
 /****************MÉDIA QUERRY ordinateur*****************/

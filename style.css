@@ -1210,9 +1210,12 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   flex-direction: row;
   justify-content: space-around;
 }
+.boutonsPageCours .boutonCours .btn2 {
+  height: 4rem;
+}
 .boutonsPageCours .boutonCours {
-  width: 20%;
   top: 0;
+  left: 0;
 }
 
 /*******************************MÉDIA QUERRY**************************/
@@ -1225,6 +1228,17 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   }
   .projetsDuCours img {
     width: 45vw;
+  }
+  body main .boutonCours {
+    width: auto;
+  }
+  body main .boutonCours .btn1 {
+    width: 20vw;
+    left: 10vw;
+  }
+  body main .boutonCours .btn2 {
+    width: 30vw;
+    height: 110%;
   }
 }
 /****************MÉDIA QUERRY ordinateur*****************/
