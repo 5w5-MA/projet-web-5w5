@@ -13,7 +13,8 @@
         margin-bottom: 5px;
         position: relative;
         left: 60px;
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s;
     }
 
     .btn2 {
@@ -24,7 +25,8 @@
         align-content: center;
         font-size: x-large;
         color: var(--marin-fond);
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s, margin 0.2s;
 
         box-shadow: 1px 1px 15px 1px #000000;
     }
@@ -34,7 +36,8 @@
         height: 5px;
         background-color: var(--orange);
         margin-top: 5px;
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s;
     }
 
     .btn4 {
@@ -44,7 +47,8 @@
         position: relative;
         top: -5px;
         left: 92px;
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s;
     }
 
     .btn5 {
@@ -54,7 +58,9 @@
         position: relative;
         top: -10px;
         left: 119px;
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s;
+
     }
 
     .btn6 {
@@ -63,38 +69,35 @@
         background-color: var(--orange);
         position: relative;
         top: -8px;
-        transition: color 0.5s, background-color 0.2s;
+        scale: 1;
+        transition: color 0.5s, scale 0.2s, margin 0.2s;
     }
 
     &:hover {
         .btn1 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
         }
 
         .btn2 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
+            margin: 1rem 0;
         }
 
         .btn3 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
         }
 
         .btn4 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
         }
 
         .btn5 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
         }
 
         .btn6 {
-            background-color: var(--gris);
-            color: var(--marin-fond);
+            scale: 1.05;
+            margin: 0.5rem;
         }
     }
 }

@@ -209,7 +209,8 @@ footer p {
   margin-bottom: 5px;
   position: relative;
   left: 60px;
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s;
 }
 .boutonCours .btn2 {
   width: 150px;
@@ -219,7 +220,8 @@ footer p {
   align-content: center;
   font-size: x-large;
   color: var(--marin-fond);
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s, margin 0.2s;
   box-shadow: 1px 1px 15px 1px #000000;
 }
 .boutonCours .btn3 {
@@ -227,7 +229,8 @@ footer p {
   height: 5px;
   background-color: var(--orange);
   margin-top: 5px;
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s;
 }
 .boutonCours .btn4 {
   width: 25px;
@@ -236,7 +239,8 @@ footer p {
   position: relative;
   top: -5px;
   left: 92px;
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s;
 }
 .boutonCours .btn5 {
   width: 10px;
@@ -245,7 +249,8 @@ footer p {
   position: relative;
   top: -10px;
   left: 119px;
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s;
 }
 .boutonCours .btn6 {
   width: 65px;
@@ -253,31 +258,28 @@ footer p {
   background-color: var(--orange);
   position: relative;
   top: -8px;
-  transition: color 0.5s, background-color 0.2s;
+  scale: 1;
+  transition: color 0.5s, scale 0.2s, margin 0.2s;
 }
 .boutonCours:hover .btn1 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
 }
 .boutonCours:hover .btn2 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
+  margin: 1rem 0;
 }
 .boutonCours:hover .btn3 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
 }
 .boutonCours:hover .btn4 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
 }
 .boutonCours:hover .btn5 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
 }
 .boutonCours:hover .btn6 {
-  background-color: var(--gris);
-  color: var(--marin-fond);
+  scale: 1.05;
+  margin: 0.5rem;
 }
 
 body {
@@ -1232,6 +1234,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     width: 45vw;
   }
   body main .boutonCours {
+    height: 10vh;
     width: auto;
   }
   body main .boutonCours .btn1 {
