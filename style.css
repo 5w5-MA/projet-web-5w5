@@ -194,6 +194,92 @@ footer p {
   transform: translateX(2.7rem) skewX(-37deg);
 }
 
+.boutonCours {
+  position: relative;
+  top: -7vh;
+  left: 3vw;
+  transition: scale 0.5s, transform 0.5s;
+  width: 150px;
+  scale: 80%;
+}
+.boutonCours .btn1 {
+  height: 5px;
+  width: 90px;
+  background-color: var(--orange);
+  margin-bottom: 5px;
+  position: relative;
+  left: 60px;
+  transition: color 0.5s, background-color 0.2s;
+}
+.boutonCours .btn2 {
+  width: 150px;
+  height: 50px;
+  background-color: var(--orange);
+  text-align: center;
+  align-content: center;
+  font-size: x-large;
+  color: var(--marin-fond);
+  transition: color 0.5s, background-color 0.2s;
+  box-shadow: 1px 1px 15px 1px #000000;
+}
+.boutonCours .btn3 {
+  width: 90px;
+  height: 5px;
+  background-color: var(--orange);
+  margin-top: 5px;
+  transition: color 0.5s, background-color 0.2s;
+}
+.boutonCours .btn4 {
+  width: 25px;
+  height: 5px;
+  background-color: var(--orange);
+  position: relative;
+  top: -5px;
+  left: 92px;
+  transition: color 0.5s, background-color 0.2s;
+}
+.boutonCours .btn5 {
+  width: 10px;
+  height: 5px;
+  background-color: var(--orange);
+  position: relative;
+  top: -10px;
+  left: 119px;
+  transition: color 0.5s, background-color 0.2s;
+}
+.boutonCours .btn6 {
+  width: 65px;
+  height: 5px;
+  background-color: var(--orange);
+  position: relative;
+  top: -8px;
+  transition: color 0.5s, background-color 0.2s;
+}
+.boutonCours:hover .btn1 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+.boutonCours:hover .btn2 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+.boutonCours:hover .btn3 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+.boutonCours:hover .btn4 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+.boutonCours:hover .btn5 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+.boutonCours:hover .btn6 {
+  background-color: var(--gris);
+  color: var(--marin-fond);
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -239,90 +325,6 @@ body main .img {
     justify-self: flex-end;
     left: 40vw;
   }
-}
-body main .boutonCours {
-  position: relative;
-  top: -7vh;
-  left: 3vw;
-  transition: scale 0.5s, transform 0.5s;
-  width: 150px;
-  scale: 80%;
-}
-body main .boutonCours .btn1 {
-  height: 5px;
-  width: 90px;
-  background-color: #fcbe32;
-  margin-bottom: 5px;
-  position: relative;
-  left: 60px;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours .btn2 {
-  width: 150px;
-  height: 50px;
-  background-color: #fcbe32;
-  text-align: center;
-  align-content: center;
-  font-size: x-large;
-  color: #14243c;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours .btn3 {
-  width: 90px;
-  height: 5px;
-  background-color: #fcbe32;
-  margin-top: 5px;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours .btn4 {
-  width: 25px;
-  height: 5px;
-  background-color: #fcbe32;
-  position: relative;
-  top: -5px;
-  left: 92px;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours .btn5 {
-  width: 10px;
-  height: 5px;
-  background-color: #fcbe32;
-  position: relative;
-  top: -10px;
-  left: 119px;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours .btn6 {
-  width: 65px;
-  height: 5px;
-  background-color: #fcbe32;
-  position: relative;
-  top: -8px;
-  transition: color 0.5s, background-color 0.1s;
-}
-body main .boutonCours:hover .btn1 {
-  background-color: black;
-  color: #fcbe32;
-}
-body main .boutonCours:hover .btn2 {
-  background-color: black;
-  color: #fcbe32;
-}
-body main .boutonCours:hover .btn3 {
-  background-color: black;
-  color: #fcbe32;
-}
-body main .boutonCours:hover .btn4 {
-  background-color: black;
-  color: #fcbe32;
-}
-body main .boutonCours:hover .btn5 {
-  background-color: black;
-  color: #fcbe32;
-}
-body main .boutonCours:hover .btn6 {
-  background-color: black;
-  color: #fcbe32;
 }
 body main .infoCegep {
   display: flex;
