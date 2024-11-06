@@ -386,7 +386,7 @@ body main .infoCegep .divPolygone .div2 {
 body main .infoLogiciel {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 body main .infoLogiciel .divPolygone {
   width: 420px;
@@ -407,26 +407,180 @@ body main .infoLogiciel .divPolygone .div2 {
   body main .infoLogiciel {
     position: relative;
     top: -200px;
+    margin-bottom: -150px;
   }
   body main .infoLogiciel .divPolygone {
     width: 50vw;
   }
 }
 body main .description {
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: 100px;
+  width: fit-content;
+}
+body main .description .div1 {
+  background-color: white;
+  font-size: xx-large;
+  height: fit-content;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+body main .description .div2 {
   background-color: white;
   font-size: small;
   height: fit-content;
   min-height: 150px;
   align-content: center;
-  width: 80vw;
-  max-width: 700px;
+  max-width: 500px;
+  padding: 20px;
+  padding-right: 100px;
+  text-align: justify;
+}
+body main .diagramme {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+body main .diagramme .divPolygone {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+body main .diagramme .divPolygone .div1 {
+  background-color: #fcbe32;
+  color: #fcbe32;
+  font-size: xx-large;
+  height: fit-content;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+body main .diagramme .divPolygone .div2 {
+  background-color: #fcbe32;
+  color: #fcbe32;
+  font-size: small;
+  height: fit-content;
+  min-height: 150px;
+  align-content: center;
+  max-width: 500px;
+  padding: 20px;
+  padding-right: 100px;
+  text-align: justify;
+}
+@media screen and (min-width: 1150px) {
+  body main .diagramme {
+    position: relative;
+    top: -366.8px;
+    margin-bottom: -200px;
+  }
+}
+body main .titreProfile {
+  display: flex;
+  justify-content: flex-start;
+}
+body main .titreProfile .divPolygone {
+  width: 420px;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: 50px;
+}
+body main .titreProfile .divPolygone .div1 {
+  background-color: #fcbe32;
+  height: fit-content;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 900px) {
+  body main .titreProfile .divPolygone {
+    width: 50vw;
+  }
+}
+body main .titreProfileVide {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+body main .titreProfileVide .divPolygone {
+  width: 420px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+body main .titreProfileVide .divPolygone .div1 {
+  background-color: white;
+  color: white;
+  height: fit-content;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: xx-large;
+}
+@media screen and (min-width: 900px) {
+  body main .titreProfileVide {
+    position: relative;
+    top: -116.8px;
+    margin-bottom: 0px;
+  }
+  body main .titreProfileVide .divPolygone {
+    width: 50vw;
+  }
+}
+body main .logiciels {
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
   margin-bottom: 100px;
-  padding: 10px;
+  width: fit-content;
 }
-body main .description div {
-  width: 64vw;
+body main .logiciels .div1 {
+  background-color: white;
+  font-size: xx-large;
+  height: fit-content;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+body main .logiciels .div2 {
+  background-color: white;
+  font-size: small;
+  height: fit-content;
+  min-height: 150px;
+  align-content: center;
   max-width: 500px;
+  padding: 20px;
+  padding-right: 100px;
+  text-align: justify;
+}
+body main .logicielsVide {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+body main .logicielsVide .divPolygone {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+body main .logicielsVide .divPolygone .div1 {
+  background-color: #fcbe32;
+  color: #fcbe32;
+  font-size: xx-large;
+  height: fit-content;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+body main .logicielsVide .divPolygone .div2 {
+  background-color: #fcbe32;
+  color: #fcbe32;
+  font-size: small;
+  height: fit-content;
+  min-height: 150px;
+  align-content: center;
+  max-width: 500px;
+  padding: 20px;
+  padding-right: 100px;
+  text-align: justify;
+}
+@media screen and (min-width: 1150px) {
+  body main .logicielsVide {
+    position: relative;
+    top: -366.8px;
+    margin-bottom: -200px;
+  }
 }
 body main .photo {
   display: flex;
