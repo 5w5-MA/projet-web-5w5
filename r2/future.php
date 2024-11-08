@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Possibilités d'Avenir</title>
-    <link rel="stylesheet" href="../futur.css">
-</head>
-<body class="bodyFutur">
-    
+<?php get_header(); ?>
     <main class="mainFutur">
+
         <section class="intro_dessus">
             <div class="TitreSectionFutur">
                 <div class="Partie1">
                     <h1 class="TitreFutur">Possibilités d'Avenir</h1>
                 </div>
-                <!-- <div class="Partie2"></div>
-                <div class="Partie3"></div> -->
             </div>
         
             <img class="image_titre" src="../images/Journal-IntegrAL-1200x642.jpg" alt="">
@@ -31,6 +21,7 @@
             <div class="option2">Université</div>
             <div class="option3">Emploi</div>
         </section>
+        
         <section class="container">
             <section class="vide">
                 image
@@ -40,8 +31,7 @@
                 <img class="img_content" src="../images/Fichier 1.png" alt="">
             </section>
         </section>
+
+        <script src="../js/futur.js"></script>
     </main>
-    <script src="../js/futur.js"></script>
-    
-</body>
-</html>
+<?= get_footer(); ?>
