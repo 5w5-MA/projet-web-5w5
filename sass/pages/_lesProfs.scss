@@ -1,0 +1,88 @@
+.pageProfs {
+    position: relative;
+    z-index: -5;
+
+}
+
+.pageProfs::before {
+    content: "";
+
+    position: absolute;
+
+    background-color: var(--gris);
+    width: 10rem;
+    height: 100%;
+
+    transform: skewX(-45deg);
+    z-index: -1;
+
+
+
+}
+
+.pageProfs::after {
+    content: "";
+
+    position: absolute;
+    opacity: 0.5;
+
+    border-left: 3rem solid var(--gris);
+    border-right: 6rem solid var(--gris);
+    width: 10rem;
+    height: 100%;
+
+    ;
+    transform: translateY(-24rem) skewX(-45deg);
+    z-index: -1;
+}
+
+.conteneurCentre {
+
+    margin: auto 3rem;
+}
+
+.conteneurProfs {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem 0;
+
+    flex-wrap: wrap;
+    flex-grow: 0;
+}
+
+.carteProf {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    background-color: var(--gris);
+    box-shadow: 1px 1px 15px 1px #00000090;
+    width: 30vw;
+    height: 35vh;
+}
+
+.imageProf {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.imageProf img {
+
+    width: 25vw;
+    height: 10rem;
+
+}
+
+
+/*******************************MÉDIA QUERRY**************************/
+/****************MÉDIA QUERRY TABLETTE*****************/
+@media screen and (min-width: 500px) {}
+
+/****************MÉDIA QUERRY ordinateur*****************/
+@media screen and (min-width: 1100px) {}
