@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    
+    
+/* ************************* Version Mobile ******************************* */
+    .MaxProjetHeader{
+        height: 75px;
+        background-color: #bfd3ef;
+    }
+    .MaxProjetFooter{
+        height: 400px;
+        background-color: #031024;
+    }
+
+    .MaxUnProjetMain{
+        min-height: 115vh;
+        background-color: #13243C;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+
+
+        /* *************** Titre section ******************** */
+        .TitreUnProjet{
+            max-width: 300px;
+            display: flex;
+            // padding: 5% 0 5% 0;
+            
+            .Partie1 {
+                --p: 40px; /* control the shape (can be percentage) */
+                height: 50px;
+                width: 265px;
+                clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                background-color: #FCBE32;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .Partie2{    
+                --p: 80%; /* control the shape (can be percentage) */
+                height: 50px;
+                width: 60px;
+                clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                background: #FCBE32;
+                transform: translateX(-5vw);
+                
+            }
+            
+            .Partie3{
+                --p: 90%; /* control the shape (can be percentage) */
+                height: 50px;
+                width: 50px;    
+                clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                background: #FCBE32;
+                transform: translateX(-10vw);
+            }                        
+        }
+
+        .CarteJeuOmbreP{
+            width: 80%;
+            aspect-ratio: 9/16;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 10px 7.5px 5px 0px rgba(#E8E8E8 0.65);
+
+            .CarteJeuBiso{
+                background-color: #ffffff;
+                width: 100%;
+                box-shadow: inset 10px 10px 10px 0px rgba(0,0,0,0.35);
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+                // padding: 5%;
+
+                .BoiteCarte{
+                    width: 90%;
+                    height: 80%;                    
+        
+
+                    .JeuBoite{
+                        background-color: #13243C;
+                        width: 100%;
+                        align-items: flex-start;
+                        aspect-ratio: 16/9;
+                    }
+
+                    .LogicielsCarte{
+                        min-height: 15vh;
+                        background-color: #FCBE32;
+                        list-style-type: none;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        gap: 10%;
+                        .Applicase{
+                            width: 25px;
+                            aspect-ratio: 1;
+                            border-radius: 5px;
+                            background-color: #13243C;
+                        }
+                    }
+
+                    .NomElevesCarte{
+                        padding: 0;
+                    }
+
+                }
+
+            }            
+        }
+    }
+    
+    
+ /* ************************* Version Tablette & Desktop ******************************* */
+    @media screen and (min-width: 430px){
+        .MaxProjetHeader{ height: 125px;}
+    
+        .MaxProjetFooter{ height: 450px;}
+
+                /* *************** Titre section ******************** */
+                .TitreUnProjet{
+                    width: 30%;
+                    display: flex;
+                    display: none;
+                    
+                    .Partie1 {
+                        --p: 40px; /* control the shape (can be percentage) */
+                        height: 50px;
+                        min-width: 30%;
+                        clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                        background-color: #FCBE32;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .Partie2{    
+                        // --p: 70%; /* control the shape (can be percentage) */
+                        // height: 50px;
+                        // width: 60px;
+                        // clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                        // background: #FCBE32;
+                        // transform: translateX(-2.5vw);
+                        display: none;
+                    }
+                    
+                    .Partie3{
+                        // --p: 90%; /* control the shape (can be percentage) */
+                        // height: 50px;
+                        // width: 50px;    
+                        // clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+                        // background: #FCBE32;
+                        // transform: translateX(-5vw);
+                        display: none;
+                    }                        
+                }
+
+        .MaxUnProjetMain{    
+
+
+
+            .CarteJeuOmbreP{
+                width: 90%;
+                aspect-ratio: 16/9;
+
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 10px 7.5px 5px 0px rgba(150, 150, 150, 0.65);
+    
+                .CarteJeuBiso{
+                    width: 100%;
+                    box-shadow: inset 7.5px 7.5px 7.5px 0px rgba(0,0,0,0.55);
+    
+                    .BoiteCarte{
+                        width: 80vw;
+                        height: 70vh;             
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr) 6fr;
+                        grid-template-rows: repeat(4, 1fr);
+                        grid-column-gap: 10%;
+                        // grid-row-gap: 1.5%;       
+                        
+                        h3{grid-area: 1 / 1 / 2 / 4;}
+
+                        .JeuBoite{
+                            grid-area: 2 / 1 / 6 / 4;
+                            height: 90%;
+                        }
+
+                        .CoursCarte{grid-area: 1 / 4 / 2 / 5;}
+    
+                        .LogicielsCarte{grid-area: 2 / 4 / 3 / 5;}
+
+                        .NomElevesCarte{
+                            // background-color: #FCBE32;
+                            grid-area: 4 / 4 / 5 / 5;
+                            // height: 30%;
+                        }
+
+                        .Description{
+                            grid-area: 5 / 4 / 6 / 5;
+                            overflow-y: scroll;
+                        }
+    
+                    }
+    
+                }            
+            }
+        
+        }
+
+
+    }
+    
+    
+}
