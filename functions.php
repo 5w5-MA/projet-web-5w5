@@ -33,3 +33,6 @@ function features(){
     add_image_size('imagesVieEtude', 1000,800,true);
 }
 add_action('after_setup_theme',  'features');
+
+
+

@@ -39,6 +39,9 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+
+
+        
         <section class="listeCours">
             <div class="cours1">
                 <div class="coursImg"></div>
@@ -54,48 +57,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            <div class="cours2">
-                <div class="coursImg"></div>
-                <div class="infoCours">
-                    <h2 class="nomCours">Création vidéo</h2>
-                    <div class="boutonCours">
-                        <div class="btn1"></div>
-                        <div class="btn2">En savoir plus</div>
-                        <div class="btn3"></div>
-                        <div class="btn4"></div>
-                        <div class="btn5"></div>
-                        <div class="btn6"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="cours3">
-                <div class="coursImg"></div>
-                <div class="infoCours">
-                    <h2 class="nomCours">Création vidéo</h2>
-                    <div class="boutonCours">
-                        <div class="btn1"></div>
-                        <div class="btn2">En savoir plus</div>
-                        <div class="btn3"></div>
-                        <div class="btn4"></div>
-                        <div class="btn5"></div>
-                        <div class="btn6"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="cours4">
-                <div class="coursImg"></div>
-                <div class="infoCours">
-                    <h2 class="nomCours">Création vidéo</h2>
-                    <div class="boutonCours">
-                        <div class="btn1"></div>
-                        <div class="btn2">En savoir plus</div>
-                        <div class="btn3"></div>
-                        <div class="btn4"></div>
-                        <div class="btn5"></div>
-                        <div class="btn6"></div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     </main>
 

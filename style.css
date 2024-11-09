@@ -585,20 +585,17 @@ body .MaxProjetMain .SectionArcade .TitreSectionArcade .Partie3 {
   transform: translateX(-10vw);
 }
 body .MaxProjetMain .SectionArcade .ListeArcade {
-  min-height: 80vh;
-  padding: 2.5vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+  width: 80vw;
+  padding: 5vh 0px;
+  margin: 0px auto;
 }
-body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
-  grid-area: 1/1/4/5;
-  background-color: white;
-}
-body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
-  grid-area: 4/1/7/5;
+body .MaxProjetMain .SectionArcade .ListeArcade .jeu {
+  margin: 0px auto;
+  width: clamp(350px, 100%, 900px);
+  height: clamp(230px, 14vw, 700px);
   background-color: white;
 }
 body .MaxProjetMain .SectionProjet {
@@ -719,7 +716,6 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   }
   body .MaxProjetMain .SectionArcade {
     /* *************** Titre section ******************** */
-    /* ****************** Arcade *********************** */
   }
   body .MaxProjetMain .SectionArcade .TitreSectionArcade {
     max-width: 45vw;
@@ -743,30 +739,6 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     width: 15%;
     clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
     transform: translateX(-7.5vw);
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
-    grid-area: 1/1/3/3;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
-    grid-area: 1/3/3/5;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
-    grid-area: 3/1/5/3;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
-    grid-area: 3/3/5/5;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
-    grid-area: 5/1/7/3;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
-    grid-area: 5/3/7/5;
-    background-color: white;
   }
   body .MaxProjetMain .SectionProjet {
     /* *************** Titre section ******************** */
@@ -832,36 +804,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     height: 450px;
   }
   body .MaxProjetMain {
-    /* ******************** Section Arcade *********************** */
     /* ***************** Section Projet ************************** */
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu1 {
-    grid-area: 1/1/3/3;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu2 {
-    grid-area: 1/3/3/5;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu3 {
-    grid-area: 1/5/3/7;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu4 {
-    grid-area: 3/1/5/3;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu5 {
-    grid-area: 3/3/5/5;
-    background-color: white;
-  }
-  body .MaxProjetMain .SectionArcade .ListeArcade .Jeu6 {
-    grid-area: 3/5/5/7;
-    background-color: white;
   }
   body .MaxProjetMain .SectionProjet .Rangee2 {
     display: grid;

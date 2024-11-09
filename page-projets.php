@@ -14,18 +14,20 @@
         $arcadePost = new WP_Query(array( 
             'posts_per_page'=> 6,
             'category_name' => 'arcade'
-        ));
-
-        while($arcadePost ->have_posts()){
-            $arcadePost ->the_post();
-        ?>
-            <section class="ListeArcade">
-                <div class="Jeu1">
-                    <?php the_title(); ?>
-                </div>    
-            </section>
+        )); ?>
         
-        <?php }; ?>
+        <section class="ListeArcade">
+            <?php
+            while($arcadePost ->have_posts()){
+                $arcadePost ->the_post();
+            ?>
+                <section class="jeu">
+                    <div>
+                        <?php the_title(); ?>
+                    </div>    
+                </section>
+            <?php }; ?>
+        </section>
 
         <section class="SectionProjet">
             <section class="Rangee1">
