@@ -1,4 +1,9 @@
 /*****************************décor de la page**********************/
+
+body {
+    z-index: -7;
+}
+
 .pageProfs {
     position: relative;
 
@@ -19,7 +24,7 @@
     height: 100%;
 
     transform: skewX(-45deg);
-    z-index: -1;
+    z-index: -2;
 }
 
 .pageProfs::after {
@@ -35,8 +40,9 @@
     height: 100%;
 
     transform: skewX(-45deg);
-    z-index: -1;
+    z-index: -2;
 }
+
 
 /**********************Éléments de la page*******************/
 .conteneurCentre {
