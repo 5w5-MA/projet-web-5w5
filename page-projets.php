@@ -32,14 +32,14 @@
         <section class="SectionProjet">
             <section class="Rangee1">
                 <div class="FiltreSectionProjet"><div class="Partie1">
-                    <h2>Filtre</h2>
+                    <h2>Projet</h2>
                 </div>
                 <div class="Partie2"></div>
                 <div class="Partie3"></div></div>
 
                 <div class="TitreSectionProjet">
                     <div class="Partie1">
-                        <h2>Projet</h2>
+                        <h2>Filtre</h2>
                     </div>
                     <div class="Partie2"></div>
                     <div class="Partie3"></div>
