@@ -1321,6 +1321,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
 .conteneurProfs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
