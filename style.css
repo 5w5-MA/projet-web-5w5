@@ -1283,6 +1283,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
     width: 30vw;
   }
 }
+/*****************************décor de la page**********************/
 .pageProfs {
   position: relative;
   z-index: -4;
@@ -1314,6 +1315,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   z-index: -1;
 }
 
+/**********************Éléments de la page*******************/
 .conteneurCentre {
   margin: auto 3rem;
 }
@@ -1326,6 +1328,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   grid-row-gap: 2rem;
 }
 
+/************carte des professeurs************/
 .carteProf {
   display: flex;
   flex-direction: column;
