@@ -1284,10 +1284,6 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   }
 }
 /*****************************décor de la page**********************/
-body {
-  z-index: -7;
-}
-
 .pageProfs {
   position: relative;
   z-index: -4;
@@ -1303,7 +1299,7 @@ body {
   width: 15rem;
   height: 100%;
   transform: skewX(-45deg);
-  z-index: -2;
+  z-index: -1;
 }
 
 .pageProfs::after {
@@ -1316,7 +1312,7 @@ body {
   width: 19rem;
   height: 100%;
   transform: skewX(-45deg);
-  z-index: -2;
+  z-index: -1;
 }
 
 /**********************Éléments de la page*******************/
