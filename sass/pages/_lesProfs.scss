@@ -1,16 +1,24 @@
+body {
+
+    z-index: -6;
+}
+
 .pageProfs {
     position: relative;
-    z-index: -5;
+    z-index: -4;
 
 }
 
 .pageProfs::before {
     content: "";
 
-    position: absolute;
 
-    background-color: var(--gris);
-    width: 10rem;
+    position: absolute;
+    bottom: -9rem;
+
+    border-left: 10rem solid var(--gris);
+    border-right: 5rem solid var(--gris);
+    width: 15rem;
     height: 100%;
 
     transform: skewX(-45deg);
@@ -25,29 +33,28 @@
 
     position: absolute;
     opacity: 0.5;
+    bottom: -19rem;
 
     border-left: 3rem solid var(--gris);
-    border-right: 6rem solid var(--gris);
-    width: 10rem;
+    border-right: 8rem solid var(--gris);
+    width: 19rem;
     height: 100%;
 
-    ;
-    transform: translateY(-24rem) skewX(-45deg);
+    transform: skewX(-45deg);
     z-index: -1;
 }
 
 .conteneurCentre {
-
     margin: auto 3rem;
 }
 
 .conteneurProfs {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-    flex-wrap: wrap;
-    flex-grow: 0;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
 }
 
 .carteProf {
@@ -56,33 +63,106 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
 
 
     background-color: var(--gris);
     box-shadow: 1px 1px 15px 1px #00000090;
     width: 30vw;
-    height: 35vh;
+    height: 15rem;
 }
 
 .imageProf {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    width: 25vw;
+    height: 10rem;
 }
 
 .imageProf img {
 
-    width: 25vw;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50%;
 
 }
 
 
 /*******************************MÉDIA QUERRY**************************/
 /****************MÉDIA QUERRY TABLETTE*****************/
-@media screen and (min-width: 500px) {}
+@media screen and (min-width: 500px) {
+
+
+    .pageProfs::before {
+        top: 0;
+        right: -8rem;
+        border-left: 16rem solid var(--gris);
+        border-right: 8rem solid var(--gris);
+        width: 18rem;
+    }
+
+    .pageProfs::after {
+        top: 0;
+        right: -22rem;
+        border-left: 2rem solid var(--gris);
+        border-right: 12rem solid var(--gris);
+        width: 23rem;
+
+    }
+
+    .conteneurProfs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .carteProf {
+        width: 23vw;
+        height: 19rem;
+    }
+
+    .imageProf {
+        width: 18vw;
+        height: 14rem;
+    }
+
+}
 
 /****************MÉDIA QUERRY ordinateur*****************/
-@media screen and (min-width: 1100px) {}
+@media screen and (min-width: 1100px) {
+
+    .pageProfs::before {
+        top: 0;
+        right: -8rem;
+        border-left: 17rem solid var(--gris);
+
+        width: 18rem;
+
+        transform: skewX(-55deg);
+    }
+
+    .pageProfs::after {
+        top: 0;
+        right: -27rem;
+
+        border-left: 4rem solid var(--gris);
+        border-right: 14rem solid var(--gris);
+        width: 25rem;
+        transform: skewX(-55deg);
+
+    }
+
+    .conteneurProfs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .carteProf {
+        width: 14rem;
+
+    }
+
+    .imageProf {
+        width: 12rem;
+
+    }
+
+}
