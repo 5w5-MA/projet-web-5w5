@@ -16,7 +16,7 @@ https://github.com/orgs/5w5-MA/projects/1/views/1
 Lien google sheet:
 https://docs.google.com/spreadsheets/d/1ifhd2P6OZVds5_mNxjLPQELZd7fUbF6d7ynXQSH9FuM/edit?gid=0#gid=0
 
-But: finir les pages en html css et commencer le wordpress
+But: finir toutes les pages en html css et les mettre sur le wordpress.
 
 Les pages:
 
@@ -31,6 +31,7 @@ Les pages:
   Futur
   
   Vie Étudiante
+
   
 
   
