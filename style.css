@@ -534,14 +534,6 @@ body {
   /* ************************* Version Tablette ******************************* */
   /* ************************* Version Desktop ******************************* */
 }
-body .MaxProjetHeader {
-  height: 75px;
-  background-color: #bfd3ef;
-}
-body .MaxProjetFooter {
-  height: 400px;
-  background-color: #031024;
-}
 body .MaxProjetMain {
   /* ******************** Section Arcade *********************** */
   /* ***************** Section Projet ************************** */
@@ -599,7 +591,6 @@ body .MaxProjetMain .SectionArcade .ListeArcade .jeu {
   background-color: white;
 }
 body .MaxProjetMain .SectionProjet {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -626,6 +617,12 @@ body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 .boutonFiltreProjet {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #d6a126;
 }
 body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
   --p: 80%; /* control the shape (can be percentage) */
@@ -658,6 +655,17 @@ body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 {
   align-items: center;
   justify-content: center;
 }
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .boutonFiltreProjet {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  background-color: #fada90;
+  text-align: center;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .boutonFiltreProjet:hover {
+  cursor: pointer;
+}
 body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
   --p: 80%; /* control the shape (can be percentage) */
   height: 50px;
@@ -674,8 +682,18 @@ body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie3 {
   background: #FCBE32;
   transform: translateX(6vw);
 }
+body .MaxProjetMain .SectionProjet .menuDeroulant {
+  transition: 1s;
+  width: 35.7%;
+  height: 0px;
+  margin-left: auto;
+  background-color: #bfd3ef;
+  overflow-y: hidden;
+}
+body .MaxProjetMain .SectionProjet .menuDeroulant div {
+  background-color: pink;
+}
 body .MaxProjetMain .SectionProjet .Rangee2 {
-  min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
