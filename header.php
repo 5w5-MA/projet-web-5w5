@@ -4,20 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lato">
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/normalize.css" />
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css" />
     <?php wp_head(); ?>
 </head>
 
+<!-- ///////////////// HAUT DE PAGE /////////////////// -->
 <body>
     <header>
 
-        <?php get_custom_logo(); ?>
+        <?php the_custom_logo(); ?>
 
-        <h1>TIM</h1>
+        
         <input type="checkbox" id="chkBurger" />
         <div class="menuCache">
             <label for="chkBurger" class="exitMenu">
@@ -25,12 +21,10 @@
                 <div class="exit2"></div>
             </label>
             <div class="optionMenu">
-                <h2>Vie étudiante</h2>
-                <h2>Liste de cours</h2>
-                <h2>Nos professeurs</h2>
-                <h2>Projet</h2>
-                <h2>Secteur avenir</h2>
-                <?php wp_nav_menu(); ?>
+               
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'headerMenuLocation',
+                )); ?>
             </div>
         </div>
         <label for="chkBurger" class="menuBurger">

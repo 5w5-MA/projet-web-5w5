@@ -16,36 +16,26 @@
     </div>
     <div class="liens">
       <h2>Liens</h2>
-      <p>Accueil</p>
+      <?php wp_nav_menu(array(
+        'theme_location' => 'footerMenuLocation',
+      )); ?>
     </div>
   </section>
   <section class="footerDroite">
     <div class="reseaux">
       <h2>Suivez-nous</h2>
       <div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <p>1</p>
       </div>
     </div>
   </section>
+
   <section class="footerBas">Maisonneuve</section>
 </footer>
 
 <?php wp_footer(); ?>
 
 </body>
-<script>
-  document
-    .getElementById("chkBurger")
-    .addEventListener("change", function() {
-      if (this.checked) {
-        document.body.classList.add("pasDeScroll");
-      } else {
-        document.body.classList.remove("pasDeScroll");
-      }
-    });
-</script>
+
 
 </html>

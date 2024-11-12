@@ -8,7 +8,6 @@ Lien WordPress:
 https://gftnth00.mywhc.ca/tim34/
 
 Lien page gitHub:
-https://5w5-ma.github.io/projet-web-5w5/
 
 Lien gitHub project:
 https://github.com/orgs/5w5-MA/projects/1/views/1

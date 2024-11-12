@@ -1,8 +1,3 @@
-.vieEtudiante {
-    color: var(--marin-fond);
-}
-
-
 /*******ZONE DE TITRE DE LA PAGE*******/
 .titrePage {
     display: flex;
@@ -61,7 +56,8 @@
 .vieEtudiante .imageVie img {
     width: 100vw;
     height: 40vh;
-    object-fit: cover;
+    object-fit: cover; //À VOIR: image devient plus pixelisé
+
 }
 
 
@@ -120,6 +116,7 @@
     .imgEnteteDiv {
         height: 100%;
         position: relative;
+        overflow: hidden;
     }
 
     ////Effets sur l'image d'entête

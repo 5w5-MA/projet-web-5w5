@@ -14,13 +14,14 @@ footer {
   .footerGauche {
     display: flex;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 5rem;
+    padding-bottom: 5rem;
   }
 
   .footerBas {
     position: absolute;
     font-size: 15vw;
-    bottom: -70px;
+    bottom: -5rem;
   }
 
   p {

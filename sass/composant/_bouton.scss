@@ -1,103 +1,103 @@
 .boutonCours {
-    position: relative;
-    top: -7vh;
-    left: 3vw;
-    transition: scale 0.5s, transform 0.5s;
-    width: 150px;
-    scale: 80%;
+  position: relative;
+  top: -7vh;
+  left: 3vw;
+  transition: scale 0.5s, transform 0.5s;
+  width: 150px;
+  scale: 80%;
 
+  .btn1 {
+    height: 5px;
+    width: 90px;
+    background-color: var(--orange);
+    margin-bottom: 5px;
+    position: relative;
+    left: 60px;
+    scale: 1;
+    transition: color 0.5s, scale 0.2s;
+  }
+
+  .btn2 {
+    width: 150px;
+    height: 50px;
+    background-color: var(--orange);
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+    color: var(--marin-fond);
+    scale: 1;
+    transition: color 0.5s, scale 0.2s, margin 0.2s;
+
+    box-shadow: 1px 1px 15px 1px #000000;
+  }
+
+  .btn3 {
+    width: 90px;
+    height: 5px;
+    background-color: var(--orange);
+    margin-top: 5px;
+    scale: 1;
+    transition: color 0.5s, scale 0.2s;
+  }
+
+  .btn4 {
+    width: 25px;
+    height: 5px;
+    background-color: var(--orange);
+    position: relative;
+    top: -5px;
+    left: 92px;
+    scale: 1;
+    transition: color 0.5s, scale 0.2s;
+  }
+
+  .btn5 {
+    width: 10px;
+    height: 5px;
+    background-color: var(--orange);
+    position: relative;
+    top: -10px;
+    left: 119px;
+    scale: 1;
+    transition: color 0.5s, scale 0.2s;
+
+  }
+
+  .btn6 {
+    width: 65px;
+    height: 5px;
+    background-color: var(--orange);
+    position: relative;
+    top: -8px;
+    scale: 1;
+    transition: color 0.5s, scale 0.2s, margin 0.2s;
+  }
+
+  &:hover {
     .btn1 {
-        height: 5px;
-        width: 90px;
-        background-color: var(--orange);
-        margin-bottom: 5px;
-        position: relative;
-        left: 60px;
-        scale: 1;
-        transition: color 0.5s, scale 0.2s;
+      scale: 1.05;
     }
 
     .btn2 {
-        width: 150px;
-        height: 50px;
-        background-color: var(--orange);
-        text-align: center;
-        align-content: center;
-        font-size: x-large;
-        color: var(--marin-fond);
-        scale: 1;
-        transition: color 0.5s, scale 0.2s, margin 0.2s;
-
-        box-shadow: 1px 1px 15px 1px #000000;
+      scale: 1.05;
+      margin: 1rem 0;
     }
 
     .btn3 {
-        width: 90px;
-        height: 5px;
-        background-color: var(--orange);
-        margin-top: 5px;
-        scale: 1;
-        transition: color 0.5s, scale 0.2s;
+      scale: 1.05;
     }
 
     .btn4 {
-        width: 25px;
-        height: 5px;
-        background-color: var(--orange);
-        position: relative;
-        top: -5px;
-        left: 92px;
-        scale: 1;
-        transition: color 0.5s, scale 0.2s;
+      scale: 1.05;
     }
 
     .btn5 {
-        width: 10px;
-        height: 5px;
-        background-color: var(--orange);
-        position: relative;
-        top: -10px;
-        left: 119px;
-        scale: 1;
-        transition: color 0.5s, scale 0.2s;
-
+      scale: 1.05;
     }
 
     .btn6 {
-        width: 65px;
-        height: 5px;
-        background-color: var(--orange);
-        position: relative;
-        top: -8px;
-        scale: 1;
-        transition: color 0.5s, scale 0.2s, margin 0.2s;
+      scale: 1.05;
+      margin: 0.5rem;
     }
-
-    &:hover {
-        .btn1 {
-            scale: 1.05;
-        }
-
-        .btn2 {
-            scale: 1.05;
-            margin: 1rem 0;
-        }
-
-        .btn3 {
-            scale: 1.05;
-        }
-
-        .btn4 {
-            scale: 1.05;
-        }
-
-        .btn5 {
-            scale: 1.05;
-        }
-
-        .btn6 {
-            scale: 1.05;
-            margin: 0.5rem;
-        }
-    }
+  }
 }
