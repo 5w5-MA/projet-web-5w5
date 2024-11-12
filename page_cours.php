@@ -9,6 +9,9 @@
 <main class="pageCours">
     <section class="coursPrincipale">
         <h1>Liste de cours</h1>
+        <?php
+        the_content();
+        ?>
         <div class="imgCours"></div>
         <div class="txt"></div>
     </section>
