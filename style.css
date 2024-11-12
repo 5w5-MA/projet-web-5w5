@@ -1284,6 +1284,11 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   }
 }
 /*****************************décor de la page**********************/
+#bodyProfs {
+  position: relative;
+  z-index: -10;
+}
+
 .pageProfs {
   position: relative;
   z-index: -4;

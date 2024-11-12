@@ -1,4 +1,11 @@
 /*****************************décor de la page**********************/
+
+#bodyProfs {
+    //mettre le bodu derrière le main
+    position: relative;
+    z-index: -10;
+}
+
 .pageProfs {
     position: relative;
 
