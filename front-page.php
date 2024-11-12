@@ -1,18 +1,20 @@
 <?php
-    get_header();
+get_header();
 ?>
 <!-- /////////////////Page D'ACCUEIL  ////////////////// -->
 <main>
     <div class="txtMain">
-        <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+        <h1><?php echo get_bloginfo('name'); ?></h1>
         <br>
-        <h2><?php echo get_bloginfo( 'description' ); ?></h2>
+        <h2><?php echo get_bloginfo('description'); ?></h2>
     </div>
 
     <div class="img">image</div>
     <div class="boutonCours">
         <div class="btn1"></div>
-        <a href="<?php echo site_url('/liste-de-cours'); ?>"><div class="btn2">cours</div></a>
+        <a href="<?php echo site_url('/liste-de-cours'); ?>">
+            <div class="btn2">cours</div>
+        </a>
         <div class="btn3"></div>
         <div class="btn4"></div>
         <div class="btn5"></div>
@@ -21,13 +23,11 @@
     <div class="infoCegep">
         <div class="divPolygone">
             <div class="div1">location: 7767656 rue khdsksak</div>
-            <div class="div2"></div>
         </div>
     </div>
     <div class="infoLogiciel">
         <div class="divPolygone">
             <div class="div1">img img img</div>
-            <div class="div2"></div>
         </div>
     </div>
     <div class="description">
@@ -35,7 +35,7 @@
             À propos
         </div>
         <div class="div2">
-           <?php the_content(); ?>
+            <?php the_content(); ?>
         </div>
     </div>
     <div class="diagramme">
@@ -110,7 +110,7 @@
         <div>image</div>
         <div>image</div>
     </div>
-    
+
     <?php get_template_part("componants-php/barreBasPage"); ?>
 
 </main>
