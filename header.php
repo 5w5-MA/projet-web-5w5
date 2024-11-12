@@ -8,12 +8,13 @@
 </head>
 
 <!-- ///////////////// HAUT DE PAGE /////////////////// -->
+
 <body>
     <header>
 
         <?php the_custom_logo(); ?>
 
-        
+
         <input type="checkbox" id="chkBurger" />
         <div class="menuCache">
             <label for="chkBurger" class="exitMenu">
@@ -21,7 +22,7 @@
                 <div class="exit2"></div>
             </label>
             <div class="optionMenu">
-               
+
                 <?php wp_nav_menu(array(
                     'theme_location' => 'headerMenuLocation',
                 )); ?>

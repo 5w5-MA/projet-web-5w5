@@ -2,6 +2,11 @@
 get_header();
 ?>
 <!-- /////////////////Page D'ACCUEIL  ////////////////// -->
+<div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
 <main>
     <div class="txtMain">
         <h1><?php echo get_bloginfo('name'); ?></h1>
