@@ -24,9 +24,9 @@
   <section class="footerDroite">
     <div class="reseaux">
       <h2>Suivez-nous</h2>
-      <div>
-        <p>1</p>
-      </div>
+        <div class="inconsReseaux">
+        <?php get_template_part("componants-php/social"); ?>
+        </div>
     </div>
   </section>
 

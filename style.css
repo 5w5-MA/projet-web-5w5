@@ -1342,6 +1342,9 @@ footer .footerBas {
 footer p {
   font-size: xx-small;
 }
+footer .footerDroite .reseaux .inconsReseaux {
+  display: flex;
+}
 
 .boutonCours {
   position: relative;

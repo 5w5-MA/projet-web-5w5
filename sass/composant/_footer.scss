@@ -27,4 +27,12 @@ footer {
   p {
     font-size: xx-small;
   }
+
+  .footerDroite{
+    .reseaux{
+      .inconsReseaux{
+        display: flex;
+      }
+    }
+  }
 }
