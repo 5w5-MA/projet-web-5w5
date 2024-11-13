@@ -1121,6 +1121,12 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   position: unset;
 }
 
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--marin-fond);
 }
@@ -1439,4 +1445,369 @@ footer p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.bodyFutur {
+  margin: 0;
+  padding: 0;
+}
+
+.mainFutur {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  /*-----------------HAUTE DE PAGE---------------------*/
+  /*------------------FIN HAUTE DE PAGE--------------------*/
+  /*------------------BOUTONS D'OPTIONS--------------------*/
+  /*-----------------FIN BOUTONS OPTIONS---------------------*/
+  /*------------------FIN INFO OPTIONS--------------------*/
+  /*------------------DIAGRAMME POUR INFO OPTIONS--------------------*/
+  /*----------------MEDIA QUERY----------------------*/
+  /*----------------FIN MEDIA QUERY----------------------*/
+}
+.mainFutur .intro_dessus {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.mainFutur .intro_dessus .TitreSectionFutur .Partie1 {
+  background-color: #ffc107;
+  clip-path: polygon(0 0, 100% 0%, 73% 100%, 0% 100%);
+}
+.mainFutur .intro_dessus .TitreSectionFutur .Partie1 .TitreFutur {
+  padding: 10px;
+}
+.mainFutur .intro_dessus .image_titre {
+  clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  /*height: 200vw;*/
+  width: 200px;
+  position: static;
+  right: 0;
+}
+.mainFutur .intro {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  overflow: hidden;
+}
+.mainFutur .intro .ExplicationFutur {
+  width: 60vw;
+}
+.mainFutur .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+  align-items: center;
+  /* Styles de bouton sélectionné */
+}
+.mainFutur .options .option1 {
+  background-color: #ffc107;
+  margin-left: -100px;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+  transition: background-color 0.3s, filter 0.3s;
+  position: relative;
+}
+.mainFutur .options .option2 {
+  background-color: #cfcfcf;
+  left: 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+  transition: background-color 0.3s, filter 0.3s;
+  position: relative;
+}
+.mainFutur .options .option3 {
+  background-color: #ffc107;
+  margin-left: 100px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+  clip-path: polygon(0 16%, 89% 15%, 100% 78%, 15% 78%);
+  transition: background-color 0.3s, filter 0.3s;
+  position: relative;
+}
+.mainFutur .options .selected-button {
+  background-color: #1f2a44;
+}
+.mainFutur .options .selected-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.235); /* Couleur de l'ombre */
+  clip-path: inherit; /* Utilise le même clip-path que le bouton */
+  filter: drop-shadow(12px 15px 23px white); /* Applique un flou */
+  z-index: -1; /* Place le contour flou derrière le bouton */
+}
+.mainFutur .container {
+  /*--------------CARRE INFO OPTIONS------------------------*/
+}
+.mainFutur .container .vide {
+  background-color: #ffc107;
+  width: 100px;
+  height: 300px;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  transition: background-color 0.5s ease; /* Transition douce pour changement de couleur */
+}
+.mainFutur .container .content {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  left: 15vw;
+  bottom: 10%;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  margin-top: -150px;
+  margin-left: -20px;
+}
+.mainFutur .container .content .img_content {
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  height: 10vh;
+}
+@media screen and (min-width: 430px) {
+  .mainFutur .intro_dessus .Partie1 {
+    background-color: #ffc107;
+    clip-path: polygon(0 0, 100% 0%, 72% 100%, 0% 100%);
+    padding: 10px;
+    width: 285px;
+  }
+  .mainFutur .intro_dessus .image_titre {
+    width: 300px;
+    height: 150px;
+  }
+  .mainFutur .options .option1 {
+    width: 400px;
+  }
+  .mainFutur .options .option2 {
+    width: 400px;
+  }
+  .mainFutur .options .option3 {
+    width: 400px;
+  }
+  .mainFutur .container { /* Ajoute un conteneur englobant */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainFutur .container .vide {
+    width: 50vw;
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+    right: 11vw;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .mainFutur .container .content {
+    width: 400px;
+    height: 200px;
+    z-index: 0;
+    left: 20vw;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 40px;
+  }
+  .mainFutur .container .content .img_content {
+    width: 30vw;
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainFutur .intro_dessus .Partie1 {
+    background-color: #ffc107;
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+    padding: 30px;
+    width: 305px;
+  }
+  .mainFutur .intro_dessus .image_titre {
+    width: 500px;
+    height: 250px;
+  }
+  .mainFutur .options {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .mainFutur .options .option1 {
+    margin-left: 0px;
+  }
+  .mainFutur .options .option3 {
+    margin-left: 0px;
+  }
+  .mainFutur .container .vide {
+    width: 50vw;
+    right: 17vw;
+  }
+  .mainFutur .container .content {
+    left: 24vw;
+    right: 0;
+    width: 40vw;
+  }
+  .mainFutur .container .content .img_content {
+    width: 20vw;
+    height: 240px;
+    padding: 80px;
+  }
+}
+
+/*****************************décor de la page**********************/
+#bodyProfs {
+  position: relative;
+  z-index: -10;
+}
+
+.pageProfs {
+  position: relative;
+  z-index: -4;
+  overflow: hidden;
+}
+
+.pageProfs::before {
+  content: "";
+  position: absolute;
+  bottom: -9rem;
+  border-left: 10rem solid var(--gris);
+  border-right: 5rem solid var(--gris);
+  width: 15rem;
+  height: 100%;
+  transform: skewX(-45deg);
+  z-index: -1;
+}
+
+.pageProfs::after {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  bottom: -19rem;
+  border-left: 3rem solid var(--gris);
+  border-right: 8rem solid var(--gris);
+  width: 19rem;
+  height: 100%;
+  transform: skewX(-45deg);
+  z-index: -1;
+}
+
+/**********************Éléments de la page*******************/
+.conteneurCentre {
+  margin: auto 3rem;
+}
+
+.conteneurProfs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+/************carte des professeurs************/
+.carteProf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--gris);
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.5647058824);
+  width: 30vw;
+  height: 15rem;
+}
+
+.imageProf {
+  width: 25vw;
+  height: 10rem;
+}
+
+.imageProf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+/*******************************MÉDIA QUERRY**************************/
+/****************MÉDIA QUERRY TABLETTE*****************/
+@media screen and (min-width: 500px) {
+  .pageProfs::before {
+    top: 0;
+    right: -8rem;
+    border-left: 16rem solid var(--gris);
+    border-right: 8rem solid var(--gris);
+    width: 18rem;
+  }
+  .pageProfs::after {
+    top: 0;
+    right: -22rem;
+    border-left: 2rem solid var(--gris);
+    border-right: 12rem solid var(--gris);
+    width: 23rem;
+  }
+  .conteneurProfs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .carteProf {
+    width: 23vw;
+    height: 19rem;
+  }
+  .imageProf {
+    width: 18vw;
+    height: 14rem;
+  }
+}
+/****************MÉDIA QUERRY ordinateur*****************/
+@media screen and (min-width: 1100px) {
+  .pageProfs::before {
+    top: 0;
+    right: -8rem;
+    border-left: 17rem solid var(--gris);
+    width: 18rem;
+    transform: skewX(-55deg);
+  }
+  .pageProfs::after {
+    top: 0;
+    right: -27rem;
+    border-left: 4rem solid var(--gris);
+    border-right: 14rem solid var(--gris);
+    width: 25rem;
+    transform: skewX(-55deg);
+  }
+  .conteneurProfs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .carteProf {
+    width: 14rem;
+  }
+  .imageProf {
+    width: 12rem;
+  }
 }/*# sourceMappingURL=style.css.map */
