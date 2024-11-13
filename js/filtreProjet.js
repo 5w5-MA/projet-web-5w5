@@ -20,7 +20,7 @@ boutonMenu.addEventListener('click',()=>{
 lesBoutons.forEach(element => {
     element.addEventListener('click', () => {
      
-        if(element.innerHTML=='Rafraichir'){
+        if(element.innerHTML=='Tout'){
             boutonMenu.innerHTML= "-";
             enfants.forEach(enfant => {
                 enfant.style.display = 'flex';
@@ -39,4 +39,3 @@ lesBoutons.forEach(element => {
         }
     })
 });
-

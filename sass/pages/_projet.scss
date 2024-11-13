@@ -100,12 +100,7 @@ body{
                         align-items: center;
                         justify-content: center;
 
-                        .boutonMenuProjet{
-                            
-                            height: 30px;
-                            border-radius: 10px;
-                            border: 2px solid #d6a126;
-                        }
+
                     }
                     
                     .Partie2{    
@@ -115,6 +110,7 @@ body{
                         clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
                         background: #FCBE32;
                         transform: translateX(-3vw);
+                        
                         
                     }
                     
@@ -154,6 +150,12 @@ body{
                         .boutonFiltreProjet:hover{
                             cursor: pointer;
                         }
+
+                        .boutonMenuProjet{
+                            border: 1px solid #fff;
+                            padding: 0.3rem;
+                        }
+                        
 
                     }
 

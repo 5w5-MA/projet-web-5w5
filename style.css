@@ -618,12 +618,6 @@ body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 {
   align-items: center;
   justify-content: center;
 }
-body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie1 .boutonFiltreProjet {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid #d6a126;
-}
 body .MaxProjetMain .SectionProjet .Rangee1 .FiltreSectionProjet .Partie2 {
   --p: 80%; /* control the shape (can be percentage) */
   height: 50px;
@@ -665,6 +659,10 @@ body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .bouton
 }
 body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .boutonFiltreProjet:hover {
   cursor: pointer;
+}
+body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .boutonMenuProjet {
+  border: 1px solid #fff;
+  padding: 0.3rem;
 }
 body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie2 {
   --p: 80%; /* control the shape (can be percentage) */
