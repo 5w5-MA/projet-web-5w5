@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
 <main>
     <div class="txtMain">
         <h1>Tim Maisonneuve</h1>

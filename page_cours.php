@@ -6,6 +6,11 @@
 ?>
 
 <?php get_header(); ?>
+<div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
 <main class="pageCours">
     <section class="coursPrincipale">
         <h1>Liste de cours</h1>
