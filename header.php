@@ -13,6 +13,7 @@
     <header>
 
         <?php the_custom_logo(); ?>
+      
 
 
         <input type="checkbox" id="chkBurger" />
