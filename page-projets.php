@@ -81,12 +81,29 @@
                 <?
                 }
                 ?>
-                <div class="div1"></div>
-                <div class="div2"></div>
+                <div class="galerieProjets">
+                    <img src="" alt="deux mots">
+                </div>
+                <div class="galerieProjets">
+                    <img src="" alt="je teste les grandeur">
+                </div>
+                <div class="galerieProjets">
+                    <img src="" alt="images marchent pas">
+                </div>
+                <div class="galerieProjets">
+                    <img src="" alt="image">
+                </div>
+                <div class="galerieProjets">
+                    <img src="" alt="il est sensé y avoir une image">
+                </div>
+                <div class="galerieProjets">
+                    <img src="" alt="">
+                </div>
+                <!-- <div class="div2"></div>
                 <div class="div3"></div>
                 <div class="div4"></div>
                 <div class="div5"></div>
-                <div class="div6"></div>
+                <div class="div6"></div> -->
             </div>
         </section>
 </main>
