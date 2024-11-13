@@ -298,6 +298,7 @@ body {
     }
 
     .photo {
+      position: relative;
       display: flex;
       flex-flow: wrap;
       justify-content: space-around;
@@ -314,6 +315,7 @@ body {
     }
 
     .barreBasPage {
+      position: relative;
       display: flex;
       justify-content: space-between;
 

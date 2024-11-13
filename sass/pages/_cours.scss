@@ -3,6 +3,11 @@
     h1 {
       color: var(--blanc);
       padding-left: 2vw;
+      position: relative;
+    }
+
+    button {
+      position: relative;
     }
 
     .imgCours {
@@ -317,6 +322,10 @@
       width: 75px;
       height: 100px;
       background-color: var(--bleu);
+    }
+
+    div {
+      z-index: 1;
     }
 
     .cours1 {
