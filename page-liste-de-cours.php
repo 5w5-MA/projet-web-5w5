@@ -1,46 +1,52 @@
-<?php 
+<?php
+
 /**
  * Template Name: liste de cours
  */
 get_header(); ?>
-    <main class="pageCours">
-        <section class="coursPrincipale">
-            <h1><?php the_title(); ?></h1>
-            <div class="imgCours"></div>
-            <div class="txt"></div>
-        </section>
-        <section class="coursMenu">
-            <input type="checkbox" id="chkBtnSession1">
-            <input type="checkbox" id="chkBtnSession2">
-            <input type="checkbox" id="chkBtnSession3">
-            <input type="checkbox" id="chkBtnSession4">
-            <input type="checkbox" id="chkBtnSession5">
-            <input type="checkbox" id="chkBtnSession6">
-            <div class="displayFlexBtn1">
-                <div class="btnSession1Wrap">
-                    <label for="chkBtnSession1" class="btnSession1">Session1</label>
-                </div>
-                <div class="btnSession2Wrap">
-                    <label for="chkBtnSession2" class="btnSession2">Session2</label>
-                </div>
-                <div class="btnSession3Wrap">
-                    <label for="chkBtnSession3" class="btnSession3">Session3</label>
-                </div>
+<div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
+<main class="pageCours">
+    <section class="coursPrincipale">
+        <h1><?php the_title(); ?></h1>
+        <div class="imgCours"></div>
+        <div class="txt"></div>
+    </section>
+    <section class="coursMenu">
+        <input type="checkbox" id="chkBtnSession1">
+        <input type="checkbox" id="chkBtnSession2">
+        <input type="checkbox" id="chkBtnSession3">
+        <input type="checkbox" id="chkBtnSession4">
+        <input type="checkbox" id="chkBtnSession5">
+        <input type="checkbox" id="chkBtnSession6">
+        <div class="displayFlexBtn1">
+            <div class="btnSession1Wrap">
+                <label for="chkBtnSession1" class="btnSession1">Session1</label>
             </div>
-            <div class="displayFlexBtn2">
-                <div class="btnSession4Wrap">
-                    <label for="chkBtnSession4" class="btnSession4">Session4</label>
-                </div>
-                <div class="btnSession5Wrap">
-                    <label for="chkBtnSession5" class="btnSession5">Session5</label>
-                </div>
-                <div class="btnSession6Wrap">
-                    <label for="chkBtnSession6" class="btnSession6">Session6</label>
-                </div>
+            <div class="btnSession2Wrap">
+                <label for="chkBtnSession2" class="btnSession2">Session2</label>
             </div>
-        </section>
+            <div class="btnSession3Wrap">
+                <label for="chkBtnSession3" class="btnSession3">Session3</label>
+            </div>
+        </div>
+        <div class="displayFlexBtn2">
+            <div class="btnSession4Wrap">
+                <label for="chkBtnSession4" class="btnSession4">Session4</label>
+            </div>
+            <div class="btnSession5Wrap">
+                <label for="chkBtnSession5" class="btnSession5">Session5</label>
+            </div>
+            <div class="btnSession6Wrap">
+                <label for="chkBtnSession6" class="btnSession6">Session6</label>
+            </div>
+        </div>
+    </section>
 
-        <?php ; ?>
+
         
         <section class="listeCours">
             <div class="cours1">

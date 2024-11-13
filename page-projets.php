@@ -38,7 +38,8 @@
                     </div>
                 </div>
                 <div class="Partie2"></div>
-                <div class="Partie3"></div></div>
+                <div class="Partie3"></div>
+                </div>
 
                 <div class="TitreSectionProjet">
                     <div class="Partie1">
@@ -63,6 +64,9 @@
                     $postDesign = new WP_Query(array(
                         'category_name' => 'design',
                     ));
+                $postDesign = new WP_Query(array(
+                    'category_name' => 'design'
+                ));
 
                     while($postDesign ->have_posts()){
                         $postDesign ->the_post();
@@ -73,9 +77,9 @@
                         <?
                     }
 
-                    $postProgrammation = new WP_Query(array(
-                        'category_name' => 'programmation'
-                    ));
+                $postProgrammation = new WP_Query(array(
+                    'category_name' => 'programmation'
+                ));
 
                     while($postProgrammation ->have_posts()){
                         $postProgrammation ->the_post();
@@ -111,6 +115,21 @@
                     }
                 ?>   
 
+                while ($postDesign->have_posts()) {
+                    $postDesign->the_post();
+                ?>
+                    <div class="programmation">
+                        <?php the_title(); ?>
+                    </div>
+                <?
+                }
+                ?>
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+                <div class="div5"></div>
+                <div class="div6"></div>
             </div>
         </section>
     </main>

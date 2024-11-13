@@ -129,7 +129,7 @@ body main .description .div2 {
   height: fit-content;
   min-height: 150px;
   align-content: center;
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   padding-right: 100px;
   text-align: justify;
@@ -158,7 +158,7 @@ body main .diagramme .divPolygone .div2 {
   height: fit-content;
   min-height: 150px;
   align-content: center;
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   padding-right: 100px;
   text-align: justify;
@@ -238,7 +238,7 @@ body main .logiciels .div2 {
   height: fit-content;
   min-height: 150px;
   align-content: center;
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   padding-right: 100px;
   text-align: justify;
@@ -267,7 +267,7 @@ body main .logicielsVide .divPolygone .div2 {
   height: fit-content;
   min-height: 150px;
   align-content: center;
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   padding-right: 100px;
   text-align: justify;
@@ -1426,4 +1426,20 @@ footer p {
 .boutonCours:hover .btn6 {
   background-color: black;
   color: #fcbe32;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#bg canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
