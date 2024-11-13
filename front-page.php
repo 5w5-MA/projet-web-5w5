@@ -2,6 +2,7 @@
 get_header();
 ?>
 <!-- /////////////////Page D'ACCUEIL  ////////////////// -->
+
 <main>
     <div class="txtMain">
         <h1><?php echo get_bloginfo('name'); ?></h1>
