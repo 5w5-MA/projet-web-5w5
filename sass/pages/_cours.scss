@@ -34,6 +34,7 @@
     input {
       display: none;
     }
+
     .displayFlexBtn1 {
       display: flex;
       align-items: center;
@@ -298,8 +299,7 @@
     }
 
     .wrapActif {
-      filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.25))
-        drop-shadow(-5px -5px 3px rgba(255, 255, 255, 0.25));
+      filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.25)) drop-shadow(-5px -5px 3px rgba(255, 255, 255, 0.25));
     }
   }
 

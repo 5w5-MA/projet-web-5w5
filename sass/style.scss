@@ -13,16 +13,8 @@ Text Domain: theme tim
 
 
 
-@import "pages/acceuil";
 
-@import "pages/vieEtudiante";
-
-@import "pages/projet";
-
-@import "pages/cours";
-
-@import "body";
-
+//Importer les composants
 @import "composant/font";
 
 @import "composant/barreBasPage";
@@ -31,13 +23,9 @@ Text Domain: theme tim
 
 @import "composant/variable";
 
-//Importer les composants
 @import "composant/menu";
 
 @import "composant/footer";
-
-
-@import "composant/barreBasPage";
 
 @import "composant/formeTitreSections";
 
@@ -57,3 +45,7 @@ Text Domain: theme tim
 @import "pages/unCours";
 
 @import "pages/lesProfs";
+
+@import "pages/cours";
+
+@import "body";
