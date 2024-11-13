@@ -1,20 +1,35 @@
-let bouton = document.querySelector('.boutonFiltreProjet');
+let boutonMenu = document.querySelector('.boutonMenuProjet');
 let menuDeroulant = document.querySelector('.menuDeroulant');
-let lesBouton = document.querySelectorAll('.boutonFiltreProjet');
+let lesBoutons = document.querySelectorAll('.boutonFiltreProjet');
 let enfants = document.querySelectorAll('.Rangee2 div');
 
-let visible = false;
+let menuVisible = false;
 
-lesBouton.forEach(element => {
+boutonMenu.addEventListener('click',()=>{
+
+    if(menuVisible == false){
+        menuDeroulant.style.height = '150px';
+        menuVisible  = true;
+    }else{
+        menuDeroulant.style.height = '0px';
+        menuVisible = false;
+    }
+    
+})
+
+lesBoutons.forEach(element => {
     element.addEventListener('click', () => {
-        if(element.innerHTML != "programmation" && element.innerHTML != 'design'){
+     
+        if(element.innerHTML=='Rafraichir'){
+            boutonMenu.innerHTML= "-";
             enfants.forEach(enfant => {
                 enfant.style.display = 'flex';
             })  
         }
         else{
+            boutonMenu.innerHTML= element.innerHTML;
             enfants.forEach(enfant => {
-                if(enfant.className != element.innerHTML){
+                if(enfant.className != element.innerHTML.toLowerCase()){
                     enfant.style.display = 'none';
                 }
                 else{
@@ -25,13 +40,3 @@ lesBouton.forEach(element => {
     })
 });
 
-bouton.addEventListener('click',()=>{
-    if(!visible){
-        menuDeroulant.style.height = '150px';
-        visible  = true;
-    }else{
-        menuDeroulant.style.height = '0px';
-        visible = false;
-    }
-    
-})

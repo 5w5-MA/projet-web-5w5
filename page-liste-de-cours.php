@@ -40,7 +40,7 @@ get_header(); ?>
             </div>
         </section>
 
-
+        <?php ; ?>
         
         <section class="listeCours">
             <div class="cours1">
