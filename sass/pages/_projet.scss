@@ -57,7 +57,7 @@ body {
                         min-width: 10rem;
                         margin-right: 1rem;
                         clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
-                        background-color: #FCBE32;
+                        background-color: var(--orange);
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -82,15 +82,18 @@ body {
 
             .menuDeroulant {
                 transition: 1s;
-                width: 35.7%;
                 height: 0px;
+                padding: 0 5rem;
                 margin-left: auto;
                 background-color: #bfd3ef;
                 overflow-y: hidden;
+                text-align: left;
 
-                div {
-                    background-color: pink;
-                }
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 1rem;
             }
 
             /*******************GALERIE*****************/

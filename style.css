@@ -676,7 +676,7 @@ body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 {
   min-width: 10rem;
   margin-right: 1rem;
   clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
-  background-color: #FCBE32;
+  background-color: var(--orange);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -694,14 +694,17 @@ body .MaxProjetMain .SectionProjet .Rangee1 .TitreSectionProjet .Partie1 .bouton
 }
 body .MaxProjetMain .SectionProjet .menuDeroulant {
   transition: 1s;
-  width: 35.7%;
   height: 0px;
+  padding: 0 5rem;
   margin-left: auto;
   background-color: #bfd3ef;
   overflow-y: hidden;
-}
-body .MaxProjetMain .SectionProjet .menuDeroulant div {
-  background-color: pink;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
 }
 body .MaxProjetMain .SectionProjet .Rangee2 {
   max-width: 80vw;
