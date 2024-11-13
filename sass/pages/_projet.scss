@@ -1,14 +1,9 @@
 body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
 
     /* ************************* Version Mobile ******************************* */
-
     .MaxProjetMain {
 
         /* ******************** Section Arcade *********************** */
-
         .SectionArcade {
             height: 100vh;
             display: flex;
@@ -50,50 +45,9 @@ body {
                 align-items: center;
                 justify-content: space-between;
 
-                .FiltreSectionProjet {
-                    width: 40vw;
 
 
-                    .Partie1 {
-                        --p: 15%;
-                        /* control the shape (can be percentage) */
-                        height: 50px;
-                        width: 75%;
-                        clip-path: polygon(0 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                        background-color: #FCBE32;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        .boutonFiltreProjet {
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 10px;
-                            border: 2px solid #d6a126;
-                        }
-                    }
-
-                    .Partie2 {
-                        --p: 80%;
-                        /* control the shape (can be percentage) */
-                        height: 50px;
-                        width: 15%;
-                        clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                        background: #FCBE32;
-                        transform: translateX(-3vw);
-
-                    }
-
-                    .Partie3 {
-                        --p: 80%;
-                        /* control the shape (can be percentage) */
-                        height: 50px;
-                        width: 15%;
-                        clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                        background: #FCBE32;
-                        transform: translateX(-5vw);
-                    }
-                }
+                /**************************FILTRE*************************/
 
                 .TitreSectionProjet {
                     width: 50vw;
@@ -126,143 +80,31 @@ body {
 
                     }
 
-
-                    .Partie2 {
-                        --p: 80%;
-                        /* control the shape (can be percentage) */
-                        height: 50px;
-                        width: 15%;
-                        clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                        background: #FCBE32;
-                        transform: translateX(3vw);
-
-                    }
-
-                    .Partie3 {
-                        --p: 80%;
-                        /* control the shape (can be percentage) */
-                        height: 50px;
-                        width: 15%;
-                        clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                        background: #FCBE32;
-                        transform: translateX(6vw);
-                    }
-                }
-            }
-
-            .menuDeroulant {
-                transition: 1s;
-                width: 35.7%;
-                height: 0px;
-                margin-left: auto;
-                background-color: #bfd3ef;
-                overflow-y: hidden;
-
-                div {
-                    background-color: pink;
-                }
-            }
-
-            /* ***************** Liste de Projet ***************** */
-            .Rangee2 {
-                //Répartition des cases en version Mobile
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(6, 1fr);
-                grid-column-gap: 20px;
-                grid-row-gap: 20px;
-                padding: 2.5vw;
-
-                .div1 {
-                    grid-area: 1 / 1 / 3 / 3;
-                    background-color: white
                 }
 
-                .div2 {
-                    grid-area: 1 / 3 / 3 / 5;
-                    background-color: white
-                }
+                .menuDeroulant {
+                    transition: 1s;
+                    width: 35.7%;
+                    height: 0px;
+                    margin-left: auto;
+                    background-color: #bfd3ef;
+                    overflow-y: hidden;
 
-                .div3 {
-                    grid-area: 3 / 1 / 5 / 5;
-                    background-color: white
-                }
-
-                .div4 {
-                    grid-area: 5 / 1 / 7 / 3;
-                    background-color: white
-                }
-
-                .div5 {
-                    grid-area: 5 / 3 / 7 / 5;
-                    background-color: white
-                }
-            }
-
-        }
-
-    }
-
-    /* ************************* Version Tablette ******************************* */
-    @media screen and (min-width: 430px) {
-        .MaxProjetHeader {
-            height: 75px;
-        }
-
-        .MaxProjetFooter {
-            height: 195px;
-        }
-
-        .MaxProjetMain {
-            /* ***************** Section Projet ************************** */
-
-            .SectionProjet {
-
-                /* *************** Titre section ******************** */
-                .Rangee1 {
-
-                    .FiltreSectionProjet {
-                        width: 35vw;
-
-                        .Partie1 {
-                            justify-content: flex-start;
-
-                            h2 {
-                                margin-left: 2.5vw;
-                            }
-                        }
-
-                        .Partie2 {
-                            --p: 75%;
-                            /* control the shape (can be percentage) */
-                            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                            transform: translateX(-2.5vw);
-                        }
-
-                        .Partie3 {
-                            --p: 75%;
-                            /* control the shape (can be percentage) */
-                            clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-                            transform: translateX(-5vw);
-                        }
-                    }
-
-                    .TitreSectionProjet {
-                        width: 50vw;
-
-                        .Partie2 {
-                            transform: translateX(4vw);
-                        }
-
-                        .Partie3 {
-                            transform: translateX(8vw);
-                        }
+                    div {
+                        background-color: pink;
                     }
                 }
 
+                /* ***************** Liste de Projet ***************** */
                 .Rangee2 {
+                    //Répartition des cases en version Mobile
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;
+                    padding: 2.5vw;
 
-                    //Répartition des cases en version Tablette
                     .div1 {
                         grid-area: 1 / 1 / 3 / 3;
                         background-color: white
@@ -274,21 +116,16 @@ body {
                     }
 
                     .div3 {
-                        grid-area: 3 / 1 / 5 / 3;
+                        grid-area: 3 / 1 / 5 / 5;
                         background-color: white
                     }
 
                     .div4 {
-                        grid-area: 3 / 3 / 5 / 5;
-                        background-color: white
-                    }
-
-                    .div5 {
                         grid-area: 5 / 1 / 7 / 3;
                         background-color: white
                     }
 
-                    .div6 {
+                    .div5 {
                         grid-area: 5 / 3 / 7 / 5;
                         background-color: white
                     }
@@ -298,69 +135,109 @@ body {
 
         }
 
+        /* ************************* Version Tablette ******************************* */
+        @media screen and (min-width: 430px) {
 
-    }
+            .MaxProjetMain {
+                /* ***************** Section Projet ************************** */
 
-    /* ************************* Version Desktop ******************************* */
-    @media screen and (min-width: 1024px) {
-        .MaxProjetHeader {
-            height: 125px;
-        }
-
-        .MaxProjetFooter {
-            height: 450px;
-        }
-
-        .MaxProjetMain {
+                .SectionProjet {
 
 
-            /* ***************** Section Projet ************************** */
 
-            .SectionProjet {
-                .Rangee2 {
-                    display: grid;
-                    grid-template-columns: repeat(8, 1fr);
-                    grid-template-rows: repeat(6, 1fr);
-                    grid-column-gap: 20px;
-                    grid-row-gap: 20px;
+                    .Rangee2 {
 
-                    .div1 {
-                        grid-area: 1 / 1 / 5 / 3;
-                        background-color: white;
+                        //Répartition des cases en version Tablette
+                        .div1 {
+                            grid-area: 1 / 1 / 3 / 3;
+                            background-color: white
+                        }
+
+                        .div2 {
+                            grid-area: 1 / 3 / 3 / 5;
+                            background-color: white
+                        }
+
+                        .div3 {
+                            grid-area: 3 / 1 / 5 / 3;
+                            background-color: white
+                        }
+
+                        .div4 {
+                            grid-area: 3 / 3 / 5 / 5;
+                            background-color: white
+                        }
+
+                        .div5 {
+                            grid-area: 5 / 1 / 7 / 3;
+                            background-color: white
+                        }
+
+                        .div6 {
+                            grid-area: 5 / 3 / 7 / 5;
+                            background-color: white
+                        }
                     }
 
-                    .div2 {
-                        grid-area: 1 / 3 / 5 / 5;
-                        background-color: white;
-                    }
-
-                    .div3 {
-                        grid-area: 5 / 1 / 7 / 5;
-                        background-color: white;
-                    }
-
-                    .div4 {
-                        grid-area: 1 / 5 / 3 / 9;
-                        background-color: white;
-                    }
-
-                    .div5 {
-                        grid-area: 3 / 5 / 7 / 7;
-                        background-color: white;
-                    }
-
-                    .div6 {
-                        grid-area: 3 / 7 / 7 / 9;
-                        background-color: white;
-                    }
                 }
 
             }
 
+
+        }
+
+        /* ************************* Version Desktop ******************************* */
+        @media screen and (min-width: 1024px) {
+
+            .MaxProjetMain {
+
+                /* ***************** Section Projet ************************** */
+
+                .SectionProjet {
+                    .Rangee2 {
+                        display: grid;
+                        grid-template-columns: repeat(8, 1fr);
+                        grid-template-rows: repeat(6, 1fr);
+                        grid-column-gap: 20px;
+                        grid-row-gap: 20px;
+
+                        .div1 {
+                            grid-area: 1 / 1 / 5 / 3;
+                            background-color: white;
+                        }
+
+                        .div2 {
+                            grid-area: 1 / 3 / 5 / 5;
+                            background-color: white;
+                        }
+
+                        .div3 {
+                            grid-area: 5 / 1 / 7 / 5;
+                            background-color: white;
+                        }
+
+                        .div4 {
+                            grid-area: 1 / 5 / 3 / 9;
+                            background-color: white;
+                        }
+
+                        .div5 {
+                            grid-area: 3 / 5 / 7 / 7;
+                            background-color: white;
+                        }
+
+                        .div6 {
+                            grid-area: 3 / 7 / 7 / 9;
+                            background-color: white;
+                        }
+                    }
+
+                }
+
+            }
+
+
         }
 
 
     }
-
-
-}
