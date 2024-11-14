@@ -5,7 +5,7 @@ function files()
 {
     wp_enqueue_script('scriptFutur', get_theme_file_uri('/js/futur.js'), array(), NULl, true);
     wp_enqueue_script('burgerScript', get_theme_file_uri('/js/burger.js'), array(), NULL, true);
-    wp_enqueue_script('coursScript', get_theme_file_uri('/js/cours.js'), array(), NULL, true);
+    //wp_enqueue_script('coursScript', get_theme_file_uri('/js/cours.js'), array(), NULL, true);
     wp_enqueue_script('buttonCoursScript', get_theme_file_uri('/js/buttonCours.js'), array(), NULL, true);
     wp_enqueue_script('animationScrollVieEtudiante', get_theme_file_uri('js/animationScrollVieEtudiante.js'), array(), NULL, true);
     wp_enqueue_script('filtreProjet', get_theme_file_uri('/js/filtreProjet.js'), array(), NULL, true);
@@ -39,3 +39,14 @@ function features()
     add_image_size('imagesVieEtude', 1000, 800, true);
 }
 add_action('after_setup_theme',  'features');
+
+function do_shortcode_in_menu($items, $args)
+{
+    foreach ($items as $item) {
+        // Applique le shortcode à chaque élément de menu
+        $item->title = do_shortcode($item->title);
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'do_shortcode_in_menu', 10, 2);

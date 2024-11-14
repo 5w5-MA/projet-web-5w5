@@ -4,7 +4,7 @@ get_header();
 <!-- /////////////////Page D'ACCUEIL  ////////////////// -->
 
 <div id="bg">
-    <canvas></canvas>
+    <canvas id="canvas1"></canvas>
     <canvas></canvas>
     <canvas></canvas>
 </div>
