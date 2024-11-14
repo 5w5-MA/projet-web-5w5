@@ -21,14 +21,17 @@
   }
 
   .btn2 {
-    width: 150px;
-    height: 50px;
+    width: 18rem;
+    height: 2.5rem;
     background-color: var(--jaune);
     text-align: center;
     align-content: center;
     font-size: x-large;
     color: #14243c;
     transition: color 0.5s, background-color 0.1s;
+    font-family: "lato";
+    font-weight: 500;
+    letter-spacing: 0.2rem;
   }
 
   .btn3 {
@@ -70,33 +73,38 @@
 
   &:hover {
     .btn1 {
-      background-color: var(--bleu);
-      color: var(--jaune);
+      background-color: var(--jaune);
+      box-shadow: 0px 0px 10px 2px var(--jaune);
     }
 
     .btn2 {
-      background-color: var(--bleu);
+      background-color: rgba(0, 0, 0, 0.634);
+      backdrop-filter: blur(3px);
       color: var(--jaune);
+      text-shadow: var(--jaune) 1px 0 10px;
+      box-shadow: 0px 0px 10px 2px var(--jaune);
+      transition: 0.3s linear;
+      letter-spacing: 0.4rem;
     }
 
     .btn3 {
-      background-color: var(--bleu);
-      color: var(--jaune);
+      background-color: var(--jaune);
+      box-shadow: 0px 0px 10px 2px var(--jaune);
     }
 
     .btn4 {
-      background-color: var(--bleu);
-      color: var(--jaune);
+      background-color: var(--jaune);
+      box-shadow: 0px 0px 10px 2px var(--jaune);
     }
 
     .btn5 {
-      background-color: var(--bleu);
-      color: var(--jaune);
+      background-color: var(--jaune);
+      box-shadow: 0px 0px 10px 2px var(--jaune);
     }
 
     .btn6 {
-      background-color: var(--bleu);
-      color: var(--jaune);
+      background-color: var(--jaune);
+      box-shadow: 0px 0px 10px 2px var(--jaune);
     }
   }
 }

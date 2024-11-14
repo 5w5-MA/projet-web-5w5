@@ -9,11 +9,11 @@ while (have_posts()) {
 
 
     <body>
-        <div id="bg">
-            <canvas></canvas>
-            <canvas></canvas>
-            <canvas></canvas>
-        </div>
+    <div id="bg">
+    <canvas id="canvas1"></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
         <main class="vieEtudiante">
             <!-- section de titre -->
             <div class="titrePage">
