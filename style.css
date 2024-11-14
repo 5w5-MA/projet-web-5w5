@@ -865,6 +865,10 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
 .pageCours .coursPrincipale h1 {
   color: var(--blanc);
   padding-left: 2vw;
+  position: relative;
+}
+.pageCours .coursPrincipale button {
+  position: relative;
 }
 .pageCours .coursPrincipale .imgCours {
   height: 200px;
@@ -911,7 +915,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--jaune);
-  clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap .actif {
   background-color: var(--bleu);
@@ -928,7 +932,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: var(--blanc);
+  background-color: var(--jaune);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -979,7 +983,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: var(--blanc);
+  background-color: var(--jaune);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -1023,8 +1027,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: var(--blanc);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  background-color: var(--jaune);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .btnSession6:hover {
@@ -1035,7 +1039,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   color: var(--blanc);
 }
 .pageCours .coursMenu .wrapActif {
-  filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.25)) drop-shadow(-5px -5px 3px rgba(255, 255, 255, 0.25));
+  filter: drop-shadow(5px 5px 3px var(--drop-shadow)) drop-shadow(-5px -5px 3px var(--drop-shadow));
 }
 .pageCours .listeCours {
   min-height: 450px;
@@ -1051,6 +1055,9 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   width: 75px;
   height: 100px;
   background-color: var(--bleu);
+}
+.pageCours .listeCours div {
+  z-index: 1;
 }
 .pageCours .listeCours .cours1 {
   width: 300px;
