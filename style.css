@@ -16,6 +16,7 @@ Text Domain: theme tim
   --jaune: #fcbe32;
   --blanc: #e8e8e8;
   --texte: black;
+  --gris: grey;
   --drop-shadow: rgba(255, 255, 255, 0.25);
 }
 
@@ -1001,6 +1002,8 @@ header {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+  z-index: 11;
 }
 header .custom-logo {
   width: 80px;
@@ -1174,15 +1177,9 @@ footer .footerDroite .reseaux .inconsReseaux {
   text-decoration: none;
 }
 .boutonCours .btn2 {
-<<<<<<< HEAD
-  width: 150px;
-  height: 50px;
-  background-color: var(--jaune);
-=======
   width: 18rem;
   height: 2.5rem;
-  background-color: #fcbe32;
->>>>>>> 5fc2a35cab178595ebe4197a45c494dc2d2a579d
+  background-color: var(--jaune);
   text-align: center;
   align-content: center;
   font-size: x-large;
@@ -1226,58 +1223,33 @@ footer .footerDroite .reseaux .inconsReseaux {
   transition: color 0.5s, background-color 0.1s;
 }
 .boutonCours:hover .btn1 {
-<<<<<<< HEAD
-  background-color: var(--bleu);
-  color: var(--jaune);
-}
-.boutonCours:hover .btn2 {
-  background-color: var(--bleu);
-  color: var(--jaune);
-}
-.boutonCours:hover .btn3 {
-  background-color: var(--bleu);
-  color: var(--jaune);
-}
-.boutonCours:hover .btn4 {
-  background-color: var(--bleu);
-  color: var(--jaune);
-}
-.boutonCours:hover .btn5 {
-  background-color: var(--bleu);
-  color: var(--jaune);
-}
-.boutonCours:hover .btn6 {
-  background-color: var(--bleu);
-  color: var(--jaune);
-=======
-  background-color: #fcbe32;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
+  background-color: var(--jaune);
+  box-shadow: 0px 0px 10px 2px var(--jaune);
 }
 .boutonCours:hover .btn2 {
   background-color: rgba(0, 0, 0, 0.634);
   backdrop-filter: blur(3px);
-  color: #fcbe32;
-  text-shadow: #fcbe32 1px 0 10px;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
+  color: var(--jaune);
+  text-shadow: var(--jaune) 1px 0 10px;
+  box-shadow: 0px 0px 10px 2px var(--jaune);
   transition: 0.3s linear;
   letter-spacing: 0.4rem;
 }
 .boutonCours:hover .btn3 {
-  background-color: #fcbe32;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
+  background-color: var(--jaune);
+  box-shadow: 0px 0px 10px 2px var(--jaune);
 }
 .boutonCours:hover .btn4 {
-  background-color: #fcbe32;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
+  background-color: var(--jaune);
+  box-shadow: 0px 0px 10px 2px var(--jaune);
 }
 .boutonCours:hover .btn5 {
-  background-color: #fcbe32;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
+  background-color: var(--jaune);
+  box-shadow: 0px 0px 10px 2px var(--jaune);
 }
 .boutonCours:hover .btn6 {
-  background-color: #fcbe32;
-  box-shadow: 0px 0px 10px 2px #fcbe32;
->>>>>>> 5fc2a35cab178595ebe4197a45c494dc2d2a579d
+  background-color: var(--jaune);
+  box-shadow: 0px 0px 10px 2px var(--jaune);
 }
 
 #bg {
@@ -1533,42 +1505,42 @@ footer .footerDroite .reseaux .inconsReseaux {
 #bodyProfs {
   position: relative;
 }
-#bodyProfs #bg {
-  z-index: 0;
-}
 
 .pageProfs {
   position: relative;
   overflow: hidden;
+  z-index: 10;
 }
 
 .pageProfs::before {
   content: "";
   position: absolute;
   bottom: -9rem;
-  border-left: 10rem solid var(--blanc);
-  border-right: 5rem solid var(--blanc);
+  border-left: 10rem solid var(--gris);
+  border-right: 5rem solid var(--gris);
   width: 15rem;
   height: 100%;
   transform: skewX(-45deg);
+  z-index: 5;
 }
 
 .pageProfs::after {
   content: "";
   position: absolute;
-  opacity: 0.5;
   bottom: -19rem;
-  border-left: 3rem solid var(--blanc);
-  border-right: 8rem solid var(--blanc);
+  border-left: 3rem solid var(--jaune);
+  border-right: 8rem solid var(--jaune);
   width: 19rem;
   height: 100%;
   transform: skewX(-45deg);
+  z-index: 5;
 }
 
 /**********************Éléments de la page*******************/
 .conteneurCentre {
   margin: auto 3rem;
   position: relative;
+  z-index: 10;
 }
 
 .conteneurProfs {
@@ -1578,6 +1550,7 @@ footer .footerDroite .reseaux .inconsReseaux {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   position: relative;
+  z-index: 10;
 }
 
 /************carte des professeurs************/
@@ -1587,16 +1560,12 @@ footer .footerDroite .reseaux .inconsReseaux {
   align-items: center;
   justify-content: center;
   text-align: center;
-<<<<<<< HEAD
   background-color: var(--blanc);
-=======
-  position: relative;
-  background-color: var(--gris);
->>>>>>> 5fc2a35cab178595ebe4197a45c494dc2d2a579d
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.5647058824);
   width: 30vw;
   height: 15rem;
-  z-index: 1;
+  position: relative;
+  z-index: 10;
 }
 
 .imageProf {
@@ -1617,15 +1586,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 16rem solid var(--blanc);
-    border-right: 8rem solid var(--blanc);
+    border-left: 16rem solid var(--gris);
+    border-right: 8rem solid var(--gris);
     width: 18rem;
   }
   .pageProfs::after {
     top: 0;
     right: -22rem;
-    border-left: 2rem solid var(--blanc);
-    border-right: 12rem solid var(--blanc);
+    border-left: 2rem solid var(--jaune);
+    border-right: 12rem solid var(--jaune);
     width: 23rem;
   }
   .conteneurProfs {
@@ -1645,15 +1614,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 17rem solid var(--blanc);
+    border-left: 17rem solid var(--gris);
     width: 18rem;
     transform: skewX(-55deg);
   }
   .pageProfs::after {
     top: 0;
     right: -27rem;
-    border-left: 4rem solid var(--blanc);
-    border-right: 14rem solid var(--blanc);
+    border-left: 4rem solid var(--jaune);
+    border-right: 14rem solid var(--jaune);
     width: 25rem;
     transform: skewX(-55deg);
   }

@@ -3,14 +3,12 @@
 #bodyProfs {
   //mettre le bodu derrière le main
   position: relative;
-  z-index: -10;
 }
 
 .pageProfs {
   position: relative;
-
-  z-index: -4;
   overflow: hidden;
+  z-index: 10;
 }
 
 .pageProfs::before {
@@ -19,34 +17,36 @@
   position: absolute;
   bottom: -9rem;
 
-  border-left: 10rem solid var(--blanc);
-  border-right: 5rem solid var(--blanc);
+  border-left: 10rem solid var(--gris);
+  border-right: 5rem solid var(--gris);
   width: 15rem;
   height: 100%;
 
   transform: skewX(-45deg);
-  z-index: -1;
+  z-index: 5;
 }
 
 .pageProfs::after {
   content: "";
 
   position: absolute;
-  opacity: 0.5;
+  // opacity: 0.5;
   bottom: -19rem;
 
-  border-left: 3rem solid var(--blanc);
-  border-right: 8rem solid var(--blanc);
+  border-left: 3rem solid var(--jaune);
+  border-right: 8rem solid var(--jaune);
   width: 19rem;
   height: 100%;
 
   transform: skewX(-45deg);
-  z-index: -1;
+  z-index: 5;
 }
 
 /**********************Éléments de la page*******************/
 .conteneurCentre {
   margin: auto 3rem;
+  position: relative;
+  z-index: 10;
 }
 
 .conteneurProfs {
@@ -55,6 +55,8 @@
   justify-items: center;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 /************carte des professeurs************/
@@ -64,11 +66,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
   background-color: var(--blanc);
   box-shadow: 1px 1px 15px 1px #00000090;
   width: 30vw;
   height: 15rem;
+  position: relative;
+  z-index: 10;
 }
 
 .imageProf {
@@ -92,16 +95,16 @@
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 16rem solid var(--blanc);
-    border-right: 8rem solid var(--blanc);
+    border-left: 16rem solid var(--gris);
+    border-right: 8rem solid var(--gris);
     width: 18rem;
   }
 
   .pageProfs::after {
     top: 0;
     right: -22rem;
-    border-left: 2rem solid var(--blanc);
-    border-right: 12rem solid var(--blanc);
+    border-left: 2rem solid var(--jaune);
+    border-right: 12rem solid var(--jaune);
     width: 23rem;
   }
 
@@ -126,7 +129,7 @@
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 17rem solid var(--blanc);
+    border-left: 17rem solid var(--gris);
 
     width: 18rem;
 
@@ -137,8 +140,8 @@
     top: 0;
     right: -27rem;
 
-    border-left: 4rem solid var(--blanc);
-    border-right: 14rem solid var(--blanc);
+    border-left: 4rem solid var(--jaune);
+    border-right: 14rem solid var(--jaune);
     width: 25rem;
     transform: skewX(-55deg);
   }

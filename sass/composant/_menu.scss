@@ -6,8 +6,10 @@ header {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+  z-index: 11;
 
-  .custom-logo{
+  .custom-logo {
     width: 80px;
     height: 80px;
   }
@@ -53,11 +55,11 @@ header {
       flex-direction: column;
       height: 600px;
 
-      .menu-menuprincipal-container{
+      .menu-menuprincipal-container {
         text-align: center;
-        ul{
+        ul {
           list-style: none;
-          a{
+          a {
             text-decoration: none;
             color: white;
             font-size: larger;
@@ -85,7 +87,7 @@ header {
         padding-right: 2vw;
         right: 10vw;
       }
-      .menu{
+      .menu {
         display: flex;
         width: clamp(700px, 60vw, 800px);
         font-size: clamp(16px, 1.06vw, 21px);
@@ -169,4 +171,3 @@ header {
 .pasDeScroll {
   overflow-y: hidden;
 }
-
