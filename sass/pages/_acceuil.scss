@@ -2,6 +2,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Lato";
+  color: var(--texte);
 
   main {
     min-height: 100vh;
@@ -10,7 +11,7 @@ body {
 
     .txtMain {
       text-align: center;
-      color: white;
+      color: var(--blanc);
       position: relative;
       top: 5vh;
       left: -27vw;
@@ -24,11 +25,11 @@ body {
     .img {
       width: 70vw;
       height: 300px;
-      background-color: #fcbe32;
+      background-color: var(--jaune);
       position: relative;
       left: 30vw;
       clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
-      color: #14243c;
+      color: var(--bleu);
       text-align: center;
       align-content: center;
 
@@ -55,13 +56,13 @@ body {
         margin-bottom: 50px;
 
         .div1 {
-          background-color: white;
+          background-color: var(--blanc);
           height: 100px;
           margin-bottom: 10px;
         }
 
         .div2 {
-          background-color: white;
+          background-color: var(--blanc);
           height: 40px;
         }
       }
@@ -84,14 +85,14 @@ body {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 
         .div1 {
-          background-color: #fcbe32;
+          background-color: var(--jaune);
           height: 100px;
           margin-bottom: 10px;
           text-align: center;
         }
 
         .div2 {
-          background-color: #fcbe32;
+          background-color: var(--jaune);
           height: 40px;
         }
       }
@@ -113,7 +114,7 @@ body {
       width: fit-content;
 
       .div1 {
-        background-color: white;
+        background-color: var(--blanc);
         font-size: xx-large;
         height: fit-content;
         margin-bottom: 20px;
@@ -122,7 +123,7 @@ body {
       }
 
       .div2 {
-        background-color: white;
+        background-color: var(--blanc);
         font-size: small;
         height: fit-content;
         min-height: 150px;
@@ -143,8 +144,8 @@ body {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 
         .div1 {
-          background-color: #fcbe32;
-          color: #fcbe32;
+          background-color: var(--jaune);
+          color: var(--jaune);
           font-size: xx-large;
           height: fit-content;
           margin-bottom: 20px;
@@ -153,8 +154,8 @@ body {
         }
 
         .div2 {
-          background-color: #fcbe32;
-          color: #fcbe32;
+          background-color: var(--jaune);
+          color: var(--jaune);
           font-size: small;
           height: fit-content;
           min-height: 150px;
@@ -183,7 +184,7 @@ body {
         margin-bottom: 50px;
 
         .div1 {
-          background-color: #fcbe32;
+          background-color: var(--jaune);
           height: fit-content;
           padding: 10px;
           padding-left: 20px;
@@ -209,8 +210,8 @@ body {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 
         .div1 {
-          background-color: white;
-          color: white;
+          background-color: var(--blanc);
+          color: var(--blanc);
           height: fit-content;
           margin-bottom: 10px;
           padding: 10px;
@@ -235,7 +236,7 @@ body {
       width: fit-content;
 
       .div1 {
-        background-color: white;
+        background-color: var(--blanc);
         font-size: xx-large;
         height: fit-content;
         margin-bottom: 20px;
@@ -244,7 +245,7 @@ body {
       }
 
       .div2 {
-        background-color: white;
+        background-color: var(--blanc);
         font-size: small;
         height: fit-content;
         min-height: 150px;
@@ -265,8 +266,8 @@ body {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 
         .div1 {
-          background-color: #fcbe32;
-          color: #fcbe32;
+          background-color: var(--jaune);
+          color: var(--jaune);
           font-size: xx-large;
           height: fit-content;
           margin-bottom: 20px;
@@ -275,8 +276,8 @@ body {
         }
 
         .div2 {
-          background-color: #fcbe32;
-          color: #fcbe32;
+          background-color: var(--jaune);
+          color: var(--jaune);
           font-size: small;
           height: fit-content;
           min-height: 150px;
@@ -305,7 +306,7 @@ body {
       div {
         height: 300px;
         width: 200px;
-        background-color: #fcbe32;
+        background-color: var(--jaune);
         text-align: center;
         align-content: center;
       }
@@ -318,13 +319,13 @@ body {
       .div1 {
         height: 20px;
         width: 20vw;
-        background-color: #fcbe32;
+        background-color: var(--jaune);
       }
 
       .div2 {
         height: 20px;
         width: 70vw;
-        background-color: #fcbe32;
+        background-color: var(--jaune);
       }
     }
   }

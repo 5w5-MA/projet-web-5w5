@@ -4,7 +4,7 @@ get_header();
 <!-- /////////////////Page D'ACCUEIL  ////////////////// -->
 
 <div id="bg">
-    <canvas></canvas>
+    <canvas id="canvas1"></canvas>
     <canvas></canvas>
     <canvas></canvas>
 </div>
@@ -111,12 +111,22 @@ get_header();
         </div>
     </div>
 
-    <div class="photo">
-        <div> image</div>
-        <div>image</div>
-        <div>image</div>
-        <div>image</div>
-    </div>
+    <?php
+        $carrousel = new WP_Query(array( 
+            'category_name' => 'carrousel'
+        )); ?>
+        
+            <?php
+            while($carrousel ->have_posts()){
+                $carrousel ->the_post();
+            ?>
+                <section class="carrousel">
+                    <div>
+                        <?php the_title(); ?>
+                        <?php the_content(); ?>
+                    </div>    
+                </section>
+            <?php }; ?>
 
     <?php get_template_part("componants-php/barreBasPage"); ?>
 

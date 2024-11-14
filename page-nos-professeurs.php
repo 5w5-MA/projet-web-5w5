@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+
+
+
 <main class="pageProfs">
 
 <div class="titreSection">
@@ -44,5 +47,10 @@
 </div>
 
 </main>
+<div id="bg">
+    <canvas id="canvas1"></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
 
 <?php get_footer(); ?>

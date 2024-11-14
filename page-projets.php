@@ -1,14 +1,18 @@
 <?php get_header(); ?>
 
+<div id="bg">
+    <canvas id="canvas1"></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
+
     <main class="MaxProjetMain">
 
     <section class="SectionArcade">
             <div class="TitreSectionArcade">
-                <div class="Partie1">
+                <div class="titreSection">
                     <h2>Arcade</h2>
                 </div>
-                <div class="Partie2"></div>
-                <div class="Partie3"></div>
             </div>
         
         <?php
@@ -33,20 +37,17 @@
         <section class="SectionProjet">
             <section class="Rangee1">
                 <div class="FiltreSectionProjet">
-                    <div class="Partie1">
+                    <div class="titreSection">
                         <h2>Projet</h2>
                     </div>
                 </div>
-                <div class="Partie2"></div>
-                <div class="Partie3"></div></div>
+
 
                 <div class="TitreSectionProjet">
                     <div class="Partie1">
                         <h2>Filtre</h2>
                         <div class="boutonMenuProjet"> - </div>
                     </div>
-                    <div class="Partie2"></div>
-                    <div class="Partie3"></div>
                 </div>
             </section>
 
@@ -67,7 +68,7 @@
                     while($postDesign ->have_posts()){
                         $postDesign ->the_post();
                         ?>
-                        <div class="design">
+                        <div class="design" id="galerieProjets">
                             <?php the_title();?>
                         </div>
                         <?
@@ -80,7 +81,7 @@
                     while($postProgrammation ->have_posts()){
                         $postProgrammation ->the_post();
                         ?>
-                        <div class="programmation">
+                        <div class="programmation" id="galerieProjets">
                             <?php the_title();?>
                         </div>
                         <?
@@ -92,7 +93,7 @@
                     while($postJeu ->have_posts()){
                         $postJeu ->the_post();
                         ?>
-                        <div class="jeu">
+                        <div class="jeu" id="galerieProjets">
                             <?php the_title();?>
                         </div>
                         <?
@@ -104,7 +105,7 @@
                     while($postModelisation ->have_posts()){
                         $postModelisation ->the_post();
                         ?>
-                        <div class="modélisation">
+                        <div class="modélisation" id="galerieProjets">
                             <?php the_title();?>
                         </div>
                         <?

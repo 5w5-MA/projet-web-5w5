@@ -8,7 +8,7 @@ let menuVisible = false;
 boutonMenu.addEventListener('click',()=>{
 
     if(menuVisible == false){
-        menuDeroulant.style.height = '150px';
+        menuDeroulant.style.height = 'auto';
         menuVisible  = true;
     }else{
         menuDeroulant.style.height = '0px';

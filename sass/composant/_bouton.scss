@@ -21,14 +21,17 @@
   }
 
   .btn2 {
-    width: 150px;
-    height: 50px;
+    width: 18rem;
+    height: 2.5rem;
     background-color: #fcbe32;
     text-align: center;
     align-content: center;
     font-size: x-large;
     color: #14243c;
     transition: color 0.5s, background-color 0.1s;
+    font-family: 'lato';
+    font-weight: 500;
+    letter-spacing: 0.2rem;
    
   }
 
@@ -71,33 +74,38 @@
 
   &:hover {
     .btn1 {
-      background-color: black;
-      color: #fcbe32;
+      background-color: #fcbe32;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
     }
 
     .btn2 {
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.634);
+      backdrop-filter: blur(3px);
       color: #fcbe32;
+      text-shadow: #fcbe32 1px 0 10px;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
+      transition: 0.3s linear;
+      letter-spacing: 0.4rem;
     }
 
     .btn3 {
-      background-color: black;
-      color: #fcbe32;
+      background-color: #fcbe32;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
     }
 
     .btn4 {
-      background-color: black;
-      color: #fcbe32;
+      background-color: #fcbe32;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
     }
 
     .btn5 {
-      background-color: black;
-      color: #fcbe32;
+      background-color: #fcbe32;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
     }
 
     .btn6 {
-      background-color: black;
-      color: #fcbe32;
+      background-color: #fcbe32;
+      box-shadow: 0px 0px 10px 2px #fcbe32;
     }
   }
 }

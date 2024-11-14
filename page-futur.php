@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<div id="bg">
+    <canvas id="canvas1"></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
     <main class="mainFutur">
 
         <section class="intro_dessus">

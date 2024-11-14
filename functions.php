@@ -39,3 +39,14 @@ function features()
     add_image_size('imagesVieEtude', 1000, 800, true);
 }
 add_action('after_setup_theme',  'features');
+
+function do_shortcode_in_menu($items, $args)
+{
+    foreach ($items as $item) {
+        // Applique le shortcode à chaque élément de menu
+        $item->title = do_shortcode($item->title);
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'do_shortcode_in_menu', 10, 2);
