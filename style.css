@@ -699,7 +699,6 @@ body .MaxProjetMain .SectionProjet .menuDeroulant {
   margin-left: auto;
   background-color: #bfd3ef;
   overflow-y: hidden;
-  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
