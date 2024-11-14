@@ -11,6 +11,14 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme tim
 */
+:root {
+  --bleu: #13243c;
+  --jaune: #fcbe32;
+  --blanc: #e8e8e8;
+  --texte: black;
+  --drop-shadow: rgba(255, 255, 255, 0.25);
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -23,7 +31,7 @@ body main {
 }
 body main .txtMain {
   text-align: center;
-  color: white;
+  color: var(--blanc);
   position: relative;
   top: 5vh;
   left: -27vw;
@@ -35,11 +43,11 @@ body main .txtMain h1 {
 body main .img {
   width: 70vw;
   height: 300px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   position: relative;
   left: 30vw;
   clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
-  color: #14243c;
+  color: var(--bleu);
   text-align: center;
   align-content: center;
 }
@@ -67,12 +75,12 @@ body main .infoCegep .divPolygone {
   margin-bottom: 50px;
 }
 body main .infoCegep .divPolygone .div1 {
-  background-color: white;
+  background-color: var(--blanc);
   height: 100px;
   margin-bottom: 10px;
 }
 body main .infoCegep .divPolygone .div2 {
-  background-color: white;
+  background-color: var(--blanc);
   height: 40px;
 }
 @media screen and (min-width: 900px) {
@@ -91,13 +99,13 @@ body main .infoLogiciel .divPolygone {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 body main .infoLogiciel .divPolygone .div1 {
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   height: 100px;
   margin-bottom: 10px;
   text-align: center;
 }
 body main .infoLogiciel .divPolygone .div2 {
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   height: 40px;
 }
 @media screen and (min-width: 900px) {
@@ -116,7 +124,7 @@ body main .description {
   width: fit-content;
 }
 body main .description .div1 {
-  background-color: white;
+  background-color: var(--blanc);
   font-size: xx-large;
   height: fit-content;
   margin-bottom: 20px;
@@ -124,7 +132,7 @@ body main .description .div1 {
   padding-left: 20px;
 }
 body main .description .div2 {
-  background-color: white;
+  background-color: var(--blanc);
   font-size: small;
   height: fit-content;
   min-height: 150px;
@@ -143,8 +151,8 @@ body main .diagramme .divPolygone {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 body main .diagramme .divPolygone .div1 {
-  background-color: #fcbe32;
-  color: #fcbe32;
+  background-color: var(--jaune);
+  color: var(--jaune);
   font-size: xx-large;
   height: fit-content;
   margin-bottom: 20px;
@@ -152,8 +160,8 @@ body main .diagramme .divPolygone .div1 {
   padding-left: 20px;
 }
 body main .diagramme .divPolygone .div2 {
-  background-color: #fcbe32;
-  color: #fcbe32;
+  background-color: var(--jaune);
+  color: var(--jaune);
   font-size: small;
   height: fit-content;
   min-height: 150px;
@@ -180,7 +188,7 @@ body main .titreProfile .divPolygone {
   margin-bottom: 50px;
 }
 body main .titreProfile .divPolygone .div1 {
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   height: fit-content;
   padding: 10px;
   padding-left: 20px;
@@ -202,8 +210,8 @@ body main .titreProfileVide .divPolygone {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 body main .titreProfileVide .divPolygone .div1 {
-  background-color: white;
-  color: white;
+  background-color: var(--blanc);
+  color: var(--blanc);
   height: fit-content;
   margin-bottom: 10px;
   padding: 10px;
@@ -225,7 +233,7 @@ body main .logiciels {
   width: fit-content;
 }
 body main .logiciels .div1 {
-  background-color: white;
+  background-color: var(--blanc);
   font-size: xx-large;
   height: fit-content;
   margin-bottom: 20px;
@@ -233,7 +241,7 @@ body main .logiciels .div1 {
   padding-left: 20px;
 }
 body main .logiciels .div2 {
-  background-color: white;
+  background-color: var(--blanc);
   font-size: small;
   height: fit-content;
   min-height: 150px;
@@ -252,8 +260,8 @@ body main .logicielsVide .divPolygone {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 body main .logicielsVide .divPolygone .div1 {
-  background-color: #fcbe32;
-  color: #fcbe32;
+  background-color: var(--jaune);
+  color: var(--jaune);
   font-size: xx-large;
   height: fit-content;
   margin-bottom: 20px;
@@ -261,8 +269,8 @@ body main .logicielsVide .divPolygone .div1 {
   padding-left: 20px;
 }
 body main .logicielsVide .divPolygone .div2 {
-  background-color: #fcbe32;
-  color: #fcbe32;
+  background-color: var(--jaune);
+  color: var(--jaune);
   font-size: small;
   height: fit-content;
   min-height: 150px;
@@ -289,7 +297,7 @@ body main .photo {
 body main .photo div {
   height: 300px;
   width: 200px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   text-align: center;
   align-content: center;
 }
@@ -300,12 +308,12 @@ body main .barreBasPage {
 body main .barreBasPage .div1 {
   height: 20px;
   width: 20vw;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
 }
 body main .barreBasPage .div2 {
   height: 20px;
   width: 70vw;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
 }
 
 /*******ZONE DE TITRE DE LA PAGE*******/
@@ -316,7 +324,7 @@ body main .barreBasPage .div2 {
   position: relative;
   height: 25vh;
   z-index: 1;
-  color: var(--gris);
+  color: var(--blanc);
 }
 
 .titrePage::before {
@@ -340,7 +348,7 @@ body main .barreBasPage .div2 {
 
 /*********TITRE DES SECTIONS**********/
 .titreSection h2 {
-  background-color: var(--orange);
+  background-color: var(--jaune);
   height: max-content;
   width: max-content;
   padding: 0 2rem;
@@ -370,7 +378,7 @@ body main .barreBasPage .div2 {
 .texte {
   margin: 10% 0;
   padding: 2rem;
-  background-color: var(--gris);
+  background-color: var(--blanc);
 }
 
 /*******************************MÉDIA QUERRY**************************/
@@ -386,7 +394,7 @@ body main .barreBasPage .div2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: var(--gris);
+    color: var(--blanc);
     position: relative;
   }
   .titrePage h1 {
@@ -415,7 +423,7 @@ body main .barreBasPage .div2 {
     left: 0px;
     width: 4rem;
     height: 100%;
-    background-color: var(--marin-fond);
+    background-color: var(--bleu);
     z-index: 3;
     clip-path: polygon(100% 0, 0% 100%, 0% 100%, 0 0);
   }
@@ -427,8 +435,8 @@ body main .barreBasPage .div2 {
     left: 90px;
     width: 8rem;
     height: 100%;
-    border: 2px solid var(--marin-fond);
-    background-color: var(--marin-fond);
+    border: 2px solid var(--bleu);
+    background-color: var(--bleu);
     z-index: 3;
     clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
   }
@@ -454,12 +462,12 @@ body main .barreBasPage .div2 {
     right: -30px;
     width: 2rem;
     height: 100%;
-    background-color: var(--orange);
+    background-color: var(--jaune);
     clip-path: polygon(100% 0, 50% 100%, 0% 100%, 0 0);
   }
   .decoTitre {
     position: relative;
-    background-color: var(--gris);
+    background-color: var(--blanc);
     height: 29px;
     flex-grow: 1;
   }
@@ -471,7 +479,7 @@ body main .barreBasPage .div2 {
     width: 2rem;
     height: 100%;
     z-index: 3;
-    background-color: var(--gris);
+    background-color: var(--blanc);
     clip-path: polygon(100% 0, 100% 100%, 0% 100%, 50% 0);
   }
   /***********INFORMATIONS ET IMAGES***************/
@@ -488,8 +496,8 @@ body main .barreBasPage .div2 {
     margin: 0;
     padding-right: 4rem;
     z-index: 1;
-    background-color: var(--marin-fond);
-    color: var(--gris);
+    background-color: var(--bleu);
+    color: var(--blanc);
   }
   .vieEtudiante .imageVie {
     width: 40vw;
@@ -855,7 +863,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
 }
 
 .pageCours .coursPrincipale h1 {
-  color: white;
+  color: var(--blanc);
   padding-left: 2vw;
 }
 .pageCours .coursPrincipale .imgCours {
@@ -865,12 +873,12 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   left: 40vw;
   position: relative;
   clip-path: polygon(7vw 0, 100% 0, 100% 100%, 0 100%);
-  background-color: #fcbe32;
+  background-color: var(--jaune);
 }
 .pageCours .coursPrincipale .txt {
   height: 200px;
   width: 60vw;
-  background-color: white;
+  background-color: var(--blanc);
   clip-path: polygon(0 0, 53vw 0, 100% 100%, 0 100%);
 }
 .pageCours .coursMenu {
@@ -902,12 +910,12 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession1Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap {
   transition: scale 0.2s;
@@ -920,7 +928,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -928,8 +936,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   scale: 1.2;
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession2Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap {
   transition: scale 0.2s;
@@ -942,7 +950,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -950,8 +958,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   scale: 1.2;
 }
 .pageCours .coursMenu .displayFlexBtn1 .btnSession3Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .displayFlexBtn2 {
   display: flex;
@@ -971,7 +979,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -979,8 +987,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   scale: 1.2;
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession4Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap {
   transition: scale 0.2s;
@@ -993,7 +1001,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -1001,8 +1009,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   scale: 1.2;
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession5Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap {
   transition: scale 0.2s;
@@ -1015,7 +1023,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   transition: scale 0.2s;
 }
@@ -1023,8 +1031,8 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   scale: 1.2;
 }
 .pageCours .coursMenu .displayFlexBtn2 .btnSession6Wrap .actif {
-  background-color: #13243c;
-  color: #e8e8e8;
+  background-color: var(--bleu);
+  color: var(--blanc);
 }
 .pageCours .coursMenu .wrapActif {
   filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.25)) drop-shadow(-5px -5px 3px rgba(255, 255, 255, 0.25));
@@ -1042,14 +1050,14 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
 .pageCours .listeCours .coursImg {
   width: 75px;
   height: 100px;
-  background-color: #13243c;
+  background-color: var(--bleu);
 }
 .pageCours .listeCours .cours1 {
   width: 300px;
   height: 200px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1068,7 +1076,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   height: 200px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1087,7 +1095,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   height: 200px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1106,7 +1114,7 @@ body .MaxProjetMain .SectionProjet .Rangee2 .div5 {
   height: 200px;
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #e8e8e8;
+  background-color: var(--blanc);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1128,7 +1136,7 @@ html {
 }
 
 body {
-  background-color: var(--marin-fond);
+  background-color: var(--bleu);
 }
 
 h1 {
@@ -1144,12 +1152,12 @@ h1 {
 .barreBasPage .div1 {
   height: 20px;
   width: 20vw;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
 }
 .barreBasPage .div2 {
   height: 20px;
   width: 70vw;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
 }
 
 .titreSection {
@@ -1177,13 +1185,6 @@ h1 {
   border-left: 5px solid var(--orange);
   border-right: 2px solid var(--orange);
   transform: translateX(2.7rem) skewX(-37deg);
-}
-
-:root {
-  --orange: #fcbe32;
-  --marin-fond: #14243c;
-  --gris: #e8e8e8;
-  --marin: #010d1e;
 }
 
 header {
@@ -1357,7 +1358,7 @@ footer .footerDroite .reseaux .inconsReseaux {
 .boutonCours .btn1 {
   height: 5px;
   width: 90px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   margin-bottom: 5px;
   position: relative;
   left: 60px;
@@ -1369,7 +1370,7 @@ footer .footerDroite .reseaux .inconsReseaux {
 .boutonCours .btn2 {
   width: 150px;
   height: 50px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   text-align: center;
   align-content: center;
   font-size: x-large;
@@ -1379,14 +1380,14 @@ footer .footerDroite .reseaux .inconsReseaux {
 .boutonCours .btn3 {
   width: 90px;
   height: 5px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   margin-top: 5px;
   transition: color 0.5s, background-color 0.1s;
 }
 .boutonCours .btn4 {
   width: 25px;
   height: 5px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   position: relative;
   top: -5px;
   left: 92px;
@@ -1395,7 +1396,7 @@ footer .footerDroite .reseaux .inconsReseaux {
 .boutonCours .btn5 {
   width: 10px;
   height: 5px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   position: relative;
   top: -10px;
   left: 119px;
@@ -1404,34 +1405,34 @@ footer .footerDroite .reseaux .inconsReseaux {
 .boutonCours .btn6 {
   width: 65px;
   height: 5px;
-  background-color: #fcbe32;
+  background-color: var(--jaune);
   position: relative;
   top: -8px;
   transition: color 0.5s, background-color 0.1s;
 }
 .boutonCours:hover .btn1 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 .boutonCours:hover .btn2 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 .boutonCours:hover .btn3 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 .boutonCours:hover .btn4 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 .boutonCours:hover .btn5 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 .boutonCours:hover .btn6 {
-  background-color: black;
-  color: #fcbe32;
+  background-color: var(--bleu);
+  color: var(--jaune);
 }
 
 #bg {
@@ -1699,8 +1700,8 @@ footer .footerDroite .reseaux .inconsReseaux {
   content: "";
   position: absolute;
   bottom: -9rem;
-  border-left: 10rem solid var(--gris);
-  border-right: 5rem solid var(--gris);
+  border-left: 10rem solid var(--blanc);
+  border-right: 5rem solid var(--blanc);
   width: 15rem;
   height: 100%;
   transform: skewX(-45deg);
@@ -1712,8 +1713,8 @@ footer .footerDroite .reseaux .inconsReseaux {
   position: absolute;
   opacity: 0.5;
   bottom: -19rem;
-  border-left: 3rem solid var(--gris);
-  border-right: 8rem solid var(--gris);
+  border-left: 3rem solid var(--blanc);
+  border-right: 8rem solid var(--blanc);
   width: 19rem;
   height: 100%;
   transform: skewX(-45deg);
@@ -1740,7 +1741,7 @@ footer .footerDroite .reseaux .inconsReseaux {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--gris);
+  background-color: var(--blanc);
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.5647058824);
   width: 30vw;
   height: 15rem;
@@ -1764,15 +1765,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 16rem solid var(--gris);
-    border-right: 8rem solid var(--gris);
+    border-left: 16rem solid var(--blanc);
+    border-right: 8rem solid var(--blanc);
     width: 18rem;
   }
   .pageProfs::after {
     top: 0;
     right: -22rem;
-    border-left: 2rem solid var(--gris);
-    border-right: 12rem solid var(--gris);
+    border-left: 2rem solid var(--blanc);
+    border-right: 12rem solid var(--blanc);
     width: 23rem;
   }
   .conteneurProfs {
@@ -1792,15 +1793,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 17rem solid var(--gris);
+    border-left: 17rem solid var(--blanc);
     width: 18rem;
     transform: skewX(-55deg);
   }
   .pageProfs::after {
     top: 0;
     right: -27rem;
-    border-left: 4rem solid var(--gris);
-    border-right: 14rem solid var(--gris);
+    border-left: 4rem solid var(--blanc);
+    border-right: 14rem solid var(--blanc);
     width: 25rem;
     transform: skewX(-55deg);
   }
