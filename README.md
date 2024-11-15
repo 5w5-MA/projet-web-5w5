@@ -16,21 +16,40 @@ https://github.com/orgs/5w5-MA/projects/1/views/1
 Lien google sheet:
 https://docs.google.com/spreadsheets/d/1ifhd2P6OZVds5_mNxjLPQELZd7fUbF6d7ynXQSH9FuM/edit?gid=0#gid=0
 
-But: finir toutes les pages en html css et les mettre sur le wordpress.
+SSPRINT #2
+
+But: faire les pages en html css et commencer à les mettre sur le wordpress.
 
 Les pages:
 
   Accueil
   
   Les cours
-
-  Les professeurs
   
   Les projets
   
   Futur
   
   Vie Étudiante
+
+
+SPRINT #4
+
+
+finir toutes les pages en html css
+
+Un cours
+
+Les projets
+
+Les professeurs
+
+Futur
+
+
+les mettre sur WordPress
+
+
 
   
 
