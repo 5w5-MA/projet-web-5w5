@@ -16,7 +16,7 @@ Text Domain: theme tim
   --jaune: #fcbe32;
   --blanc: #e8e8e8;
   --texte: black;
-  --gris: grey;
+  --gris: rgba(198, 198, 198, 0.907);
   --drop-shadow: rgba(255, 255, 255, 0.25);
 }
 
@@ -34,6 +34,7 @@ body {
 }
 body main {
   min-height: 100vh;
+  margin-top: -150px;
   padding-bottom: 150px;
   overflow-x: hidden;
 }
@@ -60,6 +61,18 @@ body main .txtMain h2 {
   font-family: "lato";
   font-weight: 300;
 }
+@media screen and (max-width: 900px) {
+  body main .txtMain {
+    width: 15rem;
+    padding-left: 0;
+    margin: auto;
+    z-index: 1;
+    top: 15rem;
+  }
+  body main .txtMain h1 {
+    font-size: 1rem;
+  }
+}
 body main .img {
   width: 70vw;
   height: 300px;
@@ -70,6 +83,18 @@ body main .img {
   color: var(--bleu);
   text-align: center;
   align-content: center;
+}
+@media screen and (max-width: 900px) {
+  body main .img {
+    width: 90vw;
+    clip-path: none;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+  body main .img img {
+    border-radius: 10px;
+  }
 }
 @media screen and (min-width: 900px) {
   body main .img {
@@ -82,6 +107,28 @@ body main .img {
     width: 60vw;
     justify-self: flex-end;
     left: 0vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  body main .boutonCours {
+    width: 287px;
+    margin: auto;
+    left: 0;
+  }
+  body main .boutonCours .btn1 {
+    display: none;
+  }
+  body main .boutonCours .btn3 {
+    display: none;
+  }
+  body main .boutonCours .btn4 {
+    display: none;
+  }
+  body main .boutonCours .btn5 {
+    display: none;
+  }
+  body main .boutonCours .btn6 {
+    display: none;
   }
 }
 body main .infoCegep {
@@ -1051,6 +1098,7 @@ header .menuCache .optionMenu .menu-menuprincipal-container {
 }
 header .menuCache .optionMenu .menu-menuprincipal-container ul {
   list-style: none;
+  margin: none;
 }
 header .menuCache .optionMenu .menu-menuprincipal-container ul a {
   text-decoration: none;
@@ -1077,7 +1125,6 @@ header .menuCache .optionMenu .menu-menuprincipal-container ul a {
     display: flex;
     width: clamp(700px, 60vw, 800px);
     font-size: clamp(16px, 1.06vw, 21px);
-    margin: 40px 0px 0px 0px;
     padding: 25px 10px;
     justify-content: space-between;
   }
@@ -1522,12 +1569,14 @@ footer .footerDroite .reseaux .inconsReseaux {
 /*****************************décor de la page**********************/
 #bodyProfs {
   position: relative;
+  z-index: 5;
 }
 
 .pageProfs {
   position: relative;
+  padding-top: 10rem;
   overflow: hidden;
-  z-index: 10;
+  z-index: 5;
 }
 
 .pageProfs::before {
@@ -1539,51 +1588,54 @@ footer .footerDroite .reseaux .inconsReseaux {
   width: 15rem;
   height: 100%;
   transform: skewX(-45deg);
-  z-index: 5;
+  z-index: 2;
 }
 
 .pageProfs::after {
   content: "";
   position: absolute;
+  opacity: 0.5;
   bottom: -19rem;
-  border-left: 3rem solid var(--jaune);
-  border-right: 8rem solid var(--jaune);
+  border-left: 3rem solid rgba(198, 198, 198, 0.7176470588);
+  border-right: 8rem solid rgba(198, 198, 198, 0.7176470588);
   width: 19rem;
   height: 100%;
   transform: skewX(-45deg);
-  z-index: 5;
+  z-index: 2;
 }
 
 /**********************Éléments de la page*******************/
 .conteneurCentre {
-  margin: auto 3rem;
   position: relative;
-  z-index: 10;
+  margin: auto 3rem;
+  z-index: 3;
 }
 
 .conteneurProfs {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 /************carte des professeurs************/
 .carteProf {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--blanc);
-  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.5647058824);
+  padding: 1rem;
+  background-color: var(--gris);
+  box-shadow: 1px 1px 15px 1px rgba(54, 54, 54, 0.5647058824);
   width: 30vw;
   height: 15rem;
-  position: relative;
-  z-index: 10;
+  z-index: 3;
+  border-radius: 5px;
 }
 
 .imageProf {
@@ -1604,15 +1656,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 16rem solid var(--gris);
-    border-right: 8rem solid var(--gris);
+    border-left: 16rem solid rgba(198, 198, 198, 0.7176470588);
+    border-right: 8rem solid rgba(198, 198, 198, 0.7176470588);
     width: 18rem;
   }
   .pageProfs::after {
     top: 0;
     right: -22rem;
-    border-left: 2rem solid var(--jaune);
-    border-right: 12rem solid var(--jaune);
+    border-left: 2rem solid rgba(198, 198, 198, 0.7176470588);
+    border-right: 12rem solid rgba(198, 198, 198, 0.7176470588);
     width: 23rem;
   }
   .conteneurProfs {
@@ -1632,15 +1684,15 @@ footer .footerDroite .reseaux .inconsReseaux {
   .pageProfs::before {
     top: 0;
     right: -8rem;
-    border-left: 17rem solid var(--gris);
+    border-left: 17rem solid rgba(198, 198, 198, 0.7176470588);
     width: 18rem;
     transform: skewX(-55deg);
   }
   .pageProfs::after {
     top: 0;
     right: -27rem;
-    border-left: 4rem solid var(--jaune);
-    border-right: 14rem solid var(--jaune);
+    border-left: 4rem solid var(--gris);
+    border-right: 14rem solid var(--gris);
     width: 25rem;
     transform: skewX(-55deg);
   }
@@ -1653,4 +1705,7 @@ footer .footerDroite .reseaux .inconsReseaux {
   .imageProf {
     width: 12rem;
   }
+}
+ul {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

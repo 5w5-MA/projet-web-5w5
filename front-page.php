@@ -17,7 +17,7 @@ get_header();
     </div>
 
     <div class="img">
-        <img class="imagesGeneral" src="<?php echo  wp_get_attachment_url(84); ?>" alt="">
+        <img class="imagesGeneral" src="<?php echo  wp_get_attachment_url(53); ?>" alt="">
     </div>
     <div class="boutonCours">
         <div class="btn1"></div>
@@ -124,7 +124,7 @@ get_header();
             ?>
                 <section class="carrousel">
                     <div>
-                        <?php the_title(); ?>
+                    
                         <?php the_content(); ?>
                     </div>    
                 </section>

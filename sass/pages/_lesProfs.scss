@@ -1,160 +1,179 @@
 /*****************************décor de la page**********************/
 
 #bodyProfs {
-  //mettre le bodu derrière le main
-  position: relative;
+    //mettre le bodu derrière le main
+    position: relative;
+    z-index: 5;
 }
 
+
 .pageProfs {
-  position: relative;
-  overflow: hidden;
-  z-index: 10;
+    position: relative;
+    padding-top: 10rem;
+    overflow: hidden;
+    z-index: 5;
 }
 
 .pageProfs::before {
-  content: "";
+    content: "";
 
-  position: absolute;
-  bottom: -9rem;
+    position: absolute;
+    bottom: -9rem;
 
-  border-left: 10rem solid var(--gris);
-  border-right: 5rem solid var(--gris);
-  width: 15rem;
-  height: 100%;
+    border-left: 10rem solid var(--gris);
+    border-right: 5rem solid var(--gris);
+    width: 15rem;
+    height: 100%;
 
-  transform: skewX(-45deg);
-  z-index: 5;
+    transform: skewX(-45deg);
+
+    z-index: 2;
+   
 }
-
 .pageProfs::after {
-  content: "";
+    content: "";
 
-  position: absolute;
-  // opacity: 0.5;
-  bottom: -19rem;
+    position: absolute;
+    opacity: 0.5;
+    bottom: -19rem;
 
-  border-left: 3rem solid var(--jaune);
-  border-right: 8rem solid var(--jaune);
-  width: 19rem;
-  height: 100%;
+    border-left: 3rem solid #c6c6c6b7;
+    border-right: 8rem solid #c6c6c6b7;
+    width: 19rem;
+    height: 100%;
 
-  transform: skewX(-45deg);
-  z-index: 5;
+    transform: skewX(-45deg);
+
+    z-index: 2;
+  
 }
 
 /**********************Éléments de la page*******************/
 .conteneurCentre {
-  margin: auto 3rem;
-  position: relative;
-  z-index: 10;
+    position: relative;
+    margin: auto 3rem;
+    z-index: 3;
 }
 
 .conteneurProfs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  position: relative;
-  z-index: 10;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    z-index: 3;
+
 }
 
 /************carte des professeurs************/
 .carteProf {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--blanc);
-  box-shadow: 1px 1px 15px 1px #00000090;
-  width: 30vw;
-  height: 15rem;
-  position: relative;
-  z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--gris);
+    box-shadow: 1px 1px 15px 1px #36363690;
+    width: 30vw;
+    height: 15rem;
+    z-index: 3;
+    border-radius: 5px;
 }
 
 .imageProf {
-  width: 25vw;
-  height: 10rem;
+    width: 25vw;
+    height: 10rem;
 }
 
 .imageProf img {
-  width: 100%;
-  height: 100%;
 
-  object-fit: cover;
-  object-position: 50%;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50%;
+
 }
+
 
 /*******************************MÉDIA QUERRY**************************/
 /****************MÉDIA QUERRY TABLETTE*****************/
 @media screen and (min-width: 500px) {
-  // changer la taille des cartes et du décor
+    // changer la taille des cartes et du décor
 
-  .pageProfs::before {
-    top: 0;
-    right: -8rem;
-    border-left: 16rem solid var(--gris);
-    border-right: 8rem solid var(--gris);
-    width: 18rem;
-  }
+    .pageProfs::before {
+        top: 0;
+        right: -8rem;
+        border-left: 16rem solid #c6c6c6b7;
+        border-right: 8rem solid #c6c6c6b7;
+        width: 18rem;
+    }
 
-  .pageProfs::after {
-    top: 0;
-    right: -22rem;
-    border-left: 2rem solid var(--jaune);
-    border-right: 12rem solid var(--jaune);
-    width: 23rem;
-  }
+    .pageProfs::after {
+        top: 0;
+        right: -22rem;
+        border-left: 2rem solid #c6c6c6b7;
+        border-right: 12rem solid #c6c6c6b7;
+        width: 23rem;
 
-  .conteneurProfs {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    }
 
-  .carteProf {
-    width: 23vw;
-    height: 19rem;
-  }
+    .conteneurProfs {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-  .imageProf {
-    width: 18vw;
-    height: 14rem;
-  }
+    .carteProf {
+        width: 23vw;
+        height: 19rem;
+    }
+
+    .imageProf {
+        width: 18vw;
+        height: 14rem;
+    }
+
 }
 
 /****************MÉDIA QUERRY ordinateur*****************/
 @media screen and (min-width: 1100px) {
-  // changer la taille des cartes et du décor
-  .pageProfs::before {
-    top: 0;
-    right: -8rem;
-    border-left: 17rem solid var(--gris);
 
-    width: 18rem;
+    // changer la taille des cartes et du décor
+    .pageProfs::before {
+        top: 0;
+        right: -8rem;
+        border-left: 17rem solid #c6c6c6b7;
 
-    transform: skewX(-55deg);
-  }
+        width: 18rem;
 
-  .pageProfs::after {
-    top: 0;
-    right: -27rem;
+        transform: skewX(-55deg);
+    }
 
-    border-left: 4rem solid var(--jaune);
-    border-right: 14rem solid var(--jaune);
-    width: 25rem;
-    transform: skewX(-55deg);
-  }
+    .pageProfs::after {
+        top: 0;
+        right: -27rem;
 
-  .conteneurProfs {
-    grid-template-columns: repeat(4, 1fr);
-  }
+        border-left: 4rem solid var(--gris);
+        border-right: 14rem solid var(--gris);
+        width: 25rem;
+        transform: skewX(-55deg);
 
-  .carteProf {
-    width: 14rem;
-  }
+    }
 
-  .imageProf {
-    width: 12rem;
-  }
+    .conteneurProfs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .carteProf {
+        width: 14rem;
+
+    }
+
+    .imageProf {
+        width: 12rem;
+
+    }
+
 }

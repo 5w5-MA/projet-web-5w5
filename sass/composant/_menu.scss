@@ -59,6 +59,7 @@ header {
         text-align: center;
         ul {
           list-style: none;
+          margin: none;
           a {
             text-decoration: none;
             color: white;
@@ -91,7 +92,6 @@ header {
         display: flex;
         width: clamp(700px, 60vw, 800px);
         font-size: clamp(16px, 1.06vw, 21px);
-        margin: 40px 0px 0px 0px;
         padding: 25px 10px;
         justify-content: space-between;
       }
