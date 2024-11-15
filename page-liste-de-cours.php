@@ -12,7 +12,9 @@ get_header(); ?>
 <main class="pageCours">
     <section class="coursPrincipale">
         <h1><?php the_title(); ?></h1>
-        <div class="imgCours"></div>
+        <div class="imgCours">
+        <img class="imagesGeneral" src="<?php echo  wp_get_attachment_url(84); ?>" alt="">
+        </div>
         <div class="txt"></div>
     </section>
     <section class="coursMenu">

@@ -12,11 +12,13 @@ get_header();
 <main>
     <div class="txtMain">
         <h1><?php echo get_bloginfo('name'); ?></h1>
-        <br>
         <h2><?php echo get_bloginfo('description'); ?></h2>
+        <p>bienvenu au tim maisonneuve</p>
     </div>
 
-    <div class="img">image</div>
+    <div class="img">
+        <img class="imagesGeneral" src="<?php echo  wp_get_attachment_url(84); ?>" alt="">
+    </div>
     <div class="boutonCours">
         <div class="btn1"></div>
         <a href="<?php echo site_url('/liste-de-cours'); ?>">

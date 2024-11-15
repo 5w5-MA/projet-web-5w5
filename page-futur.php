@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <img class="image_titre" src="../images/Journal-IntegrAL-1200x642.jpg" alt="">
+        <img class="image_titre" src="<?php echo  wp_get_attachment_url(84); ?>" alt="">
 
     </section>
 
