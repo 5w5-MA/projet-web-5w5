@@ -33,7 +33,8 @@ Les pages:
   Vie Étudiante
 
 
-SPRINT #4
+
+SPRINT #3
 
 
 finir toutes les pages en html css
@@ -53,6 +54,14 @@ faire une extension carrousel et une de changement de couleur.
 
 peaufiner les pages.
 
+
+
+SPRINT #4
+
+Régler les problèmes d'intégration sur le serveur.
+ajouter des animations.
+améliorer les extensions
+finaliser les pages
 
 
   
