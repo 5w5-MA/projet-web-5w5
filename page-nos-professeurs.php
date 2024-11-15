@@ -29,10 +29,7 @@
                     // Display the featured image of the post, with a fallback for when no image is set
                     if (has_post_thumbnail()) {
                         the_post_thumbnail('full'); // You can change 'full' to another size if needed (like 'medium' or 'large')
-                    } else {
-                        // Optionally, provide a default image if no post thumbnail is available
-                        echo '<img src="' . get_template_directory_uri('84') . '/images/entete.jpg" alt="image d\'un prof">';
-                    }
+                    } 
                 ?>
             </div>
             <p><?php the_title(); ?></p>

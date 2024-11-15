@@ -17,7 +17,12 @@ get_header();
     </div>
 
     <div class="img">
-        <img class="imagesGeneral" src="<?php echo  wp_get_attachment_url(53); ?>" alt="">
+                <?php 
+                    // Display the featured image of the post, with a fallback for when no image is set
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('full'); // You can change 'full' to another size if needed (like 'medium' or 'large')
+                    } 
+                ?>
     </div>
     <div class="boutonCours">
         <div class="btn1"></div>

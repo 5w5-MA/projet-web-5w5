@@ -11,11 +11,16 @@ footer {
   position: relative;
   overflow-y: hidden;
 
+  @media screen and (max-width: 900px) {
+    padding: 0;
+  }
+
   .footerGauche {
     display: flex;
     justify-content: space-evenly;
     gap: 5rem;
     padding-bottom: 5rem;
+    flex-wrap: wrap;
   }
 
   .footerBas {
