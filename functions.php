@@ -7,7 +7,7 @@ function files()
     wp_enqueue_script('burgerScript', get_theme_file_uri('/js/burger.js'), array(), NULL, true);
     //wp_enqueue_script('coursScript', get_theme_file_uri('/js/cours.js'), array(), NULL, true);
     wp_enqueue_script('buttonCoursScript', get_theme_file_uri('/js/buttonCours.js'), array(), NULL, true);
-    wp_enqueue_script('animationScrollVieEtudiante', get_theme_file_uri('js/animationScrollVieEtudiante.js'), array(), NULL, true);
+    wp_enqueue_script('animationScrollVieEtudiante', get_theme_file_uri('js/animationScroll.js'), array(), NULL, true);
     wp_enqueue_script('filtreProjet', get_theme_file_uri('/js/filtreProjet.js'), array(), NULL, true);
     wp_enqueue_script('animationBackground', get_theme_file_uri('/js/animationBackground.js'), array(), NULL, true);
 
