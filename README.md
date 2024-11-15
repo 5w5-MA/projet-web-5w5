@@ -49,6 +49,10 @@ Futur
 
 les mettre sur WordPress
 
+faire une extension carrousel et une de changement de couleur.
+
+peaufiner les pages.
+
 
 
   
